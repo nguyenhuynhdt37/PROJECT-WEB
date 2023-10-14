@@ -297,6 +297,7 @@ body {
 
 .product__sub {
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .product__fit {
@@ -332,4 +333,29 @@ body {
     font-size: 15px;
     color: #0066CC;
     font-weight: 400;
+}
+
+.category-description {
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    /* margin-bottom: 80px; */
+}
+
+.category__history {
+    margin-bottom: 22px;
+
+}
+
+.category__history--title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.category__history--content {
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 10px 0;
+    color: #515154;
+    text-align: justify;
 }
