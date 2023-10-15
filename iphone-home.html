@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
-    <link rel="stylesheet" href="/asset/gird.css">
+    <link rel="stylesheet" href="/asset/grid.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -439,13 +439,57 @@
                                     target="_blank" rel="noopener">iPhone 15 Pro</a></span></p>
                     </div>
                 </div>
-            </div>
-            <div class="product-reviews">
+                <div class="row product___reviews">
 
+                    <h2 class="col l-12 product__reviews--title">Bình luận</h2>
+
+                    <div class="col l-4 product-reviews-content">
+                        <p class="reviews-content__title">Viết bình luận của bạn</p>
+                        <div class="reviews-content__input name">
+                            <p>Tên của bạn</p>
+                            <input class="input " name="text" type="text" placeholder="">
+
+                        </div>
+                        <div class="reviews-content__input email">
+                            <p>Email hoặc số điện thoại </p>
+                            <input class="input" name="email" type="email" placeholder="">
+
+                        </div>
+                        <div class="reviews-content__input name">
+                            <p>Nội dung bình luận</p>
+                            <textarea class="input input-textarea" id="AddCustomerComment_ReviewText"
+                                name="AddCustomerComment.ReviewText"></textarea>
+
+                        </div>
+                        <input type="button" name="add-comment" class="product__reviews--send" value="Gửi">
+                    </div>
+                    <div class="col l-8 product__review-item">
+                        <div class="top-title-review">
+                            <div class="user-comment-info">
+                                <img src="https://shopdunk.com/images/thumbs/default-avatar_120.jpg" alt=""
+                                    class="avatar-review">
+                                <span class="name-reviews">Thảo Linh</span>
+                            </div>
+                            <div class="user-comment"><span class="user-comment-text"> Bao giờ về VN ạ </span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_newletter">
+                    <div class="heading_newletter">Đăng ký nhận tin từ TechNoPro</div>
+                    <p>Thông tin sản phẩm mới nhất và chương trình khuyến mãi</p>
+                    <div class="newsletter">
+                        <div class="newsletter-subscribe">
+                            <div class="newsletter-email">
+                                <input class="newsletter-subscribe-text" placeholder="Email của bạn" type="email">
+                                <button type="button">Đăng ký</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
-        <footer class="footer">
+        <footer class="gird wide footer">
 
         </footer>
 

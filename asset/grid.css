@@ -1,11 +1,13 @@
 * {
     box-sizing: border-box;
 }
+
 .grid {
     width: 100%;
     display: block;
     padding: 0;
 }
+
 .wide {
     margin: 0 auto;
     max-width: 1200px;
