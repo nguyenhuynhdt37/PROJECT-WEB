@@ -197,6 +197,15 @@ body {
     /* height: 285px; */
 }
 
+.product__box-item:hover {
+    border-color: #02010100;
+    box-shadow: 1px 1px 28px 0px rgb(0 0 0 / 12%);
+}
+
+.product__box-item:hover img {
+    opacity: 0.8;
+}
+
 .product-grid {
     margin-top: 50px;
     justify-content: space-around;
@@ -281,6 +290,11 @@ body {
     opacity: 0.6;
 }
 
+.page-1:hover {
+    opacity: 0.5;
+    background-color: #d5d5d5;
+}
+
 .page__number>.active {
     background-color: #0066CC;
     color: #fff;
@@ -308,6 +322,11 @@ body {
     height: 215px;
     border-radius: 10px;
     flex: 0 0 49.3%;
+}
+
+.product__fit:hover {
+    border-color: #02010100;
+    box-shadow: 1px 1px 28px 0px rgb(0 0 0 / 12%);
 }
 
 .product__fit>.row {
@@ -442,6 +461,11 @@ body {
     background-color: #0066CC;
     color: #f7f7f7;
     font-size: 15px;
+    cursor: pointer;
+}
+
+.product__reviews--send:hover {
+    opacity: 0.8;
 }
 
 .product__review-item {
@@ -529,6 +553,108 @@ body {
     color: #EBEAEA;
 }
 
+.newsletter-subscribe-text~button:hover {
+    opacity: 0.8;
+}
+
+.footer__box {
+    text-align: center;
+    margin-top: 20px;
+    /* border-bottom: 1px solid #dfdede; */
+
+}
+
+.footer__column {
+    text-align: start;
+}
+
 .footer {
-    background-color: #1d1d1f;
+    background-color: #ffffff;
+}
+
+.footer__list {
+    margin: 0;
+    padding: 0;
+}
+
+.footer__list--item {
+    list-style: none;
+}
+
+.footer__list--item>.item {
+    line-height: 40px;
+    text-decoration: none;
+    color: #515154;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.footer__list--item>.item:hover {
+    color: #0066CC;
+}
+
+.footer__list--item:first-of-type>.item {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 30px;
+    line-height: 100px;
+    font-weight: 700;
+}
+
+.footer__list--item .item-icon {
+    margin-right: 10px;
+}
+
+.footer__list--item>.item-icon>i:hover {
+    opacity: 0.8;
+}
+
+.privacy-policy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__list--policy {
+    font-size: 32px;
+    text-align: start;
+}
+
+.policy--item {
+    list-style: none;
+}
+
+.policy--item>.item {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+
+.footer__list--item>a {
+    margin: 0;
+    padding: 0 2px;
+}
+
+.footer__list--item>a>i {
+
+    font-size: 30px;
+}
+
+.footer__navigation {
+    border-top: 1px solid #d5d5d5;
+    text-align: center;
+    font-weight: 700;
+    justify-content: center;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.footer__end {
+    text-align: center;
+    font-weight: 400;
+    color: #515154;
+    padding-bottom: 100px;
 }
