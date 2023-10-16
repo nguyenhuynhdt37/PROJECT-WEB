@@ -160,8 +160,45 @@ body {
     /* height: 403px; */
 
     border-radius: 10px;
+    display: none;
+    /* transform: translateX(-100%); */
 }
 
+.open {
+    display: block;
+}
+
+.product__banner {
+    position: relative;
+}
+
+.product__banner--btn-left {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+}
+
+.product__banner--btn-right {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%);
+
+}
+
+.product__banner>.btn {
+    border-radius: 50%;
+    border: none;
+    width: 48px;
+    height: 48px;
+    /* background-color: #515154; */
+    opacity: 0.5;
+}
+
+.banner__icon-btn {
+    color: #6f6f6f;
+}
 
 .notification__float {
     display: 100%;

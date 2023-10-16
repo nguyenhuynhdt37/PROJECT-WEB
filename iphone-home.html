@@ -81,8 +81,23 @@
             <div class="grid wide">
                 <div class="name__product--title">iPhone</div>
 
-                <img src="https://shopdunk.com/images/uploaded/banner/banner_thang10/iPhone%2011.png" alt=""
-                    class="container__notification--float">
+                <div class="product__banner">
+                    <img src="https://shopdunk.com/images/uploaded/banner/banner_thang10/iPhone%2011.png" alt=""
+                        class="container__notification--float open">
+                    <img src="https://shopdunk.com/images/uploaded/banner/banner_thang10/banner%20iphone%2015%20TH_Danh%20m%E1%BB%A5c%20(3).jpg"
+                        alt="" class="container__notification--float">
+                    <img src="https://shopdunk.com/images/uploaded/banner/banner_thang10/banner%20iphone%2014%20Pro%20Max%20T10_Danh%20m%E1%BB%A5c.jpg"
+                        alt="" class="container__notification--float">
+                    <img src="https://shopdunk.com/images/uploaded/banner/banner_thang10/banner%20iphone%2014%20Pro%20Max%20T10_Danh%20m%E1%BB%A5c.jpg"
+                        alt="" class="container__notification--float">
+
+                    <button class="btn product__banner--btn-left">
+                        <i class="fa-solid fa-angle-left  banner__icon-btn"></i>
+                    </button>
+                    <button class="btn product__banner--btn-right">
+                        <i class="fa-solid fa-angle-right banner__icon-btn"></i>
+                    </button>
+                </div>
                 <div class="row product-grid">
                     <div class="col l-3 m-4 c-6 product__item">
                         <a href="#" class=" product__box-item" style="padding: 0 20px;">
@@ -454,7 +469,7 @@
                                 Apple
                                 uỷ quyền tại Việt Nam, đáp ứng được các yêu cầu khắt khe từ Apple như: dịch vụ kinh
                                 doanh,
-                                dịch vụ chăm sóc khách hàng, Store Locationđặt ...</p>
+                                dịch vụ chăm sóc khách hàng, Store Location đặt ...</p>
                         </div>
                     </div>
                 </div>
@@ -625,6 +640,39 @@
                 used without written permission from us.</p>
         </footer>
     </div>
+    <script>
+        $ = document.querySelector.bind(document);
+        $$ = document.querySelectorAll.bind(document);
+        var imgbannerElements = $$('.container__notification--float');
+        function toggleImageBanners() {
+            let currentIndex = -1;
+
+            imgbannerElements.forEach((imgbannerElement, index) => {
+                if (imgbannerElement.classList.contains('open')) {
+                    currentIndex = index;
+                }
+            });
+
+            if (currentIndex >= 0) {
+                imgbannerElements[currentIndex].classList.remove('open');
+            }
+
+            if (currentIndex < imgbannerElements.length - 1) {
+                imgbannerElements[currentIndex + 1].classList.add('open');
+            } else {
+                imgbannerElements[0].classList.add('open');
+            }
+        }
+
+        setInterval(toggleImageBanners, 2000);
+
+
+
+
+
+
+
+    </script>
 </body>
 
 </html>
