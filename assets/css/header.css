@@ -24,8 +24,6 @@
     justify-content: space-between;
 }
 
-/*  */
-
 .header__main-info ul {
     display: flex;
     align-items: center;
@@ -72,7 +70,8 @@
 /* Navbar */
 .header__nav {
     height: 40px;
-    background-color: #EDECEC;
+    background-image: linear-gradient(to bottom, #fff, #eee);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .header__nav-list {
