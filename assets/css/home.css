@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f5f5f7;
+}
+
+:root {
+    --primary-blue: #0d6efd;
+    --text-color: #000;
+    --white-color: #fff;
+    --border-color: #dbdbdb;
+    --text-color: #333;
+}
+/* >= PC */
+@media (min-width: 992px) {
+    .header__more {
+        order: 1;
+    }
+}
+/* PC and Large Tablet */
+@media (min-width: 768px) {
+    #carousel-pc {
+        display: block;
+    }
+    #carousel-mobile {
+        display: none;
+    }
+}
+/* Tablet and mobile */
+@media (max-width: 992px) {
+    #carousel-pc {
+        display: none;
+    }
+    #carousel-mobile {
+        display: block;
+    }
+    #product-nav {
+        padding: 8px 0 !important;
+        font-size: 1.6rem !important;
+    }
+    #product-nav::-webkit-scrollbar {
+        display: none;
+    }
+    #searchModal input {
+        height: 44px;
+    }
+    .nav {
+        overflow-x: auto;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        display: flex;
+        justify-content: flex-start !important;
+    }
+    .header__more {
+        text-align: end;
+        width: 70%;
+    }
+    .auth-form-btn {
+        margin-top: 16px;
+        margin-left: 10px;
+    }
+}
+/* Mobile */
+@media (max-width: 576px) {
+    .header__more {
+        text-align: end;
+        width: 50%;
+    }
+    .content__iphone-left, .content__iphone-right {
+        height: 30rem !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro p {
+        font-size: 2rem !important;
+    }
+}
+/* Header */
+.navbar a, .auth-form-btn {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+#product-nav {
+    background: linear-gradient(#fff, #efefef);
+}
+
+#product-nav .nav-link {
+    transition: transform .2s;
+}
+
+#product-nav .nav-link:hover {
+    color: var(--primary-blue) !important;
+    transform: scale(1.1);
+}
+
+.header__more i:hover, .auth-form-btn:hover {
+    opacity: .7;
+}
+/* Authen modal */
+.auth-form__input {
+    width: 100%;
+    height: 40px;
+    margin-top: 18px;
+    padding: 0 12px;
+    font-size: 1.3rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    outline: none;
+}
+
+.auth-form__input:focus {
+    border-color: #777;
+}
+
+.auth-form__policy-text {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: center;
+    padding: 0 40px;
+    margin-top: 16px;
+}
+
+.modal-content {
+    border-radius: .8rem;
+}
+/* Content */
+.content__iphone-title {
+    text-align: center;
+}
+
+.content__iphone-left {
+    
+    
+    border-radius: 10px;
+}
+
+.content__iphone-left:hover,
+.content__iphone-right:hover,
+.benefits-item:hover {
+    transform: scale(1.05);
+    transition: transform .5s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.content__product {
+    
+}
+
+.device-picture {
+    background: url('https://www.apple.com/v/iphone-15/b/images/overview/usb-c/usbc__bvuxditgibci_large.png') center / cover no-repeat;
+    padding-top: 50%;
+}
+
+.intro p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.intro a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.intro .text-dark {
+    color: #f00bc6 !important;
+}
+
+.content__iphone-right {
+https://www.apple.com/newsroom/images/2023/09/apple-debuts-iphone-15-and-iphone-15-plus/article/Apple-iPhone-15-lineup-hero-230912_inline.jpg.large.jpg
+
+    border-radius: 10px;
+}
+
