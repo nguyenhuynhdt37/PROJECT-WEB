@@ -70,7 +70,8 @@ body {
     display: 100%;
 }
 
-.container {
+.container-fluid {
+    padding-top: 100px;
     background-color: #f5f5f7;
 
 }
@@ -625,7 +626,12 @@ body {
     }
 
     .header {
-        display: none;
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
     }
 
 
