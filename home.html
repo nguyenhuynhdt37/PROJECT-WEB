@@ -25,17 +25,17 @@
 <body>
     <div class="app">
         <!-- Header Navbar by Bootstrap -->
-        <nav class="header__nav navbar navbar-expand-lg p-4 bg-primary sticky-top">
-            <div class="container-fluid">
-                <a class="header__logo navbar-brand me-4 fs-1 fw-bold text-white" href="#">TechNoPro</a>
-                <div class="header__more fs-3">
-                    <!-- Search btn -->
-                    <a type="button" class="search-btn text-white mx-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <!-- Cart btn -->
-                    <a href="https://shopdunk.com/cart" class="cart-btn text-white mx-3"><i class="fa-solid fa-cart-shopping"></i></a>
+        <nav class="header__nav navbar navbar-expand-lg fixed-top px-4 py-1 bg-white">
+            <div class="container">
+                <!-- Logo Apple -->
+                <a class="header__logo navbar-brand fs-1 text-dark" href="#"><i class="fa-brands fa-apple"></i></a>
+                <!-- Search & Cart btn-->
+                <div class="header__more fs-4">
+                    <a type="button" class="search-btn text-dark mx-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="https://shopdunk.com/cart" class="cart-btn text-dark mx-3"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
                 <!-- Toggle Button for Responsive Navbar -->
-                <button class="navbar-toggler fs-1 text-white" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler fs-2 text-dark" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
@@ -43,36 +43,36 @@
                 <div class="header__main collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active fs-3 text-light mx-3" aria-current="page" href="#">Home</a>
+                            <a class="nav-link fs-5 text-dark mx-4" href="./about-us.html">Giới Thiệu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-3 text-light mx-3" href="./about-us.html">About</a>
+                            <a class="nav-link active fs-5 text-dark mx-4" aria-current="page" href="#">Tất cả sản phẩm</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-3 text-light mx-3" href="./contact.html">Contact</a>
+                            <a class="nav-link fs-5 text-dark mx-4" href="">iPhone</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-3 text-light mx-3" href="#">Help Center</a>
+                            <a class="nav-link fs-5 text-dark mx-4" href="./contact.html">iPad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-dark mx-4" href="#">Mac</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-dark mx-4" href="#">Watch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-dark mx-4" href="#">Phụ kiện</a>
                         </li>
                     </ul>
                     <!-- Button Log in/Sign up modal -->
-                    <a type="button" class="auth-form-btn text-white text-decoration-none me-2 fs-4" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop-sign-up">Sign up |</a>
-                    <a type="button" class="auth-form-btn text-white text-decoration-none me-2 fs-4" data-bs-toggle="modal"
+                    <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 fs-5" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop-sign-up">Sign up</a>
+                    <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 me-3 fs-5" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop">Log in</a>
                 </div>
             </div>
         </nav>
-        <!-- Product Navbar by Bootstrap -->
-        <nav id="product-nav" class="nav p-1 justify-content-center fs-4">
-            <a class="nav-link mx-4 text-dark" href="#">Tất cả sản phẩm</a>
-            <a class="nav-link mx-4 text-dark" href="#">iPhone</a>
-            <a class="nav-link mx-4 text-dark" href="#">iPad</a>
-            <a class="nav-link mx-4 text-dark" href="#">Macbook</a>
-            <a class="nav-link mx-4 text-dark" href="#">Apple Watch</a>
-            <a class="nav-link mx-4 text-dark" href="#">Phụ kiện</a>
-        </nav>
-
+    
         <div class="container-fluid p-0">
             <!-- Slide PC -->
             <div id="carousel-pc" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
