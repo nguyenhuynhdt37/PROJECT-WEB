@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/product_iphone_details.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="product_iphone">
+        <!-- Header Navbar by Bootstrap -->
+        <nav class="header__nav navbar navbar-expand-lg fixed-top px-4 py-1 bg-white">
+            <div class="container">
+                <!-- Logo Apple -->
+                <a class="header__logo navbar-brand fs-1 text-dark" href="#"><i class="fa-brands fa-apple"></i></a>
+                <!-- Search & Cart btn-->
+                <div class="header__more fs-4">
+                    <a type="button" class="search-btn text-dark mx-3" data-bs-toggle="modal"
+                        data-bs-target="#searchModal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="https://shopdunk.com/cart" class="cart-btn text-dark mx-3"><i
+                            class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <!-- Toggle Button for Responsive Navbar -->
+                <button class="navbar-toggler fs-2 text-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="header__main collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-dark mx-4" href="./about-us.html">Giới Thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5 text-dark mx-4" aria-current="page" href="#">Tất cả sản
+                                phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-dark mx-4" href="">iPhone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-dark mx-4" href="./contact.html">iPad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-dark mx-4" href="#">Mac</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-dark mx-4" href="#">Watch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-dark mx-4" href="#">Phụ kiện</a>
+                        </li>
+                    </ul>
+                    <!-- Button Log in/Sign up modal -->
+                    <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 fs-5"
+                        data-bs-toggle="modal" data-bs-target="#staticBackdrop-sign-up">Sign up</a>
+                    <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 me-3 fs-5"
+                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Log in</a>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+</body>
+
+</html>
