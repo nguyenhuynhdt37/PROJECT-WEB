@@ -10,25 +10,25 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/product_details.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
 </head>
 
 <body>
     <div class="app bg-white">
         <header>
-            <nav class="header__nav navbar navbar-expand-lg p-4 bg-primary sticky-top">
-                <div class="container-fluid">
-                    <a class="header__logo navbar-brand me-4 fs-1 fw-bold text-white" href="#">TechNoPro</a>
-                    <div class="header__more fs-3">
-                        <!-- Search btn -->
-                        <a type="button" class="search-btn text-white mx-3" data-bs-toggle="modal"
+            <nav class="header__nav navbar navbar-expand-lg fixed-top px-4  py-1 bg-white ">
+                <div class="container px-0">
+                    <!-- Logo Apple -->
+                    <a class="header__logo navbar-brand fs-1 text-dark" href="#" style="margin-top: -0.2rem;"><i
+                            class="fa-brands fa-apple "></i></a>
+                    <!-- Search & Cart btn-->
+                    <div class="header__more fs-4">
+                        <a type="button" class="search-btn text-dark mx-3" data-bs-toggle="modal"
                             data-bs-target="#searchModal"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        <!-- Cart btn -->
-                        <a href="https://shopdunk.com/cart" class="cart-btn text-white mx-3"><i
+                        <a href="https://shopdunk.com/cart" class="cart-btn text-dark mx-3"><i
                                 class="fa-solid fa-cart-shopping"></i></a>
                     </div>
                     <!-- Toggle Button for Responsive Navbar -->
-                    <button class="navbar-toggler fs-1 text-white" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler fs-2 text-dark" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa-solid fa-bars"></i>
@@ -36,28 +36,48 @@
                     <div class="header__main collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item">
-                                <a class="nav-link active fs-3 text-light mx-3" aria-current="page" href="#">Home</a>
+                                <a class="nav-link fs-5 text-dark mx-1" href="./about-us.html">Trang chủ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-3 text-light mx-3" href="./about-us.html">About</a>
+                                <a class="nav-link active fs-5 text-dark mx-1" aria-current="page" href="#">Tất cả sản
+                                    phẩm</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-3 text-light mx-3" href="./contact.html">Contact</a>
+                                <a class="nav-link fs-5 text-dark mx-1" href="">iPhone</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-3 text-light mx-3" href="#">Help Center</a>
+                                <a class="nav-link fs-5 text-dark mx-1" href="./contact.html">iPad</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 text-dark mx-1" href="#">Mac</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 text-dark mx-1" href="#">Watch</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 text-dark mx-1" href="#">Phụ kiện</a>
                             </li>
                         </ul>
                         <!-- Button Log in/Sign up modal -->
-                        <a type="button" class="auth-form-btn text-white text-decoration-none me-2 fs-4"
-                            data-bs-toggle="modal" data-bs-target="#staticBackdrop-sign-up">Sign up |</a>
-                        <a type="button" class="auth-form-btn text-white text-decoration-none me-2 fs-4"
+                        <a type="button" class="auth-form-btn text-dark text-decoration-none fs-5"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop-sign-up">Sign up</a>
+                        <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 me-3 fs-5"
                             data-bs-toggle="modal" data-bs-target="#staticBackdrop">Log in</a>
                     </div>
                 </div>
             </nav>
+            <!-- Modal search -->
+            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <input class="form-control form-control-lg fs-4 ps-4" type="search" placeholder="Search..."
+                            aria-label="Search">
+                    </div>
+                </div>
+            </div>
         </header>
-        <div class="container">
+        <div class="container" style="margin-top: 5rem;">
             <div class="row product__main justify-content-center">
                 <ul class="product__nav-list d-flex m-0 fs-4 p-0 my-3 ">
                     <li class="product__nav-item list-unstyled me-2">
@@ -70,7 +90,7 @@
                     </li>
                 </ul>
                 <div class="product__title--x p-0 d-flex align-items-center border-bottom pb-3">
-                    <h2 class="product__name m-0 p-0 me-4 fs-2 fw-bold">Điện thoại iPhone 15 Pro Max 512GB</h2>
+                    <h2 class="product__name m-0 p-0 me-4 fs-1 fw-bold">Điện thoại iPhone 15 Pro Max</h2>
                     <div class="product__evaluate d-flex align-items-center">
                         <div class="product__degree-evaluation d-inline-block me-2">
                             <i class="fa-solid fa-star text-warning"></i>
@@ -85,7 +105,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="row product__content-main mt-3 align-items-center">
+                <div class="row product__content-main mt-3">
 
                     <div class="col-lg-7 product--img ">
                         <div class="container-lg my-3" style="position: relative;">
@@ -126,11 +146,11 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-5 product__details-x">
-                        <div class="product__title--y p-0 d-flex align-items-center border-bottom pb-3">
-                            <h2 class="product__name m-0 p-0 me-4 fs-2 pb-2 fw-bold">Điện thoại iPhone 15 Pro Max 512GB
+                    <div class="col-lg-5 product__details-x mt-5">
+                        <div class="product__title--y p-0 d-flex align-items-center border-bottom pb-3 d-none">
+                            <h2 class="product__name m-0 p-0 me-4 fs-1 pb-2 fw-bold">iPhone 14 Pro Max
                             </h2>
-                            <div class="product__evaluate d-flex align-items-center">
+                            <div class="product__evaluate d-flex align-items-center fs-4">
                                 <div class="product__degree-evaluation d-inline-block me-2">
                                     <i class="fa-solid fa-star text-warning"></i>
                                     <i class="fa-solid fa-star text-warning"></i>
@@ -194,26 +214,28 @@
                             </div>
                             <div class="pr-item py-4 px-2">
                                 <div class="d-flex">
-                                    <i class="fa-solid fa-circle-info me-2"></i>
-                                    <div class="divb-right">
-                                        <p>Thu cũ Đổi mới: Giảm đến 2 triệu (Tuỳ model máy cũ, Không kèm thanh toán qua
+                                    <i class="fa-solid fa-circle-info me-2 pt-1 text-primary"></i>
+                                    <div class="divb-right d-inline-block">
+                                        <span>Thu cũ Đổi mới: Giảm đến 2 triệu (Tuỳ model máy cũ, Không kèm thanh toán
+                                            qua
                                             cổng online, mua kèm) <a href=""> Xem chi tiết</a>
-                                        </p>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="d-flex">
-                                    <i class="fa-solid fa-circle-info me-2"></i>
-                                    <div class="divb-right">
-                                        <p>Nhập mã MMSALE100 giảm ngay 1% tối đa 100.000đ khi thanh toán qua MOMO <a
-                                                href="" target="_blank">(Xem chi tiết tại đây)</a></p>
+                                    <i class="fa-solid fa-circle-info me-2 pt-1 text-primary"></i>
+                                    <div class="divb-right d-inline-block">
+                                        <span>Nhập mã MMSALE100 giảm ngay 1% tối đa 100.000đ khi thanh toán qua MOMO <a
+                                                href="" target="_blank">(Xem chi tiết tại đây)</a></span>
                                     </div>
                                 </div>
                                 <div class="d-flex">
-                                    <i class="fa-solid fa-circle-info me-2"></i>
-                                    <div class="divb-right">
-                                        <p>Nhập mã VNPAYTAO giảm ngay 200K cho đơn hàng từ 15 Triệu, chỉ áp dụng thanh
+                                    <i class="fa-solid fa-circle-info me-2 pt-1 text-primary"></i>
+                                    <div class="divb-right d-inline-block">
+                                        <span>Nhập mã VNPAYTAO giảm ngay 200K cho đơn hàng từ 15 Triệu, chỉ áp dụng
+                                            thanh
                                             toán VNPAY-QR tại cửa hàng <a href="" target="_blank">(Xem chi tiết tại
-                                                đây)</a></p>
+                                                đây)</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -236,16 +258,15 @@
                     </div>
                 </div>
             </div>
-            <div class=" container-box mt-5">
+            <div class=" container-box" style="margin-top: 10rem;">
 
                 <div class="tab-details text-center">
-                    <div
-                        class="product__description-btn px-4 fw-bold py-3 d-inline-block border border-3 border-primary text-primary rounded my-5 present-btn">
-                        Mô tả sản phẩm
-                    </div>
+                    <button type="button" class="btn btn-outline-primary"
+                        style="padding: 0.7rem 3rem !important; font-size: 1.5rem; font-weight: 500; border-radius: 0.5rem;">Mô
+                        tả sản phẩm</button>
                 </div>
                 <div class="product__trademark mx-auto" style="width: 80%; ">
-                    <div class="product__banner--title fs-1 text-center">
+                    <div class="product__banner--title text-center" style="font-size: 3.5rem;margin-top: 3rem;">
                         <i class="fa-brands fa-apple"></i>
                         <span>iPhone</span>
                     </div>
@@ -266,8 +287,8 @@
                                 alt="" class=" product__description--display--img " style="width: 80%;">
                         </div>
                     </div>
-                    <div class="row design__description justify-content-between my-5">
-                        <div class="col-sm-12 col-md-6 col-lg-6  design__material--box box-1 pe-4">
+                    <div class="row design__description justify-content-between" style="margin-top: 5rem;">
+                        <div class="col-sm-12 col-md-6 col-lg-6  design__material--box box-1 pe-3">
                             <div class="row design__material justify-content-center px-5">
                                 <p class="col-12 design__material--title fs-1 fw-bold text-center mt-5"
                                     style="opacity: 0.8;">Thiết kế bằng kính
@@ -296,7 +317,7 @@
                         </div>
 
                     </div>
-                    <div class="row design__description pb-5">
+                    <div class="row design__description" style="margin-top: 5rem;">
                         <div class="col-sm-12 col-md-8 col-xg-6 product__camera p-0 pe-2">
                             <div class="product__camera--box1">
                                 <img src="https://shopdunk.com/images/uploaded/iPhone%2015%20Pro%201TB/camera%20iphone%2015%20plus/camera-chinh-48mp-cua-iphone-15-plus.jpg"
@@ -314,7 +335,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row product__battery mb-5 px-4 justify-content-center align-items-center">
+                    <div class="row product__battery px-4 justify-content-center align-items-center"
+                        style="margin-top: 5rem;">
                         <div class="col-12 product__battery--title fs-1 fw-bold text-center text-white"
                             style="opacity: 0.8;">Pin
                             dùng cả ngày. <br>Cứ
@@ -323,8 +345,7 @@
                             việc
                             bạn
                             muốn.</div>
-                        <div class="col-2  product__battery--model  fw-bold text-center text-white"
-                            style="opacity: 0.8; ">
+                        <div class="col-2  product__battery--model  text-center text-white" style="opacity: 0.8; ">
                             <p class="battery__model--title">Lên đến</p>
                             <div class="battery__model--max">26 giờ</div>
                             <div class="battery__model--action">thời gian xem video trên iPhone 15 Plus.
@@ -334,14 +355,13 @@
                             <img src="https://cdn.tgdd.vn/Files/2023/09/22/1548541/2-220923-203112.jpg"
                                 style="width: 100%;" alt="">
                         </div>
-                        <div class="col-2   product__battery--model-small  fw-bold text-center text-white"
-                            style="opacity: 0.8; ">
+                        <div class="col-2   product__battery--model  text-center text-white" style="opacity: 0.8; ">
                             <p class="battery__model--title">Lên đến</p>
                             <div class="battery__model--max">20 giờ</div>
                             <div class="battery__model--action">thời gian xem video trên iPhone 15.</div>
                         </div>
                     </div>
-                    <div class="row product__perfomence py-5 justify-content-between">
+                    <div class="row product__perfomence  justify-content-between" style="margin-top: 5rem;">
                         <div class="col-sm-12 col-md-6 col-lg-4 product__perfomence--box p-0 pe-2">
                             <div class="product__perfomence--cpu text-center px-5 py-4">
                                 <p class="cpu-title fs-4 fw-bolder m-0 mb-1 pt-5" style="color: #767676;">
@@ -367,40 +387,42 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product__special--design text-center my-5 fs-1 fw-bold" style="opacity: 0.8;">Được
+                    <div class="product__special--design text-center  fs-1 fw-bold"
+                        style="opacity: 0.8; margin-top: 5rem;">Được
                         thiết
                         kế
                         để tạo nên khác biệt.
                     </div>
-                    <div class="row text-center product__security justify-content-center">
-                        <div class="product__security--logo fs-1 py-5">
+                    <div class="row text-center product__security justify-content-center" style="margin-top: 5rem;">
+                        <div class="product__security--logo  py-3 pt-5" style="font-size: 4rem">
                             <i class="fa-brands fa-apple"></i>
                         </div>
-                        <div class="product__security--title fs-2 fw-bold mb-2" style="opacity:  0.9;">
+                        <div class="product__security--title fs-1 fw-bold mb-2" style="opacity:  0.9;">
                             Quyền riêng tư. Rất
                             iPhone.</div>
-                        <p class="product__security--describe fs-5 mb-5" style="opacity: 0.8;">
+                        <p class="product__security--describe fs-4 mb-5 text-secondary">
                             Từ Mã Khóa đến Báo Cáo Quyền Riêng Tư<br>
                             đến ứng dụng Sức Khoẻ, iPhone cho bạn <br>
                             quyền kiểm soát những gì mình chia sẻ.
                         </p>
                         <img src="https://shopdunk.com/images/uploaded-source/compareiphone15/flex_privacy_final_large_2x.png?1694035518951"
-                            alt="" class="product__security--img" style="width: 30%;">
+                            alt="" class="product__security--img" style="width: 40%;">
                     </div>
-                    <p class="product__update--title fs-2 fw-bold text-center my-5" style="opacity: 0.8;">
+                    <p class="product__update--title fs-1 fw-bold text-center"
+                        style="opacity: 0.8; margin: 0; margin-top: 5rem;">
                         Nâng cấp
                         dễ
-                        dàng. <br> Chuyển đổi đơn
+                        dàng <br> Chuyển đổi đơn
                         giản.</p>
-                    <div class="row product__lever-up pb-5">
-                        <div class="col-md-6 col-lg-6 col-md-3 p-0 pe-2 product__update--box-1">
-                            <div class="product__update text-center p-5 d-flex flex-column justify-content-center"
-                                style="min-height: 25rem;">
+                    <div class="row product__lever-up " style="margin-top: 5rem;">
+                        <div class="col-md-6 col-lg-6 col-md-3 product__update--box-1">
+                            <div class="product__update text-center d-flex flex-column justify-content-center"
+                                style="min-height: 27rem; padding: 3rem 5rem;">
                                 <i class="fa-solid fa-repeat product__update--icon fs-1 text-primary"></i>
                                 <p class="product__update--question fs-2 fw-bold mt-3" style="opacity: 0.8;">Chuyển
                                     sang
                                     iPhone?</p>
-                                <p class="product__update--answer fs-5 m-0 text-justify">Bạn chỉ cần đặt
+                                <p class="product__update--answer fs-3 m-0 text-justify text-secondary">Bạn chỉ cần đặt
                                     iPhone cũ
                                     cạnh
                                     iPhone
@@ -412,22 +434,22 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-6 col-md-3 p-0 ps-2 product__update--box-2">
-                            <div class="product__update text-center p-5 d-flex flex-column justify-content-center"
-                                style="min-height: 25rem;">
+                        <div class="col-md-6 col-lg-6 col-md-3 product__update--box-2">
+                            <div class="product__update text-center  d-flex flex-column justify-content-center"
+                                style="min-height: 27rem; padding: 3rem  5rem;">
                                 <i class="fa-solid fa-arrow-up-right-dots product__update--icon fs-1 text-primary"></i>
                                 <p class="product__update--question fs-2 fw-bold mt-3" style="opacity: 0.8;">Nâng
                                     cấp từ
-                                    <br>iPhone cũ?
+                                    iPhone cũ?
                                 </p>
-                                <p class="product__update--answer fs-5 m-0 text-justify">Khi bạn mua một
+                                <p class="product__update--answer fs-3 m-0 text-justify text-secondary">Khi bạn mua một
                                     chiếc
                                     iPhone
-                                    mới,>ứng
+                                    mới,ứng
                                     dụng
                                     Chuyển
                                     Sang
-                                    iOS sẽ giúp bạn>dễ dàng chuyển ảnh, danh bạ WhatsApp,> và hơn thế
+                                    iOS sẽ giúp bạn>dễ dàng chuyển ảnh, danh bạ WhatsApp, và hơn thế
                                     nữa.</p>
                             </div>
                         </div>
@@ -436,7 +458,7 @@
             </div>
         </div>
         <div class="product__more m-0">
-            <div class="product__more--box container mt-5">
+            <div class="product__more--box container" style="margin-top: 5rem;">
                 <div class="product__trademark mx-auto" style="width: 80%;">
                     <p class="product__more--title fw-bold text-center fs-1 " style="padding: 5rem; opacity: 0.8;">Vẫn
                         còn
@@ -465,8 +487,9 @@
                                 alt="" style="width: 100%;">
                         </div>
                     </div>
-                    <div class="product__complimentary">
-                        <div class="product__juridical--title fs-5 fw-bold" style="opacity: 0.8;"> Từ Chối Trách
+                    <div class="product__complimentary fs-5 text-secondary">
+                        <div class="product__juridical--title fs-4 fw-bold text-black" style="opacity: 0.8;"> Từ Chối
+                            Trách
                             Nhiệm
                             Pháp Lý.</div>
                         <br>
@@ -536,7 +559,7 @@
                     <div class="heading_newletter fs-1 fw-bold">Đăng ký nhận tin từ TechNoPro</div>
                     <p class="fs-4 py-3">Thông tin sản phẩm mới nhất và chương trình khuyến mãi</p>
                     <div class="input-group  mx-auto " style="width: 50%; position: relative;">
-                        <input type="email" name="email" class="form-control" placeholder="Email của bạn"
+                        <input type="email" name="email" class="form-control form-control1" placeholder="Email của bạn"
                             aria-label="Recipient's username" aria-describedby="button-addon2">
                         <button class="btn btn-outline-secondary" type="button" id="button-addon2">Đăng Ký</button>
                     </div>
@@ -544,7 +567,7 @@
             </div>
         </div>
         <!-- Remove the container if you want to extend the Footer to full width. -->
-        <div class="container-fluid p-0 mt-0 my-5">
+        <div class="container-fluid p-0 ">
 
             <footer class="bg-primary text-center text-lg-start text-white">
                 <!-- Grid container -->
@@ -682,7 +705,15 @@
 
         </div>
         <!-- End of .container -->
-
+        <!-- Modal search -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <input class="form-control form-control-lg fs-4 ps-4" type="search" placeholder="Search..."
+                        aria-label="Search">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
