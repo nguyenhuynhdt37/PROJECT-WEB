@@ -18,59 +18,276 @@
 </head>
 
 <body>
-    <div class="product_iphone">
-        <!-- Header Navbar by Bootstrap -->
-        <nav class="header__nav navbar navbar-expand-lg fixed-top px-4 py-1 bg-white">
-            <div class="container">
-                <!-- Logo Apple -->
-                <a class="header__logo navbar-brand fs-1 text-dark" href="#"><i class="fa-brands fa-apple"></i></a>
-                <!-- Search & Cart btn-->
-                <div class="header__more fs-4">
-                    <a type="button" class="search-btn text-dark mx-3" data-bs-toggle="modal"
-                        data-bs-target="#searchModal"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a href="https://shopdunk.com/cart" class="cart-btn text-dark mx-3"><i
-                            class="fa-solid fa-cart-shopping"></i></a>
+    <!-- Header Navbar by Bootstrap -->
+    <nav class="header__nav navbar navbar-expand-lg fixed-top px-4 py-1 bg-white">
+        <div class="container">
+            <!-- Logo Apple -->
+            <a class="header__logo navbar-brand fs-1 text-dark" href="#"><i class="fa-brands fa-apple"></i></a>
+            <!-- Search & Cart btn-->
+            <div class="header__more fs-4">
+                <a type="button" class="search-btn text-dark mx-3" data-bs-toggle="modal"
+                    data-bs-target="#searchModal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="https://shopdunk.com/cart" class="cart-btn text-dark mx-3"><i
+                        class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <!-- Toggle Button for Responsive Navbar -->
+            <button class="navbar-toggler fs-2 text-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="header__main collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-dark mx-4" href="./about-us.html">Giới Thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 text-dark mx-4" aria-current="page" href="#">Tất cả sản
+                            phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-dark mx-4" href="">iPhone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-dark mx-4" href="./contact.html">iPad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-dark mx-4" href="#">Mac</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-dark mx-4" href="#">Watch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-dark mx-4" href="#">Phụ kiện</a>
+                    </li>
+                </ul>
+                <!-- Button Log in/Sign up modal -->
+                <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 fs-5" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop-sign-up">Sign up</a>
+                <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 me-3 fs-5"
+                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">Log in</a>
+            </div>
+        </div>
+    </nav>
+    <div class="Header__baner">
+        <div class="Header__baner__title">iphone</div>
+        <div class="Baner">
+            <div id="carousel-pc" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-pc" data-bs-slide-to="0" class="active"
+                        aria-label="Slide 1" aria-current="true"></button>
+                    <button type="button" data-bs-target="#carousel-pc" data-bs-slide-to="1" aria-label="Slide 2"
+                        class=""></button>
+                    <button type="button" data-bs-target="#carousel-pc" data-bs-slide-to="2" aria-label="Slide 3"
+                        class=""></button>
+                    <button type="button" data-bs-target="#carousel-pc" data-bs-slide-to="3" aria-label="Slide 4"
+                        class=""></button>
+                    <button type="button" data-bs-target="#carousel-pc" data-bs-slide-to="4" aria-label="Slide 5"
+                        class=""></button>
+                    <button type="button" data-bs-target="#carousel-pc" data-bs-slide-to="5" aria-label="Slide 6"
+                        class=""></button>
+                    <button type="button" data-bs-target="#carousel-pc" data-bs-slide-to="6" aria-label="Slide 7"
+                        class=""></button>
+                    <button type="button" data-bs-target="#carousel-pc" data-bs-slide-to="7" aria-label="Slide 8"
+                        class=""></button>
                 </div>
-                <!-- Toggle Button for Responsive Navbar -->
-                <button class="navbar-toggler fs-2 text-dark" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <div class="header__main collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 text-dark mx-4" href="./about-us.html">Giới Thiệu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active fs-5 text-dark mx-4" aria-current="page" href="#">Tất cả sản
-                                phẩm</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 text-dark mx-4" href="">iPhone</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 text-dark mx-4" href="./contact.html">iPad</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 text-dark mx-4" href="#">Mac</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 text-dark mx-4" href="#">Watch</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 text-dark mx-4" href="#">Phụ kiện</a>
-                        </li>
-                    </ul>
-                    <!-- Button Log in/Sign up modal -->
-                    <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 fs-5"
-                        data-bs-toggle="modal" data-bs-target="#staticBackdrop-sign-up">Sign up</a>
-                    <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 me-3 fs-5"
-                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Log in</a>
+                <div class="carousel-inner">
+                    <div class="carousel-item carousel-item-next carousel-item-start">
+                        <img class="d-block w-100"
+                            src="https://shopdunk.com/images/uploaded/banner/banner_thang10/banner%20iphone%2015%20pro%20max%20TH_PC%20(3).jpg"
+                            alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://shopdunk.com/images/uploaded/banner/banner_thang10/banner%20iphone%2014%20Pro%20Max%20T10_Banner%20PC.jpg"
+                            alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://shopdunk.com/images/uploaded/banner/banner_thang10/banner%20ipad%20gen%209%20T10_Banner%20PC%20(1).jpg"
+                            alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://shopdunk.com/images/uploaded/banner/banner_thang10/banner%20watch%20T10_Banner%20PC.jpg"
+                            alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://shopdunk.com/images/uploaded/banner/banner_thang10/banner%20macbook%20air%20t10_Banner%20PC%20(1).jpg"
+                            alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://shopdunk.com/images/uploaded/banner/Banner%20th%C3%A1ng%208/banner%20apple%20pay_Banner%20PC.jpg"
+                            alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://shopdunk.com/images/uploaded/banner/banner_thang10/banner%20kv%2020.10%20T10_Banner%20PC.jpg"
+                            alt="">
+                    </div>
+                    <div class="carousel-item active carousel-item-start">
+                        <img class="d-block w-100"
+                            src="https://shopdunk.com/images/uploaded/banner/banner_thang10/banner%20iphone%2015%20TH_PC%20(3).jpg"
+                            alt="">
+                    </div>
                 </div>
             </div>
-        </nav>
 
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-pc" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <!-- <i class="fa-solid fa-angle-left fs-2 text-secondary"></i> -->
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-pc" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <!-- <i class="fa-solid fa-angle-right fs-2 text-secondary"></i> -->
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!--iphone details -->
+    <div class="product_iphone">
+        <div class="container__product">
+            <div class="container__product__items ">
+                <img class="img__product " src="https://shopdunk.com/images/thumbs/0022255_iphone-15-128gb_240.png"
+                    alt="technopro">
+                <img class="img__product__new " src="https://shopdunk.com/images/uploaded/icon/new.png" alt="technopro">
+                <a href ="product-details.html" class="container__name">iPhone 15 128GB</a>
+                <div class="container__product__title ">
+                    <div class="container__price_new">21.490.000₫</div>
+                    <div class="container__price_old">24.990.000₫</div>
+                    <div class="container__discount">14%</div>
+                </div>
+            </div>
+            <div class="container__product__items ">
+                <img class="img__product " src="https://shopdunk.com/images/thumbs/0022255_iphone-15-128gb_240.png"
+                    alt="technopro">
+                <img class="img__product__new " src="https://shopdunk.com/images/uploaded/icon/new.png" alt="technopro">
+                <a href ="product-details.html" class="container__name">iPhone 15 128GB</a>
+                <div class="container__product__title ">
+                    <div class="container__price_new">21.490.000₫</div>
+                    <div class="container__price_old">24.990.000₫</div>
+                    <div class="container__discount">14%</div>
+                </div>
+            </div>
+            <div class="container__product__items ">
+                <img class="img__product " src="https://shopdunk.com/images/thumbs/0022255_iphone-15-128gb_240.png"
+                    alt="technopro">
+                <img class="img__product__new " src="https://shopdunk.com/images/uploaded/icon/new.png" alt="technopro">
+                <a href ="product-details.html" class="container__name">iPhone 15 128GB</a>
+                <div class="container__product__title ">
+                    <div class="container__price_new">21.490.000₫</div>
+                    <div class="container__price_old">24.990.000₫</div>
+                    <div class="container__discount">14%</div>
+                </div>
+            </div>
+            <div class="container__product__items ">
+                <img class="img__product " src="https://shopdunk.com/images/thumbs/0022255_iphone-15-128gb_240.png"
+                    alt="technopro">
+                <img class="img__product__new " src="https://shopdunk.com/images/uploaded/icon/new.png" alt="technopro">
+                <a href ="product-details.html" class="container__name">iPhone 15 128GB</a>
+                <div class="container__product__title ">
+                    <div class="container__price_new">21.490.000₫</div>
+                    <div class="container__price_old">24.990.000₫</div>
+                    <div class="container__discount">14%</div>
+                </div>
+            </div>
+        </div>
+        <div class="container__product">
+            <div class="container__product__items ">
+                <img class="img__product " src="https://shopdunk.com/images/thumbs/0022255_iphone-15-128gb_240.png"
+                    alt="technopro">
+                <img class="img__product__new " src="https://shopdunk.com/images/uploaded/icon/new.png" alt="technopro">
+                <a href ="product-details.html" class="container__name">iPhone 15 128GB</a>
+                <div class="container__product__title ">
+                    <div class="container__price_new">21.490.000₫</div>
+                    <div class="container__price_old">24.990.000₫</div>
+                    <div class="container__discount">14%</div>
+                </div>
+            </div>
+            <div class="container__product__items ">
+                <img class="img__product " src="https://shopdunk.com/images/thumbs/0022255_iphone-15-128gb_240.png"
+                    alt="technopro">
+                <img class="img__product__new " src="https://shopdunk.com/images/uploaded/icon/new.png" alt="technopro">
+                <a href ="product-details.html" class="container__name">iPhone 15 128GB</a>
+                <div class="container__product__title ">
+                    <div class="container__price_new">21.490.000₫</div>
+                    <div class="container__price_old">24.990.000₫</div>
+                    <div class="container__discount">14%</div>
+                </div>
+            </div>
+            <div class="container__product__items ">
+                <img class="img__product " src="https://shopdunk.com/images/thumbs/0022255_iphone-15-128gb_240.png"
+                    alt="technopro">
+                <img class="img__product__new " src="https://shopdunk.com/images/uploaded/icon/new.png" alt="technopro">
+                <a href ="product-details.html" class="container__name">iPhone 15 128GB</a>
+                <div class="container__product__title ">
+                    <div class="container__price_new">21.490.000₫</div>
+                    <div class="container__price_old">24.990.000₫</div>
+                    <div class="container__discount">14%</div>
+                </div>
+            </div>
+            <div class="container__product__items ">
+                <img class="img__product " src="https://shopdunk.com/images/thumbs/0022255_iphone-15-128gb_240.png"
+                    alt="technopro">
+                <img class="img__product__new " src="https://shopdunk.com/images/uploaded/icon/new.png" alt="technopro">
+                <a href ="product-details.html" class="container__name">iPhone 15 128GB</a>
+                <div class="container__product__title ">
+                    <div class="container__price_new">21.490.000₫</div>
+                    <div class="container__price_old">24.990.000₫</div>
+                    <div class="container__discount">14%</div>
+                </div>
+            </div>
+        </div>
+        <div class="container__product">
+            <div class="container__product__items ">
+                <img class="img__product " src="https://shopdunk.com/images/thumbs/0022255_iphone-15-128gb_240.png"
+                    alt="technopro">
+                <img class="img__product__new " src="https://shopdunk.com/images/uploaded/icon/new.png" alt="technopro">
+                <a href ="product-details.html" class="container__name">iPhone 15 128GB</a>
+                <div class="container__product__title ">
+                    <div class="container__price_new">21.490.000₫</div>
+                    <div class="container__price_old">24.990.000₫</div>
+                    <div class="container__discount">14%</div>
+                </div>
+            </div>
+            <div class="container__product__items ">
+                <img class="img__product " src="https://shopdunk.com/images/thumbs/0022255_iphone-15-128gb_240.png"
+                    alt="technopro">
+                <img class="img__product__new " src="https://shopdunk.com/images/uploaded/icon/new.png" alt="technopro">
+                <a href ="product-details.html" class="container__name">iPhone 15 128GB</a>
+                <div class="container__product__title ">
+                    <div class="container__price_new">21.490.000₫</div>
+                    <div class="container__price_old">24.990.000₫</div>
+                    <div class="container__discount">14%</div>
+                </div>
+            </div>
+            <div class="container__product__items ">
+                <img class="img__product " src="https://shopdunk.com/images/thumbs/0022255_iphone-15-128gb_240.png"
+                    alt="technopro">
+                <img class="img__product__new " src="https://shopdunk.com/images/uploaded/icon/new.png" alt="technopro">
+                <a href ="product-details.html" class="container__name">iPhone 15 128GB</a>
+                <div class="container__product__title ">
+                    <div class="container__price_new">21.490.000₫</div>
+                    <div class="container__price_old">24.990.000₫</div>
+                    <div class="container__discount">14%</div>
+                </div>
+            </div>
+            <div class="container__product__items ">
+                <img class="img__product " src="https://shopdunk.com/images/thumbs/0022255_iphone-15-128gb_240.png"
+                    alt="technopro">
+                <img class="img__product__new " src="https://shopdunk.com/images/uploaded/icon/new.png" alt="technopro">
+                <a href ="product-details.html" class="container__name">iPhone 15 128GB</a>
+                <div class="container__product__title ">
+                    <div class="container__price_new">21.490.000₫</div>
+                    <div class="container__price_old">24.990.000₫</div>
+                    <div class="container__discount">14%</div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 
