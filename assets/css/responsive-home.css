@@ -1,0 +1,154 @@
+/* >= PC */
+@media (min-width: 992px) {
+    .header__more {
+        order: 1;
+    }
+}
+/* PC and Large Tablet */
+@media (min-width: 768px) {
+    #carousel-pc {
+        display: block;
+    }
+    #carousel-mobile {
+        display: none;
+    }
+}
+/* Tablet and mobile */
+@media (max-width: 992px) {
+    .app {
+        margin-top: 40px;
+    }
+    #carousel-pc {
+        display: none;
+    }
+    #carousel-mobile {
+        display: block;
+    }
+    #searchModal input {
+        height: 44px;
+    }
+    .header__more {
+        text-align: end;
+        width: 88%;
+    }
+    .auth-form-btn {
+        margin-top: 16px;
+        margin-bottom: 20px;
+    }
+    .auth-form__social button {
+        padding: 10px 0;
+    }
+    .nut-bam {
+        width: 120px;
+        height: 40px;
+    }
+    .static-text {
+        font-size: 24px !important;
+    }
+    .iphone__left, .iphone__right {
+        height: 360px !important;
+    }
+    .box__iphone {
+        height: 280px !important;
+    }
+}
+/* Mobile */
+@media (max-width: 576px) {
+    .iphone__right {
+        margin-top: 30px;
+    }
+    .header__more {
+        text-align: end;
+        width: 77%;
+    }
+    .iphone__left, .iphone__right, .box__iphone {
+        height: 300px !important;
+    }
+    .ios17 {
+        background: #fff url('https://www.apple.com/vn/iphone/home/images/overview/why-iphone/ios17__glwsbqdnc6um_small.jpg')  no-repeat top;
+    }
+    .iphone-switch, .iphone-security {
+        height: 460px;
+    }
+    .iphone-switch h3 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+    .iphone-security {
+        background: #fff url('https://www.apple.com/vn/iphone/home/images/overview/why-iphone/privacy_update__cc6s1lqakkk2_small.jpg') no-repeat bottom;
+    }
+    .iphone-security h3 {
+        font-size: 40px;
+    }
+    .content__ipad-img1, .content__ipad-outro, .content__ipad-display, .content__ipad-desc {
+        width: 90%;
+    }
+    .content__ipad-outro h1, .rainbow {
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .content__ipad-img2 {
+        width: 100%;
+        transform: scale(1.8);
+        margin: 20px 0;
+    }
+    .content__ipad-display h1 {
+        margin-top: 80px;
+        font-size: 40px;
+    }
+    .content__ipad-display p {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: justify;
+        margin-top: 40px;
+    }
+    .content__ipad-img3 {
+        width: 100%;
+    }
+    .screen-item-wrap h1 {
+        font-size: 40px;
+    }
+    .pencil-title {
+        width: 77%;
+    }
+    .pencil-title h1 {
+        font-size: 54px;
+    }
+    .pencil-subtitle, .pencil-features {
+        width: 100%;
+        text-align: center;
+        margin: 24px auto;
+    }
+    .pencil-subtitle p, .pencil-features p {
+        font-weight: 400;
+    }
+    .imac, .macbook-air {
+        height: 440px;
+        margin-bottom: 20px;
+    }
+    .imac {
+        background: url('https://www.apple.com/v/home/bf/images/promos/imac/promo_imac_preorder__d3qgowjdhqs2_small.jpg') no-repeat center;
+    }
+    .macbook-air {
+        background: url('https://www.apple.com/v/home/bf/images/promos/macbook-air-15/promo_macbook_air_15_midnight__3zojl1nanrme_small.jpg') no-repeat center;
+    }
+    .mac__description h1, .mac__title {
+        font-size: 40px;
+    }
+    .mac__description h3 {
+        font-size: 20px;
+    }
+    .mac__intro {
+        display: flex;
+        flex-direction: column;
+    }
+    .mac__slogan {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+    .benefit__title {
+        font-size: 32px;
+    }
+}
