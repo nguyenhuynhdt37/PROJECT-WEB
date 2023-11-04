@@ -1,10 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Roboto:wght@300;400;500;700&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+:root {
+    --primary-blue: #0d6efd;
+    --text-color: #000;
+    --white-color: #fff;
+    --border-color: #dbdbdb;
+    --text-color: #333;
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --border-radius: 20px;
 }
 
 html {
@@ -15,68 +28,15 @@ html {
 
 body {
     background-color: #f5f5f7;
+    overflow: hidden;
 }
 
-:root {
-    --primary-blue: #0d6efd;
-    --text-color: #000;
-    --white-color: #fff;
-    --border-color: #dbdbdb;
-    --text-color: #333;
+.app {
+    margin-top: 5rem;
 }
-/* >= PC */
-@media (min-width: 992px) {
-    .header__more {
-        order: 1;
-    }
-}
-/* PC and Large Tablet */
-@media (min-width: 768px) {
-    #carousel-pc {
-        display: block;
-    }
-    #carousel-mobile {
-        display: none;
-    }
-}
-/* Tablet and mobile */
-@media (max-width: 992px) {
-    #carousel-pc {
-        display: none;
-    }
-    #carousel-mobile {
-        display: block;
-    }
-    #searchModal input {
-        height: 44px;
-    }
-    .header__more {
-        text-align: end;
-        width: 88%;
-    }
-    .auth-form-btn {
-        margin-top: 16px;
-        margin-bottom: 20px;
-    }
-}
-/* Mobile */
-@media (max-width: 576px) {
-    .header__more {
-        text-align: end;
-        width: 77%;
-    }
-    .content__iphone-left, .content__iphone-right {
-        height: 30rem !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .intro p {
-        font-size: 2rem !important;
-    }
-    .iphone__left, .iphone__right {
-        height: 300px !important;
-    }
+
+.modal-open {
+    padding-right: 0 !important;
 }
 /* Header */
 .navbar a, .auth-form-btn {
@@ -120,6 +80,432 @@ body {
     margin-top: 16px;
 }
 
-.modal-content {
-    border-radius: .8rem;
+.sign-up-content {
+    border-radius: var(--border-radius);
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+/* iPhone */
+.iphone__left {
+    background-color: #000;
+    height: 560px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.iphone__left .intro {
+    text-align: center;
+}
+
+.iphone__left img {
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.iphone__right {
+    background-color: #fafafa;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.iphone__right img {
+    width: 56%;
+    border-radius: var(--border-radius);
+}
+
+.box__iphone {
+    height: 400px;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.box__iphone-img1 {
+    width: 36%;
+    display: block;
+    margin: 20px auto;
+}
+
+.box__iphone-img2 {
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+
+.box__iphone-img3 {
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+
+.ios17 {
+    background: #fff url('https://www.apple.com/vn/iphone/home/images/overview/why-iphone/ios17__glwsbqdnc6um_large.jpg') bottom no-repeat;
+    width: 100%;
+    height: 560px;
+    padding-top: 40px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.ios17__title {
+    text-align: center;
+}
+
+.ios17__title h3, .iphone-switch h3, .iphone-security h3 {
+    font-size: 4.8rem;
+    font-weight: 500;
+    line-height: 5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ios17__title p {
+    font-size: 2rem;
+}
+
+.iphone-switch {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 584px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.iphone-switch h3 {
+    margin: 44px auto;
+    width: 70%;
+    z-index: 1;
+}
+
+.iphone-switch img {
+    margin-top: -10%;
+    border-radius: var(--border-radius);
+}
+
+.iphone-security {
+    background: url('https://www.apple.com/vn/iphone/home/images/overview/why-iphone/privacy_update__cc6s1lqakkk2_large.jpg') no-repeat bottom;
+    height: 584px;
+    padding-top: 46px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.iphone-security h3 {
+    text-align: center;
+}
+/* iPad */
+.content__ipad {
+    background-color: #000;
+    padding-right: 0 !important;
+}
+
+.content__ipad-intro {
+    width: 360px;
+    margin: 0 auto;
+}
+
+.content__ipad-title {
+    font-size: 5rem;
+} 
+
+.content__ipad-text {
+    font-size: 3.2rem;
+    background: -webkit-linear-gradient(0deg,#be22ff 20%,#ff279c 50%,#ff981f 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+.content__ipad-img1 {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+} 
+
+.content__ipad-outro {
+    width: 48%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.link-to-ipad {
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.content__ipad-outro h1, .rainbow {
+    font-size: 3rem;
+    font-weight: 600;
+    background: linear-gradient(-30deg,#be22ff 20%,#ff279c 50%,#ff981f 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content__ipad-img2 {
+    width: 100%;
+    margin-top: -10%;
+}
+
+.content__ipad-img3 {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: -21%;
+}
+
+.content__ipad-display {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.content__ipad-display h1 {
+    color: #efefef;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.content__ipad-display p {
+    color: #ccc;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.content__ipad-desc {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.screen-item {
+    list-style: none;
+}
+
+.screen-item-wrap {
+    margin: 14px 0 14px 8px;
+}
+
+.screen-item-wrap p {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin-bottom: 0;
+}
+
+.screen-item-wrap h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: 700;
+    white-space: nowrap;
+    background: linear-gradient(to right,#def81e,#10e7ac, #0078ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Apple Pencil */
+.pencil {
+    margin-top: 0;
+    padding-top: 90px;
+    background-color: #fff;
+    padding-right: 0 !important;
+}
+
+.pencil-title {
+    margin: 0 auto;
+    width: 64%;
+}
+
+.pencil-title img {
+    width: 100%;
+    margin-top: 46px;
+}
+
+.pencil-title h1 {
+    font-size: 6.2rem;
+    font-weight: 600;
+    color: #1d1d1f;
+}
+
+.pencil-subtitle {
+    width: 60%;
+    margin-top: 44px;
+}
+
+.pencil-subtitle p, .pencil-features p {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #86868b;
+    text-align: justify;
+    line-height: 2.6rem;
+}
+
+.pencil-features {
+    width: 64%;
+    margin-left: 36%;
+    margin-bottom: 50px;
+}
+/* Mac */
+.mac {
+    background-color: #fff;
+}
+
+.macbook-pro__title {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.go-to-shop {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.mac img {
+    width: 100%;
+    transform: scale(1.4);
+    margin: 6% 0;
+}
+
+.mac__description h1 {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.mac__description h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.imac, .macbook-air {
+    height: 560px;
+    margin-bottom: 36px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.imac {
+    background: url('https://www.apple.com/v/home/bf/images/promos/imac/promo_imac_preorder__d3qgowjdhqs2_large.jpg') no-repeat top;
+}
+
+.macbook-air {
+    background: url('https://www.apple.com/v/home/bf/images/promos/macbook-air-15/promo_macbook_air_15_midnight__3zojl1nanrme_large.jpg') no-repeat top;
+}
+
+.mac__title {
+    font-size: 6.6rem;
+    font-weight: 500;
+}
+
+.mac__slogan {
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 3.2rem;
+}
+
+.apple-watch, .airpods, .ipad-air {
+    height: 400px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.apple-watch {
+    background: url('https://www.apple.com/vn/home/images/promos/apple-watch-series-9/promo_apple_watch_series_9_order__b3u85rm9zf6u_medium.jpg') no-repeat center;
+}
+.ipad-air {
+    background: url('https://www.apple.com/vn/home/images/promos/ipad/promo_ipad__fioegapg12qi_medium.jpg') no-repeat center;
+}
+.airpods {
+    background: url('https://www.apple.com/v/home/bf/images/promos/airpods-pro/promo_airpods_pro_order__d8xv36p4uwae_medium.jpg') no-repeat center;
+}
+
+.benefits__list {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    display: flex;
+    padding-bottom: 0px;
+}
+
+.benefit__item {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    margin: 40px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: transform .5s;
+}
+
+.benefit__item:hover {
+    transform: scale(1.1);
+    animation: linear .2s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.benefit__wrap {
+    padding: 30px;
+    width: 320px;
+    height: 244px;
+}
+
+.benefit__wrap p {
+    font-size: 2.2rem;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.box-btn {
+    border-radius: 20px !important;
+}
+
+.box-btn:focus {
+    box-shadow: none;
+}
+
+.benefit__title {
+    font-size: 4.5rem;
+    margin-left: 28px;
+    margin-top: 36px;
+}
+
+.wrap-box {
+    max-width: 800px !important;
+}
+
+.benefits-box {
+    padding: 60px 50px;
+    border-radius: 24px;
+}
+
+.benefits-box__header {
+    border-bottom: none;
+}
+
+.benefits-box__body {
+
+}
+
+.benefits-box__title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.benefits-box__content {
+    font-size: 5.5rem;
+    font-weight: 600;
+    line-height: 6.2rem;
+    margin-top: 12px;
+}
+
+.benefits-box__subcontent {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 20px;
 }
