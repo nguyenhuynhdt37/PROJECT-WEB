@@ -18,6 +18,9 @@
     .app {
         margin-top: 40px;
     }
+    .navbar a {
+        font-size: 22px !important;
+    }
     #carousel-pc {
         display: none;
     }
@@ -150,5 +153,8 @@
     }
     .benefit__title {
         font-size: 32px;
+    }
+    .swipe-to-right {
+        display:  block !important;
     }
 }
