@@ -10,12 +10,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/product_details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="app bg-white">
-        <header>
-            <nav class="header__nav navbar navbar-expand-lg fixed-top px-4  py-1 bg-white ">
+        <header style="font-family: 'Poppins', sans-serif !important;">
+            <nav class="header__nav navbar navbar-expand-lg fixed-top px-4  py-1 ">
                 <div class="container px-0">
                     <!-- Logo Apple -->
                     <a class="header__logo navbar-brand fs-1 text-dark" href="#" style="margin-top: -0.2rem;"><i
@@ -33,7 +36,7 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa-solid fa-bars"></i>
                     </button>
-                    <div class="header__main collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="header__main collapse navbar-collapse me-3" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item">
                                 <a class="nav-link fs-5 text-dark mx-1" href="./about-us.html">Trang chủ</a>
@@ -59,10 +62,8 @@
                             </li>
                         </ul>
                         <!-- Button Log in/Sign up modal -->
-                        <a type="button" class="auth-form-btn text-dark text-decoration-none fs-5"
-                            data-bs-toggle="modal" data-bs-target="#staticBackdrop-sign-up">Sign up</a>
-                        <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 me-3 fs-5"
-                            data-bs-toggle="modal" data-bs-target="#staticBackdrop">Log in</a>
+                        <a href="./sign-in.html" type="button" class="auth-form-btn text-dark text-decoration-none fs-5 me-4">Sign up</a>
+                        <a href="./log-in.html" type="button" class="auth-form-btn text-dark text-decoration-none fs-5">Log in</a>
                     </div>
                 </div>
             </nav>
@@ -77,11 +78,14 @@
                 </div>
             </div>
         </header>
-        <div class="container" style="margin-top: 5rem;">
+        <div class="container" style="margin-top: 5rem; position: relative;">
+            <button type="button" class=" btn-scroll-to-top" style="width: 5rem; height: 5rem; opacity: 0.5;">
+                <i class="fa-solid fa-arrow-up" style="font-size: 2rem;"></i>
+            </button>
             <div class="row product__main justify-content-center">
                 <ul class="product__nav-list d-flex m-0 fs-4 p-0 my-3 ">
                     <li class="product__nav-item list-unstyled me-2">
-                        <a class="text-decoration-none text-secondary href="">Điện thoại
+                        <a class="text-decoration-none text-secondary">Điện thoại
                             <i class=" fa-solid fa-chevron-right" style="font-size: 1rem;"></i>
                         </a>
                     </li>
@@ -90,7 +94,7 @@
                     </li>
                 </ul>
                 <div class="product__title--x p-0 d-flex align-items-center border-bottom pb-3">
-                    <h2 class="product__name m-0 p-0 me-4 fs-1 fw-bold">Điện thoại iPhone 15 Pro Max</h2>
+                    <h2 class="product__name m-0 p-0 me-4 fs-1 fw-bold">Điện thoại iPhone 14 Pro Max</h2>
                     <div class="product__evaluate d-flex align-items-center">
                         <div class="product__degree-evaluation d-inline-block me-2">
                             <i class="fa-solid fa-star text-warning"></i>
@@ -105,10 +109,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="row product__content-main mt-3">
+                <div class="row product__content-main mt-3 justify-content-between">
 
-                    <div class="col-lg-7 product--img ">
-                        <div class="container-lg my-3" style="position: relative;">
+                    <div class="col-lg-6 product--img ">
+                        <div class="container-lg my-3" style="position: relative; ">
                             <a class="img_Switch img_Switch-left" href="#myCarousel" data-bs-slide="prev">
                                 <div class="icon-box">
                                     <i class="fa-solid fa-chevron-left"></i>
@@ -146,9 +150,9 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-5 product__details-x mt-5">
+                    <div class="col-lg-6 product__details-x mt-5 ps-5">
                         <div class="product__title--y p-0 d-flex align-items-center border-bottom pb-3 d-none">
-                            <h2 class="product__name m-0 p-0 me-4 fs-1 pb-2 fw-bold">iPhone 14 Pro Max
+                            <h2 class="product__name m-0 p-0 me-4 fs-1 pb-2 fw-bold">iPhone 15 Pro Max
                             </h2>
                             <div class="product__evaluate d-flex align-items-center fs-4">
                                 <div class="product__degree-evaluation d-inline-block me-2">
@@ -173,19 +177,16 @@
                             <p class="product__capacity-title my-3 fs-3">Dung lượng</p>
                             <ul class="product__capacity--list p-0">
                                 <li
-                                    class="product__capacity--index d-inline-block px-4 py-3 border me-3 fs-4 rounded text-primary border-primary">
+                                    class="product__capacity--index d-inline-block px-4 py-3 border me-3 fs-4 rounded active1">
                                     128GB
                                 </li>
-                                <li
-                                    class="product__capacity--index d-inline-block px-4 py-3 border me-3 fs-4 rounded text-secondary">
+                                <li class="product__capacity--index d-inline-block px-4 py-3 border me-3 fs-4 rounded ">
                                     256GB
                                 </li>
-                                <li
-                                    class="product__capacity--index d-inline-block px-4 py-3 border me-3 fs-4 rounded text-secondary">
+                                <li class="product__capacity--index d-inline-block px-4 py-3 border me-3 fs-4 rounded ">
                                     512GB
                                 </li>
-                                <li
-                                    class="product__capacity--index d-inline-block px-4 py-3 border me-3 fs-4 rounded text-secondary">
+                                <li class="product__capacity--index d-inline-block px-4 py-3 border me-3 fs-4 rounded ">
                                     1T</li>
                             </ul>
                         </div>
@@ -193,7 +194,7 @@
                             <p class="product__color--title fs-3">Màu sắc</p>
                             <ul class="product__colors m-0 p-0">
                                 <li
-                                    class="color-item border border-primary border-2 rounded-circle p-1 me-2 blue list-unstyled d-inline-block">
+                                    class="color-item  rounded-circle p-1 me-2 white list-unstyled d-inline-block border border-primary border-2 ">
                                 </li>
                                 <li class="color-item  rounded-circle p-1 me-2 yellow list-unstyled d-inline-block">
                                 </li>
@@ -364,10 +365,10 @@
                     <div class="row product__perfomence  justify-content-between" style="margin-top: 5rem;">
                         <div class="col-sm-12 col-md-6 col-lg-4 product__perfomence--box p-0 pe-2">
                             <div class="product__perfomence--cpu text-center px-5 py-4">
-                                <p class="cpu-title fs-4 fw-bolder m-0 mb-1 pt-5" style="color: #767676;">
+                                <p class="cpu-title fs-2 fw-bolder m-0 mb-1 pt-5" style="color: #767676;">
                                     Chip A16
                                     Bionic</p>
-                                <p class="cpu-confirm fs-1 fw-bolder m-0" style="opacity: 0.8; line-height: 1.2;">
+                                <p class="cpu-confirm fs-1 fw-bolder m-0 px-5" style="opacity: 0.8; line-height: 1.2;">
                                     Sức
                                     mạnh
                                     Pro đã được kiểm
@@ -458,14 +459,14 @@
             </div>
         </div>
         <div class="product__more m-0">
-            <div class="product__more--box container" style="margin-top: 5rem;">
+            <div class="product__more--box container" style="margin-top: 5rem; padding-bottom: 5rem;">
                 <div class="product__trademark mx-auto" style="width: 80%;">
                     <p class="product__more--title fw-bold text-center fs-1 " style="padding: 5rem; opacity: 0.8;">Vẫn
                         còn
                         nhiều món
                         đáng yêu.</p>
-                    <div class="row product__accessory px-4 pt-5 align-items-center">
-                        <div class="col-6 product__accessory--info " style="">
+                    <div class="row product__accessory px-4 pt-5 align-items-center text-center">
+                        <div class="col-sm-12 col-md-6 product__accessory--info " style="">
                             <p class="accessory__title fs-3 fw-bold" style="opacity: 0.8;">Phụ kiện MagSafe</p>
                             <p class="accessory__title-main fs-1 fw-bold" style="opacity: 0.6;">Gắn thêm một ốp
                                 lưng,
@@ -482,7 +483,7 @@
                                 bộ phụ kiện phù hợp.
                             </p>
                         </div>
-                        <div class="col-6 product__accessory--img pt-5">
+                        <div class="col-sm-12 col-md-6 product__accessory--img pt-5">
                             <img src="https://shopdunk.com/images/uploaded-source/compareiphone15/flex_magsafe_large_2x.png?1694035518948"
                                 alt="" style="width: 100%;">
                         </div>
@@ -554,15 +555,6 @@
                             một số quốc gia hoặc khu vực.</p>
                     </div>
 
-                </div>
-                <div class="footer_newletter pt-5 mt-5 pb-5 text-center">
-                    <div class="heading_newletter fs-1 fw-bold">Đăng ký nhận tin từ TechNoPro</div>
-                    <p class="fs-4 py-3">Thông tin sản phẩm mới nhất và chương trình khuyến mãi</p>
-                    <div class="input-group  mx-auto " style="width: 50%; position: relative;">
-                        <input type="email" name="email" class="form-control form-control1" placeholder="Email của bạn"
-                            aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Đăng Ký</button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -719,5 +711,6 @@
 
 
 <script src="./assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+<script src="./assets/js/product_details.js"></script>
 
 </html>
