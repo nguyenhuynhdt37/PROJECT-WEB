@@ -33,11 +33,11 @@ const App = {
             img1: 'https://shopdunk.com/images/thumbs/0018642_silver_550.jpeg',
             img2: 'https://shopdunk.com/images/thumbs/0018643_silver_550.jpeg',
             img3: 'https://shopdunk.com/images/thumbs/0018644_silver_550.jpeg',
-            img4: 'https://shopdunk.com/images/thumbs/0018645_silver_550.jpeg',
             img5: 'https://shopdunk.com/images/thumbs/0018646_silver_550.jpeg',
             img6: 'https://shopdunk.com/images/thumbs/0018647_silver_550.jpeg',
             img7: 'https://shopdunk.com/images/thumbs/0018648_silver_550.jpeg',
             img8: 'https://shopdunk.com/images/thumbs/0018649_silver_550.jpeg',
+            img4: 'https://shopdunk.com/images/thumbs/0018650_silver_550.jpeg',
         },
         {
             id: 'yellow',
@@ -60,7 +60,7 @@ const App = {
                 if(index === 0) {
                   return(  
             `<li
-                class="color-item  rounded-circle p-1 me-2 ${img.id} list-unstyled d-inline-block border border-primary border-2">
+                class="color-item  rounded-circle p-1 me-2 ${img.id} list-unstyled d-inline-block border border-primary border-3">
             </li>`)
                 } else {
                     return(  
@@ -118,9 +118,9 @@ const App = {
     colorItem.forEach((item)=>{
         item.onclick = () => {
             colorItem.forEach((item1)=>{
-                item1.classList.remove('border', 'border-primary' ,'border-2')
+                item1.classList.remove('border', 'border-primary' ,'border-3')
              })
-             item.classList.add('border', 'border-primary', 'border-2')
+             item.classList.add('border', 'border-primary', 'border-3')
              this.img.forEach((ig =>{
                 if(item.classList.contains(ig.id)) {
                     const html = Object.entries(ig).map(([key, value]) => {
