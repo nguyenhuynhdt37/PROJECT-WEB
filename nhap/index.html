@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .img-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .img-container img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .img-container:hover img {
+      transform: scale(1.1);
+    }
+
+    .img-new {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white; /* Điều chỉnh màu văn bản để tăng khả năng nhìn thấy */
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="col-md-3 mb-3 text-center img-container" onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
+    <div class="img-new">
+      <h3>Tiêu điểm cuối năm 2023: Sản phẩm mới nhất của Apple</h3>
+      <span class="price actual-price">31/10/2023</span>
+    </div>
+    <img src="https://qmacstore.com/media/macbook-air-2020-m1-mgn73-7-1536x1024.png" alt="Product 1" class="hover-image">
+  </div>
+
+  <!-- Lặp lại cấu trúc trên cho các phần sản phẩm khác -->
+
+  <script>
+    function changeImage(element) {
+      var image = element.querySelector('.hover-image');
+      image.src = 'https://qmacstore.com/media/macbook-air-2020-m1-mgn73-7-1536x1024.png'; // Thay thế 'URL_mới' bằng đường dẫn của ảnh mới
+    }
+
+    function restoreImage(element) {
+      var image = element.querySelector('.hover-image');
+      image.src = 'https://tse2.mm.bing.net/th?id=OIP.1ijJ5elyg0R7nuVdwYNxigHaD4&pid=Api&P=0&h=180'; // Đặt lại ảnh ban đầu khi di chuột ra
+    }
+  </script>
+
+</body>
+</html>
