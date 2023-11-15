@@ -8,6 +8,7 @@
     <link rel="icon"
         href="https://cdn-icons-png.flaticon.com/128/10096/10096939.png?ga=GA1.1.1782978868.1679199684&track=ais"
         type="image/x-icon" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -67,7 +68,7 @@
                             <a class="nav-link fs-5 text-dark mx-4" href="">iPhone</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-5 text-dark mx-4" href="./contact.html">iPad</a>
+                            <a class="nav-link fs-5 text-dark mx-4" href="">iPad</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fs-5 text-dark mx-4" href="#">Mac</a>
@@ -80,10 +81,16 @@
                         </li>
                     </ul>
                     <!-- Button Log in/Sign up modal -->
-                    <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 fs-5"
+                    <!-- <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 fs-5"
                         data-bs-toggle="modal" data-bs-target="#staticBackdrop-sign-up">Sign up</a>
                     <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 me-3 fs-5"
-                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Log in</a>
+                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Log in</a> -->
+
+                    <!-- LogIn and SignUp Page -->
+                    <a href="./sign-up.html" type="button"
+                        class="auth-form-btn text-dark text-decoration-none ms-4 fs-5">Sign up</a>
+                    <a href="./log-in.html" type="button"
+                        class="auth-form-btn text-dark text-decoration-none ms-4 me-3 fs-5">Log in</a>
                 </div>
             </div>
         </nav>
@@ -292,8 +299,14 @@
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6 col-sm-12">
-                    <div class="iphone-security">
+                    <div class="iphone-security ">
                         <h3 class="text-center">Quyền riêng tư. <br>Rất iPhone.</h3>
+                    </div>
+                    <div class="iphone-security-desc d-none">
+                        <p class="fs-1 fw-semibold lh-sm">Mỗi chiếc iPhone đều sở hữu tính năng xác thực bằng gương mặt
+                            hoặc vân tay. Các ứng dụng cần có sự đồng ý của bạn để theo dõi hoạt động của bạn trên ứng
+                            dụng hay website của các công ty khác. Tin nhắn iMessages và các cuộc gọi FaceTime của bạn
+                            được mã hóa đầu cuối. Và quyền riêng tư thì không chỉ có vậy mà thôi.</p>
                     </div>
                 </div>
             </div>
@@ -305,15 +318,18 @@
                         <h2 class="content__ipad-text">Siêu mạnh mẽ với</h2>
                         <img class="content__ipad-chip-m2" src="./assets/images/home-img/chip_m2.png" alt="">
                     </div>
-                    <img class="content__ipad-img1" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="100" src="./assets/images/home-img/ipad-pro-m2_large.jpg" alt="">
+                    <img class="content__ipad-img1" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="100"
+                        src="./assets/images/home-img/ipad-pro-m2_large.jpg" alt="">
                     <div class="content__ipad-outro" data-aos="fade-up" data-aos-duration="1200" data-aos-offset="200">
                         <h1 class="text-light text-center fw-semibold">Hiệu năng như mơ. Màn hình tiên tiến không ngờ.
                             Kết nối không dây siêu nhanh. Năng lực Apple Pencil ở tầm cao mới.
                             Các tính năng mới mạnh mẽ trên iPadOS. Trải nghiệm iPad đỉnh cao.</h1>
                         <a class="link-to-ipad mt-4" href="#">Đến cửa hàng ></a>
                     </div>
-                    <img class="content__ipad-img2" data-aos="zoom-out" data-aos-duration="2400" data-aos-offset="500" src="./assets/images/home-img/ipad-pro-review_large.jpg" alt="">
-                    <div class="content__ipad-display" data-aos="fade-left" data-aos-duration="1400" data-aos-offset="200">
+                    <img class="content__ipad-img2" data-aos="zoom-out" data-aos-duration="2200" data-aos-offset="400"
+                        src="./assets/images/home-img/ipad-pro-review_large.jpg" alt="">
+                    <div class="content__ipad-display" data-aos="fade-left" data-aos-duration="1400"
+                        data-aos-offset="200">
                         <h1>Màn hình Liquid Retina XDR 12,9”. <br>Sáng đẹp lộng lẫy.</h1>
                         <p>Extreme Dynamic Range trên iPad Pro 12,9 inch. Màn hình <span class="rainbow">Liquid Retina
                                 XDR</span> mang lại độ chi tiết chân thực với tỷ lệ tương phản 1.000.000:1, vô cùng lý
@@ -323,7 +339,8 @@
                             rộng P3, <span class="rainbow">True Tone và ProMotion</span>. Và bạn có thể sử dụng Chế Độ
                             Tham Chiếu để thực hiện luồng công việc đòi hỏi độ chính xác cao hơn về màu sắc.</p>
                     </div>
-                    <img class="content__ipad-img3" data-aos="zoom-in" data-aos-duration="1800" data-aos-offset="400" src="./assets/images/home-img/ipad-pro-screen.jpg" alt="">
+                    <img class="content__ipad-img3" data-aos="zoom-in" data-aos-duration="1800" data-aos-offset="400"
+                        src="./assets/images/home-img/ipad-pro-screen.jpg" alt="">
                     <div class="content__ipad-desc" data-aos="fade-up" data-aos-duration="1200" data-aos-offset="200">
                         <ul class="screen row text-light">
                             <li class="screen-item col-md-6 col-sm-12">
@@ -370,14 +387,17 @@
                     <div class="pencil-title">
                         <h1>Magic Keyboard. Apple Pencil. Tiềm năng bất tận.</h1>
                         <div class="pencil-subtitle">
-                            <p data-aos="fade-up" data-aos-duration="1400" data-aos-offset="200"><span style="color: black;">Các phụ kiện Pro.</span> Apple Pencil, Magic Keyboard và
+                            <p data-aos="fade-up" data-aos-duration="1400" data-aos-offset="200"><span
+                                    style="color: black;">Các phụ kiện Pro.</span> Apple Pencil, Magic Keyboard và
                                 Smart Keyboard Folio mở ra thêm nhiều phương thức mới để sử dụng iPad Pro. Vẽ một kiệt
                                 tác, ghi chú, hoàn thành nhanh gọn bản kế hoạch kinh doanh. Apple thiết kế những phụ
                                 kiện đa năng này để đưa công việc và khả năng sáng tạo của bạn lên một tầm cao mới.</p>
                         </div>
-                        <img src="./assets/images/home-img/magic-keyboard.png" data-aos="fade-up" data-aos-duration="1600" data-aos-offset="300" alt="">
+                        <img src="./assets/images/home-img/magic-keyboard.png" data-aos="fade-up"
+                            data-aos-duration="1600" data-aos-offset="300" alt="">
                         <div class="pencil-features">
-                            <p data-aos="fade-left" data-aos-duration="1500" data-aos-offset="200"><span style="color: black;">Một tầm cao mới của Apple Pencil.</span> Tính năng lướt Apple
+                            <p data-aos="fade-left" data-aos-duration="1500" data-aos-offset="200"><span
+                                    style="color: black;">Một tầm cao mới của Apple Pencil.</span> Tính năng lướt Apple
                                 Pencil cho bạn thấy chính xác vị trí Apple Pencil sẽ chạm xuống trên màn hình. Nhờ đó,
                                 bạn có thể viết, phác thảo và vẽ minh họa với độ chính xác còn cao hơn nữa. Xem các ứng
                                 dụng và tiện ích mở rộng ra trên Màn Hình Chính khi bạn di chuyển qua chúng. Xem trước
@@ -471,7 +491,8 @@
                         <div class="airpods__title text-start text-dark">
                             <h1 style="font-size: 40px;">Còn nhiều hơn nữa!</h1>
                             <p class="fs-1 mt-2">cùng khám phá bộ sản phẩm mới nhất từ Apple</p>
-                            <a class="fs-2 text-decoration-none text-primary-emphasis" href="">Tìm hiểu thêm. <i class="fa-solid fa-circle-plus text-primary-emphasis fs-2"></i></a>
+                            <a class="fs-2 text-decoration-none text-primary-emphasis" href="">Tìm hiểu thêm. <i
+                                    class="fa-solid fa-circle-plus text-primary-emphasis fs-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -479,7 +500,8 @@
             <!-- Customer's Benefits -->
             <div class="benefits row p-4 g-5">
                 <div class="col-12">
-                    <h1 class="benefit__title fw-semibold">Những lợi ích mà bạn <br>sẽ nhận được khi <br>đến với chúng tôi.</h1>
+                    <h1 class="benefit__title fw-semibold">Những lợi ích mà bạn <br>sẽ nhận được khi <br>đến với chúng
+                        tôi.</h1>
                     <p class="swipe-to-right fs-4 ms-5 mt-4 d-none">Lướt sang phải để xem thêm >></p>
                 </div>
 
@@ -544,11 +566,11 @@
                             </div>
                         </button>
                     </li>
-                </ul>  
+                </ul>
                 <div class="scroll-btn-wrap">
                     <button class="scroll-btn left-btn">&lt;</button>
                     <button class="scroll-btn right-btn">&gt;</button>
-                </div> 
+                </div>
             </div>
         </div>
 
@@ -568,7 +590,8 @@
                         <img class="w-100 my-5" src="./assets/images/home-img/iphone-gaming.jpg" alt="">
                         <div class="row m-4">
                             <div class="col-md-6 col-sm-12">
-                                <div class="a17pro-description text-light my-5" data-aos="fade-up" data-aos-duration="1200" data-aos-offset="100">
+                                <div class="a17pro-description text-light my-5" data-aos="fade-up"
+                                    data-aos-duration="1200" data-aos-offset="100">
                                     <p class="benefits-box__subcontent">iPhone 15 Pro lần đầu tiên sử dụng công nghệ dò
                                         tia tốc độ cao bằng phần cứng nhanh gấp bốn lần so với phương pháp dò tia bằng
                                         phần mềm, đem đến đồ họa mượt hơn và ánh sáng chân thực hơn. Đây là hiệu suất dò
@@ -577,7 +600,8 @@
                             </div>
                             <div class="col-md-6 col-sm-12">
                                 <div class="a17pro-description text-light my-5">
-                                    <p class="benefits-box__subcontent" data-aos="fade-up" data-aos-duration="1400" data-aos-offset="400">MetalFX Upscaling kết hợp hiệu năng của GPU và
+                                    <p class="benefits-box__subcontent" data-aos="fade-up" data-aos-duration="1400"
+                                        data-aos-offset="400">MetalFX Upscaling kết hợp hiệu năng của GPU và
                                         Neural Engine để tạo ra đồ họa có độ phân giải cao nhưng tiêu thụ điện năng ít
                                         hơn rất nhiều. Vậy nên bạn có thể chơi game không ngừng nghỉ.</p>
                                 </div>
@@ -688,7 +712,7 @@
                         <img class="hide-on-mobile" src="./assets/images/home-img/iphone-15-design.jpg" alt="">
                         <img class="show-on-mobile d-none" src="./assets/images/home-img/ip15-design_small.jpg" alt="">
                         <div class="row mx-5">
-                            
+
                             <div class="col-sm-12 col-md-5">
                                 <div class="wrap-ip15-design ms-5">
                                     <p class="mt-5" style="font-size: 38px; font-weight: 600;">Cầm trên tay <br>là cảm
@@ -702,7 +726,8 @@
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-6">
-                                <img class="w-100" src="./assets/images/home-img/iphone-15-recycle-aluminium.jpg" alt="">
+                                <img class="w-100" src="./assets/images/home-img/iphone-15-recycle-aluminium.jpg"
+                                    alt="">
                             </div>
                         </div>
                     </div>
@@ -712,18 +737,19 @@
         <!-- Modal iOS 17 -->
         <div class="modal fade" id="ios17-box" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog big-wrap-box">
-                <div class="modal-content features-box">
+                <div class="modal-content benefits-box bg-light">
                     <div class="modal-header benefits-box__header">
                         <button type="button" class="btn-close fs-2" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
                     <div class="modal-body benefits-box__body">
-                        <h1 class="text-start fw-bold" style="color: #777; font-size: 56px; margin-bottom: 50px;">iOS 17. <br>
+                        <h1 class="text-start fw-bold" style="color: #777; font-size: 56px; margin-bottom: 50px;">iOS
+                            17. <br>
                             <span class="text-dark">Chọn phong cách. <br> Trao đổi liên hệ. <br> Tạo nhãn dán.</span>
                         </h1>
                         <img class="d-block mx-auto my-5 w-100" src="./assets/images/home-img/ios17-features_large.jpg"
                             alt="">
-                        <div class="row g-5 m-4">
+                        <div class="row g-5">
                             <div class="col-md-4 col-sm-12">
                                 <div class="wrap-connect">
                                     <p class="fs-2 text-secondary lh-md fw-medium"><span
@@ -750,6 +776,23 @@
                                         và tạo nhãn dán. Thêm các hiệu ứng như Phồng và Lóe Sáng. Hoặc tạo nhãn dán động
                                         từ Live Photos.</p>
                                 </div>
+                            </div>
+                        </div>
+                        <h2 class="widgets-title text-danger fw-bold" style="font-size: 46px; margin-top: 50px;">Tiện
+                            Ích Tương Tác</h2>
+                        <div class="row gy-5 my-5 d-flex rounded-5 bg-white"
+                            style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                            <div class="col-lg-5 d-flex align-items-center justify-content-center">
+                                <div class="widgets fw-bold lh-sm" style="font-size: 50px;">
+                                    <p>Phát nhạc,<br>
+                                        tắt đèn,<br>
+                                        làm đủ thứ. <br>
+                                        Ngay từ <br>
+                                        một tiện ích.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 p-0 m-0">
+                                <img class="w-100 rounded-5" src="./assets/images/home-img/widgets_large.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -875,8 +918,9 @@
                 </div>
             </div>
         </div>
+
         <!-- Modal Sign Up-->
-        <div class="modal fade p-0" id="staticBackdrop-sign-up" data-bs-backdrop="static" data-bs-keyboard="false"
+        <!-- <div class="modal fade p-0" id="staticBackdrop-sign-up" data-bs-backdrop="static" data-bs-keyboard="false"
             tabindex="-1" aria-labelledby="staticBackdropLabel-sign-up" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content sign-up-content p-2">
@@ -918,9 +962,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+
         <!-- Modal Log in-->
-        <div class="modal fade p-0" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        <!-- <div class="modal fade p-0" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content sign-up-content p-2">
@@ -952,7 +997,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+
         <!-- Modal search -->
         <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -967,46 +1013,48 @@
         <div class="container mt-5">
             <footer class="text-center text-lg-start text-dark">
                 <div class="container pb-0">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
-                                <h5 class="mb-3 fs-3 fw-bold"><i class="fa-brands fa-apple"></i> APPLE Inc.</h5>
-                                <ul class="list-unstyled mb-0">
-                                    <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Giới thiệu</a></li>
-                                    <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Liên hệ</a></li>
-                                    <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Trợ giúp</a></li>
-                                    <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">FAQs</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
-                                <h5 class="mb-3 fs-3 fw-bold text-uppercase">sản phẩm</h5>
-                                <ul class="list-unstyled mb-0">
-                                    <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Tất cả sản phẩm</a></li>
-                                    <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">iPhone</a></li>
-                                    <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">iPad</a></li>
-                                    <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Mac</a></li>
-                                    <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Watch</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
-                                <h5 class="mb-3 fs-3 fw-bold text-uppercase">phụ kiện</h5>
-                                <ul class="list-unstyled mb-0">
-                                    <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">AirPods</a></li>
-                                    <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Apple Pencil</a></li>
-                                    <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Apple TV</a></li>
-                                    <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Sạc USB-C</a></li>
-                                    <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Màn hình</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
-                                <h5 class="mb-3 fs-3 fw-bold text-uppercase">chính sách</h5>
-                                <ul class="list-unstyled mb-0">
-                                    <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Quyền riêng tư</a></li>
-                                    <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Bảo mật</a></li>
-                                    <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Pháp lý</a></li>
-                                    <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Bản quyền</a></li>
-                                </ul>
-                            </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                            <h5 class="mb-3 fs-3 fw-bold"><i class="fa-brands fa-apple"></i> APPLE Inc.</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Giới thiệu</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Liên hệ</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Trợ giúp</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">FAQs</a></li>
+                            </ul>
                         </div>
+                        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                            <h5 class="mb-3 fs-3 fw-bold text-uppercase">sản phẩm</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Tất cả sản phẩm</a>
+                                </li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">iPhone</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">iPad</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Mac</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Watch</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                            <h5 class="mb-3 fs-3 fw-bold text-uppercase">phụ kiện</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">AirPods</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Apple Pencil</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Apple TV</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Sạc USB-C</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Màn hình</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                            <h5 class="mb-3 fs-3 fw-bold text-uppercase">chính sách</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Quyền riêng tư</a>
+                                </li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Bảo mật</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Pháp lý</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Bản quyền</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <hr class="mb-2 mt-5" />
                 </div>
                 <!-- Copyright -->
