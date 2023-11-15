@@ -7,6 +7,7 @@ const priceOld = $('.price-old')
 const carousel = $('.carousel-inner')
 const carouselItem = $$('.carousel-item')
 const product__colors = $('.product__colors')
+const product__name = $('.product__name')
 
 const App = {
     prices: [
@@ -122,6 +123,17 @@ const App = {
                 })
             })()
 
+            ; (() => {
+                capacitys.forEach(capacity => {
+                    console.log(capacity);
+                    var check = capacity.classList.contains('active1')
+                    if (check) {
+                        product__name.innerHTML = (`iPhone 15 Pro Max - ${capacity.innerText}`)
+
+                    }
+                })
+            })()
+
     },
 
 
@@ -130,50 +142,57 @@ const App = {
         buttonCapacity: {
             capacitys.forEach((capacity) => {
                 capacity.onclick = () => {
-                    capacitys.forEach((capacity1) => {
-                        capacity1.classList.remove('active1')
-                    })
-                    capacity.classList.add('active1')
-                    if (capacity.classList.contains('active1')) {
-                        this.prices.map((price) => {
-                            if (price.id === capacity.innerText) {
-                                priceCurent.innerText = price.new
-                                priceOld.innerText = price.old
-                            }
+                    setTimeout(() => {
+                        capacitys.forEach((capacity1) => {
+                            capacity1.classList.remove('active1')
                         })
-                    }
+                        capacity.classList.add('active1')
+                        if (capacity.classList.contains('active1')) {
+                            this.prices.map((price) => {
+                                console.log(price)
+                                if (price.id === capacity.innerText) {
+                                    priceCurent.innerText = price.new
+                                    priceOld.innerText = price.old
+                                    product__name.innerHTML = (`iPhone 15 Pro Max - ${price.id}`)
+    
+                                }
+                            })
+                        }
+                    },200)
                 }
             })
         }
         ; (() => {
             colorItem.forEach((item) => {
                 item.onclick = () => {
-                    colorItem.forEach((item1) => {
-                        item1.classList.remove('border', 'border-color', 'border-2')
-                    })
-                    item.classList.add('border', 'border-color', 'border-2')
-                    this.img.forEach((ig => {
-                        if (item.classList.contains(ig.id)) {
-                            const html = Object.entries(ig).map(([key, value]) => {
+                    setTimeout(() => {
+                        colorItem.forEach((item1) => {
+                            item1.classList.remove('border', 'border-color', 'border-2')
+                        })
+                        item.classList.add('border', 'border-color', 'border-2')
+                        this.img.forEach((ig => {
+                            if (item.classList.contains(ig.id)) {
+                                const html = Object.entries(ig).map(([key, value]) => {
 
-                                if (key !== 'id') {
-                                    if (key === 'img1') {
+                                    if (key !== 'id') {
+                                        if (key === 'img1') {
 
-                                        return `<div class="carousel-item active">
-                                    <img src='${value}' class="d-block w-100" alt="Slide">
-                                </div>`;
+                                            return `<div class="carousel-item active">
+                                        <img src='${value}' class="d-block w-100" alt="Slide">
+                                    </div>`;
+                                        }
+                                        else {
+                                            return `<div class="carousel-item">
+                                        <img src='${value}' class="d-block w-100" alt="Slide">
+                                    </div>`;
+                                        }
                                     }
-                                    else {
-                                        return `<div class="carousel-item">
-                                    <img src='${value}' class="d-block w-100" alt="Slide">
-                                </div>`;
-                                    }
-                                }
-                            })
-                            carousel.innerHTML = html.join('')
-                            carouselItem[0].classList.add('active')
-                        }
-                    }))
+                                })
+                                carousel.innerHTML = html.join('')
+                                carouselItem[0].classList.add('active')
+                            }
+                        }))
+                    }, 200)
                 }
             })
         })();
@@ -193,22 +212,19 @@ App.render()
 ScrollReveal({
     reset: true,
     origin: 'bottom',   // Xuất hiện từ phía dưới
-    distance: '100px',    // Khoảng cách ban đầu
+    distance: '30px',    // Khoảng cách ban đầu
     duration: 1500,      // Thời gian xuất hiện (milliseconds)
-    delay: 150,          // Độ trễ trước khi xuất hiện (milliseconds)
+    delay: 0,          // Độ trễ trước khi xuất hiện (milliseconds)
     // easing: 'ease-in-out', // Kiểu chuyển động
     easing: 'ease-in-out',
     opacity: '0'
 });
-ScrollReveal().reveal('.product__title--move,.product__camera--box1', { delay: 200, origin: "bottom" });
-ScrollReveal().reveal('.design__size,.design__material--title,.design__material--img,.size-display--img,.product__camera-front--img,.product__accessory ', { delay: 200, origin: "bottom" });
-ScrollReveal().reveal('.product__description--display--title,.design__size-big ', { delay: 400, origin: "left" });
-ScrollReveal().reveal('.product__description--display--img ,.product__camera--front', { delay: 400, origin: "bottom" });
-ScrollReveal().reveal('.product__camera--box,.product__description--display,.product__perfomence--cpu ,.product__charger--box,.product__security', { delay: 200, origin: "bottom" });
-ScrollReveal().reveal('.design__material,.product__update  ', { delay: 200, origin: "left" });
 
 
-ScrollReveal().reveal('.product__juridical--title,.product__juridical--screen', { delay: 200, origin: "bottom", distance: '30px', duration: '1100' });
-ScrollReveal().reveal('.product__juridical--electricity,.product__juridical--charging-cable, .product__juridical--guarantee-plus,.product__juridical--area,.product__juridical--accessory, .product__juridical--network', { delay: 150, origin: "bottom", distance: '30px', duration: '1000' });
+
+ScrollReveal().reveal('.cpu-confirm,.product__battery--title,.product__charger--title,.product__security--title,.accessory__title-main ,.product__description--display--title,.design__material--title,.design__size-big,.cam-main-describe,.product__juridical--screen,.product__juridical--title,.product__juridical--screen', { origin: "bottom", duration: '1100' });
+ScrollReveal().reveal('.product__camera-front--img', { delay: 200, origin: "right", duration: '1100' });
+ScrollReveal().reveal('.product__battery--model', { delay: 200, origin: "left", duration: '1100' });
+ScrollReveal().reveal('.product__juridical--electricity,.product__juridical--charging-cable, .product__juridical--guarantee-plus,.product__juridical--area,.product__juridical--accessory, .product__juridical--network', { origin: "bottom", distance: '30px', duration: '1000' });
 
 

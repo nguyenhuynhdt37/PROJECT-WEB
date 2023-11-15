@@ -1,7 +1,7 @@
 
 
 
-var Validator =  function(selector) {
+var Validator = function (selector) {
     var _this = this;
     var formrules = {};
     /**
@@ -26,12 +26,12 @@ var Validator =  function(selector) {
                 return value.length <= max ? undefined : `Vui lòng nhập tối đa ${max} ký tự`;
             }
         },
-        checkpass: function (checkpass) {
+        checkpass: function (password) {
             return function (value) {
-            
-                return value === password ? undefined : 'Mật khẩu không khớp';
-            };
-        }
+                return value === password ? undefined : `Vui lòng nhập tối đa ${value} ký tự`;
+            }
+        },
+
     };
     function getParentNode(element, select) {
         while (element.parentNode) {
@@ -58,11 +58,11 @@ var Validator =  function(selector) {
                 if (isRuhasValue) {
                     ruleInfo = rule.split(':');
                     rule = ruleInfo[0];
-                   
+
                 }
 
                 var ruleFunc = ValidatoRules[rule];
-                console.log(ruleFunc);
+                console.log(rule);
                 if (ruleInfo) {
                     ruleFunc = ruleFunc(ruleInfo[1]);
                 }
@@ -83,10 +83,14 @@ var Validator =  function(selector) {
             //hàm thực hiện validate
             function handleValidate(event) {
                 var rules = formrules[event.target.name];
+                console.log(rules);
                 for (let i = 0; i < rules.length; i++) {
-                    var errorMessage = rules[i](event.target.value);
-                    if (errorMessage) {
-                        break;
+                    if (rules[i] !== undefined) {
+                        var errorMessage = rules[i](event.target.value);
+                        console.log(errorMessage)
+                        if (errorMessage) {
+                            break;
+                        }
                     }
                 }
                 /// nếu có lỗi thì hiển thị message lỗi
@@ -113,8 +117,10 @@ var Validator =  function(selector) {
             var check = true;
             e.preventDefault();
             var inputs = FormElement.querySelectorAll('[name][rules]');
+            console.log(inputs);
             for (let input of inputs) {
                 rules = formrules[input.name];
+                console.log(rules);
                 for (var rule of rules) {
                     var errorMessage = rule(input.value);
                     if (errorMessage) {

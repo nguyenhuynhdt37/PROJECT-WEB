@@ -302,7 +302,7 @@ body {
 }
 
 .product__battery {
-    background-color: var(--black-color);
+    background-color: var(--background--banner);
     border-radius: 2rem;
     padding: 3rem 0;
 }
