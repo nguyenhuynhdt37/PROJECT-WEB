@@ -8,6 +8,8 @@ const carousel = $('.carousel-inner')
 const carouselItem = $$('.carousel-item')
 const product__colors = $('.product__colors')
 const product__name = $('.product__name')
+const product__color__title = $('.product__color--title')
+
 
 const App = {
     prices: [
@@ -59,16 +61,20 @@ const App = {
 
             ; (() => {
                 const html = this.img.map((img, index) => {
+
                     if (index === 0) {
+                    product__color__title.innerHTML = `Màu sắc: ${img.id}`
                         return (
                             `<li
-                class="color-item  p-1 me-2 ${img.id} list-unstyled d-inline-block border border-color border-2">
-            </li>`)
+                                 class="color-item  p-1 me-2 ${img.id} list-unstyled d-inline-block border border-color border-2">
+                             </li>`
+                        )
                     } else {
                         return (
                             `<li
-                class="color-item  p-1 me-2 ${img.id} list-unstyled d-inline-block">
-            </li>`)
+                                  class="color-item  p-1 me-2 ${img.id} list-unstyled d-inline-block">
+                           </li>`
+                        )
                     }
                 }).join('')
                 product__colors.innerHTML = html
@@ -130,6 +136,8 @@ const App = {
                     if (check) {
                         product__name.innerHTML = (`iPhone 15 Pro Max - ${capacity.innerText}`)
 
+                        document.title = product__name.innerText;
+
                     }
                 })
             })()
@@ -154,11 +162,11 @@ const App = {
                                     priceCurent.innerText = price.new
                                     priceOld.innerText = price.old
                                     product__name.innerHTML = (`iPhone 15 Pro Max - ${price.id}`)
-    
+                                    document.title = product__name.innerText;
                                 }
                             })
                         }
-                    },200)
+                    }, 200)
                 }
             })
         }
@@ -166,12 +174,15 @@ const App = {
             colorItem.forEach((item) => {
                 item.onclick = () => {
                     setTimeout(() => {
+                        console.dir(item)
                         colorItem.forEach((item1) => {
                             item1.classList.remove('border', 'border-color', 'border-2')
                         })
                         item.classList.add('border', 'border-color', 'border-2')
                         this.img.forEach((ig => {
                             if (item.classList.contains(ig.id)) {
+                                product__color__title.innerHTML = `Màu sắc: ${ig.id}`
+
                                 const html = Object.entries(ig).map(([key, value]) => {
 
                                     if (key !== 'id') {
