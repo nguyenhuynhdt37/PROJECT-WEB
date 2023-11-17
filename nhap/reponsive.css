@@ -1,0 +1,135 @@
+@media (max-width: 992px){
+    .header__more {
+        text-align: end;
+        width: 88%;
+    }
+
+    .navbar a {
+        font-size: 22px !important;
+    }
+
+}
+
+
+
+@media (max-width: 1023px) {
+    .product__item {
+        margin: 8px 0;
+    }
+
+    .product__reviews--title {
+        text-align: center;
+        border: none;
+    }
+
+    .product-reviews-content {
+        border: none;
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .product__review-item {
+        border-top: 1px solid #dfdede;
+        padding: 0;
+    }
+
+    .product___reviews {
+        margin-bottom: 50px;
+    }
+
+    .footer__column {
+        display: none;
+    }
+
+    .privacy-policy {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 739px) {
+    .product__item {
+        margin: 4px 0;
+    }
+
+    .product__fit {
+        min-width: 100%;
+    }
+
+    .header__nav-list {
+        display: none;
+    }
+
+    .product__box {
+        margin-bottom: 4px;
+    }
+
+    .header {
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+    }
+
+
+    .app {
+        /* overflow-x: hidden; */
+    }
+
+    .category-description {
+        padding: 40px 20px;
+    }
+
+    .product-grid,
+    .product__sub,
+    .category__box {
+        padding: 0 20px;
+    }
+
+    .product__box {
+        margin: 16px 0;
+    }
+
+    .reviews-content__input::after {
+        right: -10px;
+    }
+
+    .container__pager {
+        margin: 20px 0;
+    }
+
+    .footer_newletter {
+        padding: 0 20px;
+    }
+
+    .newsletter-email {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .newsletter-subscribe-text~button {
+        margin-right: 20px;
+    }
+
+    .footer__box,
+    .footer__navigation {
+        margin: 0;
+    }
+    .text-center {
+        padding: 10px;
+    }
+    
+
+}
+
+@media (max-width: 539px){
+    .header__more {
+        text-align: end;
+        width: 50%;
+    }
+    .box-x {
+
+    }
+}
