@@ -29,7 +29,7 @@
         }
 
         .title-sub {
-            background: linear-gradient(to right, rgb(14, 11, 11), #0000ff);
+            background: linear-gradient(to right,black, blue);
             -webkit-background-clip: text;
             color: transparent;
             /* Đặt màu chữ thành trong suốt */
@@ -42,7 +42,7 @@
 
         .box {
             background-size: cover;
-            background-image: url(https://i.pinimg.com/originals/64/ba/6f/64ba6fa5c824b3c37e439a3e2aeed62b.png);
+            background-image: url(https://img4.thuthuatphanmem.vn/uploads/2020/07/30/background-khai-giang-cuc-dep_024036461.jpg);
         }
 
         .card-body {}
@@ -91,7 +91,7 @@
     <div class="box__sign-in">
         <div class="d-flex box" style="width: 100%;height: 100vh; align-items: center;justify-content: center;">
             <!-- Jumbotron -->
-            <div class="px-4 py-5 px-md-5 text-center text-lg-start w-100 " style="">
+            <div class="px-4 py-5 px-md-5 text-center text-lg-start w-100 " >
                 <div class="container">
                     <div class="row gx-lg-5 align-items-center">
                         <div class="col-lg-6 mb-5 mb-lg-0">
@@ -105,24 +105,29 @@
                         <div class="col-lg-6 mb-5 mb-lg-0">
                             <div class="card">
                                 <div class="card-body py-5 px-md-5">
-                                    <form>
+                                    <form action="" method="POST" class="form " id="form-1">
                                         <!-- 2 column grid layout with text inputs for the first and last names -->
 
                                         <!-- Email input -->
                                         <div class="form-outline mb-4">
-                                            <label class="form-label" for="form3Example3">Tên Tài Khoản</label>
-                                            <input type="email" id="form3Example3 " class="form-control" />
+                                            <label class="form-label" for="email">Tên Tài Khoản</label>
+                                            <input id="email" name="email" type="text" rules="required|email" placeholder="VD: email@domain.com" class="form-control" />
+                                        <span class="form-message"></span>
                                         </div>
 
                                         <!-- Password input -->
                                         <div class="form-outline mb-4">
-                                            <label class="form-label" for="form3Example4">Mật Khẩu</label>
-                                            <input type="password" id="form3Example4" class="form-control" />
+                                            <label class="form-label" for="password1    ">Mật Khẩu</label>
+                                            <input class="form-control" id="password1" name="password1" rules="required|min:6" type="password" placeholder="Nhập mật khẩu" />
+                                        <span class="form-message"></span>
                                         </div>
+                                       
                                         <div class="form-outline mb-4">
-                                            <label class="form-label" for="form3Example4">Nhập Lại Mật Khẩu</label>
-                                            <input type="password" id="form3Example4" class="form-control" />
+                                            <label class="form-label" for="password1">Nhập lại Khẩu</label>
+                                            <input class="form-control" id="password2" name="password2" type="password" placeholder="Nhập mật khẩu" />
+                                        <span class="form-message"></span>
                                         </div>
+                                       
 
                                         <!-- Checkbox -->
                                         <div class="form-check d-flex mb-4">
@@ -138,7 +143,7 @@
                                             Đăng Ký
                                         </button>
                                         <button type="" class="btn  mb-4 fw-bold">
-                                           <a class="text-decoration-none" href="./log-in.html">Đăng Nhập</a>
+                                            <a class="text-decoration-none" href="./log-in.html">Đăng Nhập</a>
                                         </button>
 
                                         <!-- Register buttons -->
@@ -184,7 +189,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         var options = {
-            strings: ["Bắt đầu hành trình với chúng tôi!", "Đăng ký tài khoản ngay"," để trải nghiệm những ưu đãi"," và tính năng độc đáo."],
+            strings: ["Bắt đầu hành trình mới", "Đăng ký tài khoản ngay", "Cùng nhiều những ưu đãi hấp dẫn", " và tính năng độc đáo."],
             typeSpeed: 150, // Tốc độ chữ hiển thị (milliseconds)
             backSpeed: 50, // Tốc độ chữ mất đi (milliseconds)
             //   startDelay: 0, // Độ trễ trước khi bắt đầu (milliseconds)
@@ -194,7 +199,14 @@
             cursorChar: "|", // Ký tự của dấu nhấn
         };
 
-        var typed = new Typed(".title-sub", options);
+    var typed = new Typed(".title-sub", options);
+    </script>
+    <script src="./assets/js/log-in.js"></script>
+    <script>
+        var form = new Validator('#form-1');
+        form.onsubmit = function (data) {
+            console.log(JSON.stringify(data))
+        }
     </script>
 </body>
 

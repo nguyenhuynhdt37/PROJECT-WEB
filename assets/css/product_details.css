@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Arimo', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 html {
@@ -11,10 +12,9 @@ html {
     line-height: 1.6rem;
     overflow-x: hidden;
 }
-header {
 
+header {}
 
-}
 body {
     background-color: #f5f5f7;
 }
@@ -36,6 +36,8 @@ body {
 .active1 {
     color: var(--blue-color);
     border: 2px solid var(--primary-blue) !important;
+    background-color: var(--blue-color);
+    color: white !important;
 }
 
 
@@ -50,6 +52,7 @@ body {
         transform: scale(1.25);
     }
 }
+
 @keyframes smooth {
     0% {
         /* transform: scale(0.9); */
@@ -71,9 +74,9 @@ body {
 
 .navbar {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    backdrop-filter: saturate(180%) blur(20px);
-    background: rgba(251, 251, 253, .8);
-}   
+    backdrop-filter: saturate(170%) blur(200px);
+    background: rgb(251 251 253 / 43%);
+}
 
 
 
@@ -111,13 +114,14 @@ body {
 }
 
 .product__img {
-    border: 2rem solid var(--border-color);
+    border: 1.5rem solid var(--border-color);
     border-radius: 1rem;
     width: 95%;
 }
+
 .container-lg {
-    border: 2.5rem solid #f6f6f6;
-    border-radius: 1rem;
+    border: 2rem solid #f6f7f7;
+    border-radius: 1.5rem;
     padding: 0;
 }
 
@@ -150,50 +154,75 @@ body {
     background-clip: content-box;
 }
 
+.border-color {
+    border-color: rgb(90, 143, 90) !important;
+}
+
+.product__capacity--index {
+    padding: 0.9rem 2rem;
+    border: 2px solid var(--line-color);
+    border-radius: 0.7rem;
+    font-weight: 500;
+    color: var(--color-old);
+    cursor: pointer;
+}
+
 .black {
     background-color: var(--black-color);
     opacity: 0.8;
+    box-shadow: inset 1px 1px 2px rgb(0 0 0 / 10%);
 }
+
 .white {
     background-color: var(--line-color);
     opacity: 0.8;
+    box-shadow: inset 1px 1px 2px rgb(0 0 0 / 10%);
 }
 
 
 .yellow {
-    background-color: rgb(176, 176, 105);
+    background-color: #e9dfa7;
     opacity: 0.8;
+    box-shadow: inset 1px 1px 2px rgb(0 0 0 / 10%);
 }
 
 .green {
     background-color: rgb(118, 179, 118);
     opacity: 0.8;
+    box-shadow: inset 1px 1px 2px rgb(0 0 0 / 10%);
 }
 
 .pink {
     background-color: rgb(203, 144, 203);
     opacity: 0.8;
+    box-shadow: inset 1px 1px 2px rgb(0 0 0 / 10%);
 }
 
 .blue {
     background-color: #406cbe;
+    box-shadow: inset 1px 1px 2px rgb(0 0 0 / 10%);
 }
 
 .silver {
     background-color: #adb0b6;
+    box-shadow: inset 1px 1px 2px rgb(0 0 0 / 10%);
 }
 
 .gold {
-    background-color: #cec562;
+    background-color: ##e9dfa7;
+    box-shadow: inset 1px 1px 2px rgb(0 0 0 / 10%);
 }
 
 .thereby {
     background-color: #b063c3;
+    box-shadow: inset 1px 1px 2px rgb(0 0 0 / 10%);
 }
 
 .backgroud-banner {
     background-color: #f5f5f7;
+    box-shadow: inset 1px 1px 2px rgb(0 0 0 / 10%);
 }
+
 .btn-scroll-to-top {
     border-radius: 50%;
     background-color: var(--blue-color);
@@ -207,6 +236,7 @@ body {
     animation: smooth ease-in 0.3s;
     z-index: 10;
 }
+
 .focus {
     border: 1px solid var(--color-old);
 
@@ -249,7 +279,7 @@ body {
 .product__description--display--title {
     font-weight: 600;
     opacity: 0.8;
-    font-size: 4rem;
+    font-size: 4.6rem;
 
 }
 
@@ -272,7 +302,7 @@ body {
 }
 
 .product__battery {
-    background-color: var(--black-color);
+    background-color: var(--background--banner);
     border-radius: 2rem;
     padding: 3rem 0;
 }
@@ -316,9 +346,17 @@ body {
 }
 
 .color-item {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 4rem;
+    height: 4rem;
     background-clip: content-box;
+    margin-right: 1rem !important;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 100%;
+}
+
+.color-item:hover {
+    border: 3px solid var(--color-old);
 }
 
 .img_Switch {
@@ -371,13 +409,13 @@ body {
 
 .product__camera--box1::after {
     position: absolute;
-    content: "2x";
+    content: "";
     padding: 1rem;
     font-size: 3rem;
     font-weight: 600;
     color: var(--white-color);
     width: 50%;
-    height: 40%;
+    height: 35%;
     border: 0.2rem solid var(--white-color);
     z-index: 3;
     top: 50%;
@@ -387,18 +425,18 @@ body {
 
 .product__camera--box1::before {
     position: absolute;
-    content: "Camera Chính 48MP";
-    font-size: 2rem;
+    content: "2x";
+    /* padding: 1rem; */
+    font-size: 2.5rem;
     font-weight: 600;
     color: var(--white-color);
-    top: 10%;
-    left: 50%;
+    /* border: 0.2rem solid var(--white-color); */
     z-index: 3;
-    transform: translateX(-50%);
-    width: 100%;
-    text-align: center;
-
+    top: 63%;
+    left: 70%;
+    transform: translate(-50%, -50%);
 }
+
 
 .product__battery--model {
     font-style: 2rem;
@@ -421,6 +459,11 @@ body {
 @media (min-width: 992px) {
     .header__more {
         order: 1;
+    }
+
+    footer .text-decoration-none,
+    h5 {
+        margin-left: 28%;
     }
 }
 
@@ -448,6 +491,14 @@ body {
     #searchModal input {
         height: 44px;
     }
+
+    .navbar a {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 22px !important;
+        color: #000 !important;
+        line-height: 44px;
+    }
+
 
     .header__more {
         text-align: end;
@@ -498,6 +549,10 @@ body {
     }
 
 
+    .color-item {
+        width: 4.5rem !important;
+        height: 4.5rem !important;
+    }
 
     .product__camera-front--img {
         width: 80%;
@@ -538,9 +593,12 @@ body {
     .product__trademark {
         width: 90% !important;
     }
+
     .product__details-x {
-        padding-left: 0.8rem !important ;
+        padding-left: 0.8rem !important;
     }
+
+
 
 }
 
@@ -576,6 +634,9 @@ body {
         margin-left: 0.2rem !important;
     }
 
+    .container-lg {
+        border: none !important;
+    }
 
     .content__iphone-left,
     .content__iphone-right {
@@ -650,10 +711,18 @@ body {
         padding: 3rem !important;
         font-size: 2.2rem !important;
     }
+
     .cpu-img {
         width: 70% !important;
     }
+
     .product__accessory--img img {
-        width: 80%!important;
+        width: 80% !important;
+    }
+
+    .ft-main span {
+        /* display: none; */
     }
 }
+
+.x-img-box::after {}

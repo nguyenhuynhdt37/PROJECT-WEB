@@ -11,9 +11,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/product_details.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
+<style>
+</style>
 
 <body>
     <div class="app bg-white">
@@ -39,7 +44,7 @@
                     <div class="header__main collapse navbar-collapse me-3" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item">
-                                <a class="nav-link fs-5 text-dark mx-1" href="./about-us.html">Trang chủ</a>
+                                <a class="nav-link fs-5 text-dark mx-1" href="">Trang chủ</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active fs-5 text-dark mx-1" aria-current="page" href="#">Tất cả sản
@@ -49,7 +54,7 @@
                                 <a class="nav-link fs-5 text-dark mx-1" href="">iPhone</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-5 text-dark mx-1" href="./contact.html">iPad</a>
+                                <a class="nav-link fs-5 text-dark mx-1" href="">iPad</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link fs-5 text-dark mx-1" href="#">Mac</a>
@@ -62,8 +67,10 @@
                             </li>
                         </ul>
                         <!-- Button Log in/Sign up modal -->
-                        <a href="./sign-in.html" type="button" class="auth-form-btn text-dark text-decoration-none fs-5 me-4">Sign up</a>
-                        <a href="./log-in.html" type="button" class="auth-form-btn text-dark text-decoration-none fs-5">Log in</a>
+                        <a href="./sign-in.html" type="button"
+                            class="auth-form-btn text-dark text-decoration-none fs-5 me-4">Sign up</a>
+                        <a href="./log-in.html" type="button"
+                            class="auth-form-btn text-dark text-decoration-none fs-5">Log in</a>
                     </div>
                 </div>
             </nav>
@@ -78,37 +85,27 @@
                 </div>
             </div>
         </header>
-        <div class="container" style="margin-top: 5rem; position: relative;">
+        <div class="container" style="margin-top: 7rem; position: relative;">
             <button type="button" class=" btn-scroll-to-top" style="width: 5rem; height: 5rem; opacity: 0.5;">
                 <i class="fa-solid fa-arrow-up" style="font-size: 2rem;"></i>
             </button>
             <div class="row product__main justify-content-center">
-                <ul class="product__nav-list d-flex m-0 fs-4 p-0 my-3 ">
+                <ul class="product__nav-list d-flex m-0 fs-4 p-0 py-3 text-secondary align-items-center border-bottom"
+                    style="font-weight: 500 !important;">
+                    <li class="product__nav-item list-unstyled me-2">
+                        Apple
+                        <i class=" fa-solid fa-chevron-right fs-5"></i>
+                        </a>
                     <li class="product__nav-item list-unstyled me-2">
                         <a class="text-decoration-none text-secondary">Điện thoại
-                            <i class=" fa-solid fa-chevron-right" style="font-size: 1rem;"></i>
+                            <i class=" fa-solid fa-chevron-right fs-5"></i>
                         </a>
                     </li>
                     <li class="product__nav-item list-unstyled">
-                        <a class="text-decoration-none" href="">Iphone 15</a>
+                        <a class="text-decoration-none text-success" href="">Iphone 15</a>
                     </li>
                 </ul>
-                <div class="product__title--x p-0 d-flex align-items-center border-bottom pb-3">
-                    <h2 class="product__name m-0 p-0 me-4 fs-1 fw-bold">Điện thoại iPhone 14 Pro Max</h2>
-                    <div class="product__evaluate d-flex align-items-center">
-                        <div class="product__degree-evaluation d-inline-block me-2">
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                        </div>
-                        <p class="product__evaluate--comments d-inline-block m-0"><a class="text-decoration-none"
-                                href="">13
-                                đánh giá</a>
-                        </p>
-                    </div>
-                </div>
+
                 <div class="row product__content-main mt-3 justify-content-between">
 
                     <div class="col-lg-6 product--img ">
@@ -150,10 +147,11 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-6 product__details-x mt-5 ps-5">
-                        <div class="product__title--y p-0 d-flex align-items-center border-bottom pb-3 d-none">
+                    <div class="col-lg-6 product__details-x mt-4 ps-5">
+                        <div class="product__title--y p-0 align-items-center border-bottom pb-3">
                             <h2 class="product__name m-0 p-0 me-4 fs-1 pb-2 fw-bold">iPhone 15 Pro Max
                             </h2>
+                            
                             <div class="product__evaluate d-flex align-items-center fs-4">
                                 <div class="product__degree-evaluation d-inline-block me-2">
                                     <i class="fa-solid fa-star text-warning"></i>
@@ -168,25 +166,23 @@
                                 </p>
                             </div>
                         </div>
-                        <p class="product__price-title fs-3">Giá ưu đãi:</p>
-                        <div class="product__price d-flex align-items-center">
-                            <span class=" price-curent fs-2 text-primary fw-bold me-2">26.550.000₫</span>
-                            <span class="price-old fs-3">34.990.000₫</span>
+                        <div class="product__price d-flex align-items-center mt-4">
+                            <span class=" price-curent fs-1 text-primary fw-bold me-2">26.550.000₫</span>
+                            <span class="price-old fs-2">34.990.000₫</span>
                         </div>
                         <div class="product__capacity">
                             <p class="product__capacity-title my-3 fs-3">Dung lượng</p>
                             <ul class="product__capacity--list p-0">
-                                <li
-                                    class="product__capacity--index d-inline-block px-4 py-3 border me-3 fs-4 rounded active1">
+                                <li class="product__capacity--index d-inline-block  me-3 fs-4  active1">
                                     128GB
                                 </li>
-                                <li class="product__capacity--index d-inline-block px-4 py-3 border me-3 fs-4 rounded ">
+                                <li class="product__capacity--index d-inline-block  me-3 fs-4  ">
                                     256GB
                                 </li>
-                                <li class="product__capacity--index d-inline-block px-4 py-3 border me-3 fs-4 rounded ">
+                                <li class="product__capacity--index d-inline-block  me-3 fs-4  ">
                                     512GB
                                 </li>
-                                <li class="product__capacity--index d-inline-block px-4 py-3 border me-3 fs-4 rounded ">
+                                <li class="product__capacity--index d-inline-block  me-3 fs-4  ">
                                     1T</li>
                             </ul>
                         </div>
@@ -194,63 +190,101 @@
                             <p class="product__color--title fs-3">Màu sắc</p>
                             <ul class="product__colors m-0 p-0">
                                 <li
-                                    class="color-item  rounded-circle p-1 me-2 white list-unstyled d-inline-block border border-primary border-2 ">
+                                    class="color-item p-1 me-2 white list-unstyled d-inline-block border border-color border-3 ">
                                 </li>
-                                <li class="color-item  rounded-circle p-1 me-2 yellow list-unstyled d-inline-block">
+                                <li class="color-item p-1 me-2 yellow list-unstyled d-inline-block">
                                 </li>
-                                <li class="color-item  rounded-circle p-1 me-2 green list-unstyled d-inline-block">
+                                <li class="color-item p-1 me-2 green list-unstyled d-inline-block">
                                 </li>
-                                <li class="color-item  rounded-circle p-1 me-2 silver list-unstyled d-inline-block">
+                                <li class="color-item p-1 me-2 silver list-unstyled d-inline-block">
                                 </li>
-                                <li class="color-item  rounded-circle p-1 me-2 black list-unstyled d-inline-block">
+                                <li class="color-item p-1 me-2 black list-unstyled d-inline-block">
                                 </li>
                             </ul>
                         </div>
-                        <div class="product__promotion  border border-2 rounded p-0">
-                            <div class="pr-top backgroud-banner py-4 px-2">
-                                <p class="pr-txtb fs-4 fw-bold m-0">Khuyến mãi </p>
-                                <i class="pr-txt fs-5">Giá và khuyến mãi áp dụng đặt và nhận hàng từ 00:00 | 01/10 -
-                                    23:00 |
-                                    31/12</i>
+                        <div class="product__promotion  border border-1 p-4" style="border-radius: 1rem;">
+                            <div class="product__promotion-title fs-4 fw-bold mb-3">
+                                <i class="fa-solid fa-gift me-2"></i> Ưu đãi
                             </div>
-                            <div class="pr-item py-4 px-2">
-                                <div class="d-flex">
-                                    <i class="fa-solid fa-circle-info me-2 pt-1 text-primary"></i>
-                                    <div class="divb-right d-inline-block">
-                                        <span>Thu cũ Đổi mới: Giảm đến 2 triệu (Tuỳ model máy cũ, Không kèm thanh toán
-                                            qua
-                                            cổng online, mua kèm) <a href=""> Xem chi tiết</a>
-                                        </span>
+                            <div class="product__promotion--detail">
+                                <div class="ps-4 promotion-item fs-5">
+                                    <h4 class="promotion-item-title my-2" style="color: rgb(214, 75, 57);">
+                                        I. Ưu đã thanh toán
+                                    </h4>
+                                    <div class="promotion-content py-1">
+                                        <i class="fa-solid fa-circle-check mx-1" style="color: limegreen;"></i>
+                                        <span>Giảm tới <strong>500.000đ </strong>qua cổng thanh toán</span> <br>
+                                    </div>
+                                    <div class="promotion-content py-1">
+                                        <i class="fa-solid fa-circle-check mx-1" style="color: limegreen;"></i>
+                                        <span>Giảm tới <strong>2.0000.000đ </strong>khi thanh toán qua thẻ tín
+                                            dụng</span>
                                     </div>
                                 </div>
-                                <div class="d-flex">
-                                    <i class="fa-solid fa-circle-info me-2 pt-1 text-primary"></i>
-                                    <div class="divb-right d-inline-block">
-                                        <span>Nhập mã MMSALE100 giảm ngay 1% tối đa 100.000đ khi thanh toán qua MOMO <a
-                                                href="" target="_blank">(Xem chi tiết tại đây)</a></span>
+                            </div>
+                            <div class="product__promotion--detail">
+                                <div class="ps-4 promotion-item fs-5">
+                                    <h4 class="promotion-item-title my-2" style="color: rgb(214, 75, 57);">
+                                        II. Ưu đãi trả góp (1/11 - 31/12)
+                                    </h4>
+                                    <div class="promotion-content py-1">
+                                        <i class="fa-solid fa-circle-check mx-1" style="color: limegreen;"></i>
+                                        <span>Ưu đãi tới <strong>500.000đ </strong>khi thanh toán trả góp</span> <br>
                                     </div>
                                 </div>
-                                <div class="d-flex">
-                                    <i class="fa-solid fa-circle-info me-2 pt-1 text-primary"></i>
-                                    <div class="divb-right d-inline-block">
-                                        <span>Nhập mã VNPAYTAO giảm ngay 200K cho đơn hàng từ 15 Triệu, chỉ áp dụng
-                                            thanh
-                                            toán VNPAY-QR tại cửa hàng <a href="" target="_blank">(Xem chi tiết tại
-                                                đây)</a></span>
+                            </div>
+                            <div class="product__promotion--detail">
+                                <div class="ps-4 promotion-item fs-5">
+                                    <h4 class="promotion-item-title my-2" style="color: rgb(214, 75, 57);">
+                                        III. Thu cũ đổi mới lên đời iPhone 14 series
+                                    </h4>
+                                    <div class="promotion-content py-1">
+                                        <i class="fa-solid fa-circle-check mx-1" style="color: limegreen;"></i>
+                                        <span>Trợ giá tới <strong>1.500.000đ </strong>cho khách lên đời iPhone 15 series
+                                        </span> <br>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="product__promotion--detail">
+                                <div class="ps-4 promotion-item fs-5">
+                                    <h4 class="promotion-item-title my-2" style="color: rgb(214, 75, 57);">
+                                        IV. Ưu đãi mua kèm iPhone 15 series
+                                    </h4>
+                                    <div class="promotion-content py-1">
+                                        <img src="https://shopdunk.com/images/uploaded/icon-gif/best-offer.gif" alt=""
+                                            width="20" height="20" class="mx-1">
+                                        <span>Mua kèm giảm sâu phụ kiện Apple</span> <br>
+                                    </div>
+                                    <div class="promotion-content py-1">
+                                        <img src="https://shopdunk.com/images/uploaded/icon-gif/best-offer.gif" alt=""
+                                            width="20" height="20" class="mx-1">
+                                        <span> Mua kèm giảm sâu phụ kiện Non Apple </span> <br>
+                                    </div>
+                                    <div class="promotion-content py-1">
+                                        <i class="fa-solid fa-circle-check mx-1" style="color: limegreen;"></i>
+                                        <span> Giảm 10% khi mua Bảo hành tiêu chuẩn mở rộng (6 tháng, 12 tháng) </span>
+                                        <br>
+                                    </div>
+                                    <div class="promotion-content py-1">
+                                        <i class="fa-solid fa-circle-check mx-1" style="color: limegreen;"></i>
+                                        <span> Giảm 20% khi mua Bảo hành kim cương, Bảo hành VIP (Rơi vỡ, vào
+                                            nước)</span> <br>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="product__buy mt-5">
                             <div class="d-grid gap-2">
-                                <button class="btn btn-origin bg-success py-4 fs-4 text-white mb-2" type="button">MUA
+                                <button class="btn btn-origin bg-success py-4 fs-4 text-white mb-2"
+                                    style="border-radius: 1rem !important;" type="button">MUA
                                     NGAY</button>
                                 <div class="d-flex">
                                     <button type="button" class="btn btn-primary btn-lg  fs-4 py-4 me-2"
-                                        style="flex: 1;">Trả
+                                        style="border-radius: 1rem !important;flex: 1;">Trả
                                         Góp</button>
                                     <button type="button" class="btn btn-primary btn-lg  fs-4 py-4 ms-2"
-                                        style="flex: 1;">Thu
+                                        style="border-radius: 1rem !important;flex: 1">Thu
                                         Cũ Đổi Mới</button>
 
                                 </div>
@@ -266,8 +300,9 @@
                         style="padding: 0.7rem 3rem !important; font-size: 1.5rem; font-weight: 500; border-radius: 0.5rem;">Mô
                         tả sản phẩm</button>
                 </div>
-                <div class="product__trademark mx-auto" style="width: 80%; ">
-                    <div class="product__banner--title text-center" style="font-size: 3.5rem;margin-top: 3rem;">
+                <div class="product__trademark mx-auto" style="width: 90%; ">
+                    <div class="product__title--move  product__banner--title text-center"
+                        style="font-size: 4.5rem;font-weight: 500;margin-top: 3rem;">
                         <i class="fa-brands fa-apple"></i>
                         <span>iPhone</span>
                     </div>
@@ -283,80 +318,88 @@
                             lên
                             đầu.
                         </h2>
-                        <div class="col-sm-12 col-md-6 col-tg-6 text-center px-5">
+                        <div class="col-sm-12 col-md-6 col-tg-6 text-center pe-5">
                             <img src="https://shopdunk.com/images/uploaded-source/compareiphone15/dynamic_island_large_2x.png?1694035518949"
-                                alt="" class=" product__description--display--img " style="width: 80%;">
+                                alt="" class=" product__description--display--img " style="width: 75%;">
                         </div>
                     </div>
                     <div class="row design__description justify-content-between" style="margin-top: 5rem;">
                         <div class="col-sm-12 col-md-6 col-lg-6  design__material--box box-1 pe-3">
                             <div class="row design__material justify-content-center px-5">
-                                <p class="col-12 design__material--title fs-1 fw-bold text-center mt-5"
-                                    style="opacity: 0.8;">Thiết kế bằng kính
-                                    pha màu và
+                                <p class="col-12 design__material--title fw-bold text-center mt-5"
+                                    style="opacity: 0.8;font-size: 3rem;">Thiết kế bằng kính
+                                    pha màu <br> và
                                     nhôm bền
                                     bỉ.
                                 </p>
                                 <img src="https://shopdunk.com/images/uploaded-source/compareiphone15/color_large_2x.png?1694035518949"
-                                    alt="" class="design__material--img pb-5 ">
+                                    alt="" class="design__material--img my-5" style="width: 80%;">
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-6  design__material--box box-2 ps-4">
                             <div
                                 class="row design__size align-items-center px-4 justify-content-center pt-5 align-items-center">
-                                <div class="col-6 fs-2 fw-bolder design__size-big text-center" style="opacity: 0.8;">
+                                <div class="col-6 fs-1 fw-bolder design__size-big text-center" style="opacity: 0.8;">
                                     <p class="size-display__title">6,7″</p>
                                     <p class="size-display__title--name">iPhone 15 Plus</p>
                                 </div>
-                                <div class="col-6 fs-2 fw-bolder design__size-big text-center" style="opacity: 0.8;">
+                                <div class="col-6 fs-1 fw-bolder design__size-big text-center" style="opacity: 0.8;">
                                     <p class="size-display__title">6,1″</p>
                                     <p class="size-display__title--name">iPhone 15</p>
                                 </div>
                                 <img src="https://shopdunk.com/images/uploaded-source/compareiphone15/display_size_large.png?1694035518951"
-                                    alt="" class="col-12 size-display--img py-5" style="width: 50%;">
+                                    alt="" class="col-12 size-display--img py-5" style="width: 40%;">
                             </div>
                         </div>
 
                     </div>
                     <div class="row design__description" style="margin-top: 5rem;">
                         <div class="col-sm-12 col-md-8 col-xg-6 product__camera p-0 pe-2">
-                            <div class="product__camera--box1">
+                            <div class="product__camera--box1" style="position: relative;">
                                 <img src="https://shopdunk.com/images/uploaded/iPhone%2015%20Pro%201TB/camera%20iphone%2015%20plus/camera-chinh-48mp-cua-iphone-15-plus.jpg"
                                     alt="" class="product__camera--img" style="width: 100%; border-radius: 2rem;">
+                                <div class="product-cam-ct text-center position text-light fw-bold"
+                                    style="position: absolute; top: 3rem;left: 50%; transform: translateX(-50%); width: 100%;">
+                                    <p class="cam-main-resolution fs-1">Camera Chính 48MP</p>
+                                    <p class="cam-main-describe" style="font-size: 3rem;">Ảnh có độ phân giải siêu cao.
+                                        <br> Telephoto 2x.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-4 col-xg-6 product__camera--front p-0 ps-2">
                             <div class="product__camera--box text-end" style="overflow: hidden;">
                                 <div class="front-camera__title py-4 px-4 fs-1 fw-bolder text-center"
                                     style="opacity: 0.8;">
-                                    Ảnh chân dung
+                                    Ảnh chân dung <br>
                                     thế hệ mới.</div>
                                 <img src="https://shopdunk.com/images/uploaded-source/compareiphone15/portrait_mode_small.png?1694035518951"
-                                    alt="" class="product__camera-front--img">
+                                    alt="" class="product__camera-front--img" width="80%">
                             </div>
                         </div>
                     </div>
                     <div class="row product__battery px-4 justify-content-center align-items-center"
                         style="margin-top: 5rem;">
-                        <div class="col-12 product__battery--title fs-1 fw-bold text-center text-white"
-                            style="opacity: 0.8;">Pin
+                        <div class="col-12 product__battery--title fs-1 fw-bold text-center"
+                            style="opacity: 0.9;">Pin
                             dùng cả ngày. <br>Cứ
                             tiếp tục làm
                             mọi
                             việc
                             bạn
                             muốn.</div>
-                        <div class="col-2  product__battery--model  text-center text-white" style="opacity: 0.8; ">
+                        <div class="col-2  product__battery--model  text-center" style="opacity: 0.6; ">
                             <p class="battery__model--title">Lên đến</p>
                             <div class="battery__model--max">26 giờ</div>
                             <div class="battery__model--action">thời gian xem video trên iPhone 15 Plus.
                             </div>
                         </div>
                         <div class="col-8 product__battery--img">
-                            <img src="https://cdn.tgdd.vn/Files/2023/09/22/1548541/2-220923-203112.jpg"
-                                style="width: 100%;" alt="">
+                            
+                            <div class="x-img-box">
+                                <img src="./assets/img/battery-removebg-preview.png" class="py-5" style="width: 100%;" alt="Khung iPhone">
+                            </div>
                         </div>
-                        <div class="col-2   product__battery--model  text-center text-white" style="opacity: 0.8; ">
+                        <div class="col-2   product__battery--model  text-center" style="opacity: 0.6; ">
                             <p class="battery__model--title">Lên đến</p>
                             <div class="battery__model--max">20 giờ</div>
                             <div class="battery__model--action">thời gian xem video trên iPhone 15.</div>
@@ -388,7 +431,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product__special--design text-center  fs-1 fw-bold"
+                    <div class="product__title--move product__special--design text-center  fs-1 fw-bold"
                         style="opacity: 0.8; margin-top: 5rem;">Được
                         thiết
                         kế
@@ -409,7 +452,7 @@
                         <img src="https://shopdunk.com/images/uploaded-source/compareiphone15/flex_privacy_final_large_2x.png?1694035518951"
                             alt="" class="product__security--img" style="width: 40%;">
                     </div>
-                    <p class="product__update--title fs-1 fw-bold text-center"
+                    <p class="product__title--move product__update--title fs-1 fw-bold text-center"
                         style="opacity: 0.8; margin: 0; margin-top: 5rem;">
                         Nâng cấp
                         dễ
@@ -418,7 +461,7 @@
                     <div class="row product__lever-up " style="margin-top: 5rem;">
                         <div class="col-md-6 col-lg-6 col-md-3 product__update--box-1">
                             <div class="product__update text-center d-flex flex-column justify-content-center"
-                                style="min-height: 27rem; padding: 3rem 5rem;">
+                                style="min-height: 30rem; padding: 3rem 5rem;">
                                 <i class="fa-solid fa-repeat product__update--icon fs-1 text-primary"></i>
                                 <p class="product__update--question fs-2 fw-bold mt-3" style="opacity: 0.8;">Chuyển
                                     sang
@@ -431,13 +474,13 @@
                                     và
                                     với
                                     vài cú
-                                    chạm, bạn có thểchuyển dữ liệu của mình hoàn toàn tự động.
+                                    chạm, bạn có thể chuyển dữ liệu của mình hoàn toàn tự động.
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-6 col-md-3 product__update--box-2">
                             <div class="product__update text-center  d-flex flex-column justify-content-center"
-                                style="min-height: 27rem; padding: 3rem  5rem;">
+                                style="min-height: 30rem; padding: 3rem  5rem;">
                                 <i class="fa-solid fa-arrow-up-right-dots product__update--icon fs-1 text-primary"></i>
                                 <p class="product__update--question fs-2 fw-bold mt-3" style="opacity: 0.8;">Nâng
                                     cấp từ
@@ -461,19 +504,20 @@
         <div class="product__more m-0">
             <div class="product__more--box container" style="margin-top: 5rem; padding-bottom: 5rem;">
                 <div class="product__trademark mx-auto" style="width: 80%;">
-                    <p class="product__more--title fw-bold text-center fs-1 " style="padding: 5rem; opacity: 0.8;">Vẫn
+                    <p class="product__title--move product__more--title fw-bold text-center fs-1 "
+                        style="padding: 5rem; opacity: 0.8;">Vẫn
                         còn
                         nhiều món
                         đáng yêu.</p>
                     <div class="row product__accessory px-4 pt-5 align-items-center text-center">
                         <div class="col-sm-12 col-md-6 product__accessory--info " style="">
-                            <p class="accessory__title fs-3 fw-bold" style="opacity: 0.8;">Phụ kiện MagSafe</p>
+                            <p class="accessory__title fs-1 fw-bold" style="opacity: 0.8;">Phụ kiện MagSafe</p>
                             <p class="accessory__title-main fs-1 fw-bold" style="opacity: 0.6;">Gắn thêm một ốp
                                 lưng,
                                 một ví da từ tính hay cả
                                 hai.
                             </p>
-                            <p class=" accessory__content" style="opacity: 0.8">Một hệ sinh thái phụ
+                            <p class=" accessory__content fs-4" style="opacity: 0.8">Một hệ sinh thái phụ
                                 kiện đầy
                                 màu
                                 sắc, gắn kết
@@ -561,138 +605,76 @@
         <!-- Remove the container if you want to extend the Footer to full width. -->
         <div class="container-fluid p-0 ">
 
-            <footer class="bg-primary text-center text-lg-start text-white">
-                <!-- Grid container -->
-                <div class="container p-4">
-                    <!--Grid row-->
-                    <div class="row my-4">
-                        <!--Grid column-->
-                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-
-                            <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
-                                style="width: 150px; height: 150px;">
-                                <img src="https://mdbootstrap.com/img/Photos/new-templates/animal-shelter/logo.png"
-                                    height="70" alt="" loading="lazy" />
+            <footer>
+                <!-- Begin Footer Bootstrap container -->
+                <div class="container mt-5">
+                    <footer class="text-center text-lg-start text-dark">
+                        <div class="container pb-0">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                                    <h5 class="mb-3 fs-3 fw-bold"><i class="fa-brands fa-apple"></i> Apple Inc.</h5>
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Giới
+                                                thiệu</a></li>
+                                        <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Liên hệ</a>
+                                        </li>
+                                        <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Trợ giúp</a>
+                                        </li>
+                                        <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">FAQs</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                                    <h5 class="mb-3 fs-3 fw-bold text-uppercase">sản phẩm</h5>
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Tất cả sản
+                                                phẩm</a></li>
+                                        <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">iPhone</a>
+                                        </li>
+                                        <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">iPad</a></li>
+                                        <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Mac</a></li>
+                                        <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Watch</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                                    <h5 class="mb-3 fs-3 fw-bold text-uppercase">phụ kiện</h5>
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">AirPods</a>
+                                        </li>
+                                        <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Apple
+                                                Pencil</a></li>
+                                        <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Apple TV</a>
+                                        </li>
+                                        <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Sạc USB-C</a>
+                                        </li>
+                                        <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Màn hình</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                                    <h5 class="mb-3 fs-3 fw-bold text-uppercase">chính sách</h5>
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Quyền riêng
+                                                tư</a></li>
+                                        <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Bảo mật</a>
+                                        </li>
+                                        <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Pháp lý</a>
+                                        </li>
+                                        <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Bản quyền</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-
-                            <p class="text-center">Homless animal shelter The budgetary unit of the Capital City of
-                                Warsaw</p>
-
-                            <ul class="list-unstyled d-flex flex-row justify-content-center">
-                                <li>
-                                    <a class="text-white px-2" href="#!">
-                                        <i class="fab fa-facebook-square"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="text-white px-2" href="#!">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="text-white ps-2" href="#!">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </li>
-                            </ul>
-
+                            <hr class="mb-2 mt-5" />
                         </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
-                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                            <h5 class="text-uppercase mb-4">Animals</h5>
-
-                            <ul class="list-unstyled">
-                                <li class="mb-2">
-                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>When your pet is
-                                        missing</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Recently
-                                        found</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>How to adopt?</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Pets for
-                                        adoption</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Material
-                                        gifts</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Help with
-                                        walks</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Volunteer
-                                        activities</a>
-                                </li>
-                            </ul>
+                        <!-- Copyright -->
+                        <div class="text-center fs-5 p-4">
+                            © 2023 Copyright:
+                            <a class="text-secondary" href="https://www.apple.com/vn/">Apple.com/vn</a>
                         </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
-                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                            <h5 class="text-uppercase mb-4">Animals</h5>
-
-                            <ul class="list-unstyled">
-                                <li class="mb-2">
-                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>General
-                                        information</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>About the
-                                        shelter</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Statistic
-                                        data</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Job</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Tenders</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
-                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                            <h5 class="text-uppercase mb-4">Contact</h5>
-
-                            <ul class="list-unstyled">
-                                <li>
-                                    <p><i class="fas fa-map-marker-alt pe-2"></i>Warsaw, 57 Street, Poland</p>
-                                </li>
-                                <li>
-                                    <p><i class="fas fa-phone pe-2"></i>+ 01 234 567 89</p>
-                                </li>
-                                <li>
-                                    <p><i class="fas fa-envelope pe-2 mb-0"></i>contact@example.com</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <!--Grid column-->
-                    </div>
-                    <!--Grid row-->
+                    </footer>
                 </div>
-                <!-- Grid container -->
-
-                <!-- Copyright -->
-                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                    © 2020 Copyright:
-                    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-                </div>
-                <!-- Copyright -->
+                <!-- End of footer Bootstrap -->
             </footer>
 
         </div>
@@ -712,5 +694,6 @@
 
 <script src="./assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
 <script src="./assets/js/product_details.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.158.0/three.min.js" integrity="sha512-/WaZCC76Yn6MLEoK6b9np9yiLBet/RngBS33X1P0SHuag6j2E0e5rT7jbA2CvXCydN6+FkDYNx8FBM+vkzsthw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </html>
