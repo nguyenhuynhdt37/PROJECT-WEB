@@ -33,6 +33,10 @@
         display: none;
     }
 
+    .header__logo i {
+        font-size: 28px !important;
+    }
+    
     .header__more {
         text-align: end;
         width: 88%;
