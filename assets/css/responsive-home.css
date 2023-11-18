@@ -12,6 +12,11 @@
         display: none;
     }
 
+    .box__iphone-img2,
+    .box__iphone-img3 {
+        width: 80%;
+    }
+
     footer .text-decoration-none,
     h5 {
         margin-left: 28%;
@@ -37,8 +42,19 @@
         font-size: 22px !important;
     }
 
-    .box__iphone {
-        height: 520px !important;
+    .nav-link {
+        margin-left: 0 !important;
+    }
+
+    .auth-form-btn {
+        margin: 16px 18px 20px 0 !important;
+    }
+
+    .iphone__left h2,
+    .iphone__left h3,
+    .iphone__right h2,
+    .iphone__right h3 {
+        font-size: 26px !important;
     }
 
     .content__ipad-img1,
@@ -124,34 +140,50 @@
         width: 86%;
     }
 
-    .auth-form-btn {
-        margin-top: 16px;
-        margin-bottom: 20px;
-    }
-
     .auth-form__social button {
         padding: 10px 0;
     }
 
-    .nut-bam {
-        width: 120px;
-        height: 40px;
-    }
-
-    .static-text {
-        font-size: 24px !important;
-    }
-
     .box__iphone {
-        height: 480px !important;
-    }
-
-    .iphone-security-desc {
-        font-size: 14px !important;
+        padding: 0 !important;
+        min-height: 420px;
     }
 
     .ios17 {
         background: #fff url('../images/home-img/ios17_small-background.jpg') no-repeat top;
+        height: 400px;
+    }
+
+    .widgets-title {
+        font-size: 30px !important;
+    }
+
+    .widgets {
+        font-size: 30px !important;
+    }
+
+    .iphone-switch,
+    .iphone-security {
+        min-height: 400px;
+    }
+
+    .iphone-switch h3,
+    .iphone-security h3 {
+        font-size: 30px !important;
+        line-height: 36px;
+    }
+
+    .big-title {
+        font-size: 4rem !important;
+    }
+
+    .switch-app p {
+        font-size: 3rem !important;
+    }
+
+    .an-toan {
+        background-image: url(../images/home-img/safety-small.jpg);
+        min-height: 340px;
     }
 
     .apple-watch {
@@ -178,6 +210,14 @@
 
 /* Only Mobile  */
 @media (max-width: 576px) {
+    .box-mobile {
+        padding: 0 !important;
+    }
+
+    .box-mobile:first-child {
+        margin-top: 0 !important;
+    }
+
     .hide-on-mobile {
         display: none;
     }
@@ -191,17 +231,14 @@
         width: 77%;
     }
 
-    .iphone__left .intro h2 {
+    .iphone__left h2,
+    .iphone__right h2 {
         font-size: 22px !important;
     }
 
-    .iphone__left,
-    .iphone__right {
-        height: 380px !important;
-    }
-
-    .box__iphone {
-        height: 320px !important;
+    .box__iphone-img2,
+    .box__iphone-img3 {
+        width: 80%;
     }
 
     #ios17-box h1 {
@@ -213,22 +250,9 @@
         width: 80%;
     }
 
-    .iphone-switch,
-    .iphone-security {
-        height: 460px;
-    }
-
     .iphone-switch h3 {
         font-size: 40px;
         line-height: 44px;
-    }
-
-    .iphone-security {
-        background: #fff url('../images/home-img/privacy_small.jpg') no-repeat bottom;
-    }
-
-    .iphone-security h3 {
-        font-size: 40px;
     }
 
     .content__ipad-outro h1,
@@ -277,6 +301,11 @@
 
     .benefit__title {
         font-size: 32px;
+    }
+
+    .benefits-box__content {
+        font-size: 36px !important;
+        line-height: 42px;
     }
 
     footer {
