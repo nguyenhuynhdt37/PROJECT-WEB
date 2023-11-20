@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
 
-
 * {
     padding: 0;
     margin: 0;
@@ -44,24 +43,15 @@ body {
 }
 
 /* Header */
-.navbar a,
-.auth-form-btn {
-    font-family: 'Open Sans', sans-serif;
-}
-
 .navbar {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     backdrop-filter: saturate(180%) blur(20px);
     background: rgba(251, 251, 253, .8);
 }
 
-/* .navbar a:hover {
-    transform: scale(1.1);
-    transition: transform .4s;
-} */
-
 .header__more i:hover,
-.auth-form-btn:hover {
+.auth-form-btn:hover,
+.nav-link:hover {
     opacity: .7;
 }
 
@@ -118,8 +108,6 @@ body {
 
 .modal-header {
     border-bottom: none;
-    /* margin-right: -30px;
-    margin-top: -40px; */
 }
 
 .modal-footer {
@@ -128,10 +116,10 @@ body {
 
 /* iPhone */
 .iphone__left {
-    background-color: #000;
-    height: 560px;
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
+    /* min-height: 580px; */
+    height: 100%;
 }
 
 .iphone__left .intro {
@@ -139,24 +127,22 @@ body {
 }
 
 .iphone__left img {
-    width: 60%;
+    width: 66%;
     display: block;
     margin: 0 auto;
     border-radius: var(--border-radius);
     transition: transform .9s;
 }
 
-.iphone__left:hover img {
-    transform: scale(1.1);
-}
-
 .iphone__right {
     background-color: #fafafa;
-    height: 560px;
     display: flex;
     align-items: center;
+    padding: 27px 0;
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
+    /* min-height: 580px; */
+    height: 100%;
 }
 
 .iphone__right img {
@@ -165,6 +151,7 @@ body {
     transition: transform .9s;
 }
 
+.iphone__left:hover img,
 .iphone__right:hover img {
     transform: scale(1.08);
 }
@@ -176,37 +163,27 @@ body {
 }
 
 .box__iphone {
-    height: 400px;
     background-color: #fff;
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
     transition: transform .6s;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .box__iphone:hover {
     transform: scale(1.08);
 }
 
-.box__iphone-img1 {
-    width: 36%;
-    display: block;
-    margin: 20px auto;
-}
-
-.box__iphone-img2 {
-    width: 60%;
-    display: block;
-    margin: auto;
-}
-
-.box__iphone-img3 {
-    width: 60%;
-    display: block;
-    margin: auto;
-}
-
 .big-wrap-box {
     max-width: 1200px;
+}
+
+.mega-wrap-box {
+    max-width: 1400px;
 }
 
 .features-box {
@@ -227,6 +204,12 @@ body {
     text-align: center;
 }
 
+.ios17:hover,
+.iphone-switch:hover,
+.iphone-security:hover {
+    box-shadow: var(--box-shadow-hover);
+}
+
 .ios17__title h3,
 .iphone-switch h3,
 .iphone-security h3 {
@@ -244,7 +227,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 584px;
+    min-height: 460px;
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
@@ -260,21 +243,17 @@ body {
     border-radius: var(--border-radius);
 }
 
-.iphone-security {
-    background: url('../images/home-img/security_large.jpg') no-repeat bottom;
-    height: 584px;
-    padding-top: 46px;
-    box-shadow: var(--box-shadow);
+.an-toan {
+    background-image: url(../images/home-img/safety-large.jpg);
+    min-height: 520px;
     border-radius: var(--border-radius);
 }
 
-.iphone-security-desc {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 60px;
-    background-color: #161617;
-    color: #86868b;
+.iphone-security {
+    background: #fff url('../images/home-img/privacy_small.jpg') no-repeat bottom;
+    min-height: 460px;
+    padding-top: 46px;
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 
@@ -335,7 +314,8 @@ body {
 
 .content__ipad-img2 {
     width: 100%;
-    margin-top: -10%;
+    /* margin-top: -10%; */
+    margin: 2% 0;
 }
 
 .content__ipad-img3 {
