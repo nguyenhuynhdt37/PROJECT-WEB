@@ -1,10 +1,8 @@
-
-
-    * {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
@@ -35,6 +33,7 @@ body {
 .auth-form-btn:hover {
     opacity: .7;
 }
+
 /* Slider */
 .slider {
     position: relative;
@@ -92,7 +91,7 @@ body {
 }
 
 .container-fluid {
-    
+
     background-color: #f5f5f7;
 
 }
@@ -209,7 +208,7 @@ body {
 
 .page-1 {
     width: 35px;
-height: 35px;
+    height: 35px;
 
     border-radius: 8px;
     display: inline-flex;
@@ -393,7 +392,7 @@ height: 35px;
     padding: 10px 50px;
     border-radius: 10px;
     border: none;
-background-color: #0066CC;
+    background-color: #0066CC;
     color: #f7f7f7;
     font-size: 15px;
     cursor: pointer;
@@ -583,7 +582,7 @@ background-color: #0066CC;
     text-align: center;
     font-weight: 700;
     justify-content: center;
-margin-top: 50px;
+    margin-top: 50px;
     padding-top: 50px;
 }
 
@@ -594,11 +593,12 @@ margin-top: 50px;
     padding-bottom: 100px;
 }
 
-.show-all{
+.show-all {
     text-align: center;
-    
+
 }
-.show-all a{
+
+.show-all a {
     border: 1px solid #0066CC;
     border-radius: 8px;
     padding: 5.5px 45px;
@@ -610,10 +610,11 @@ margin-top: 50px;
     vertical-align: middle;
     text-decoration: none;
 }
-.show-all a:hover{
+
+.show-all a:hover {
     background-color: #0066CC;
     color: #fff;
-    
+
 }
 
 .img-fluid {
@@ -621,7 +622,8 @@ margin-top: 50px;
     max-width: 200px;
     height: auto;
 }
-.img-fluid:hover{
+
+.img-fluid:hover {
     transform: scale(1.2);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
@@ -632,157 +634,165 @@ margin-top: 50px;
     background-color: #ffffff;
     border-radius: 8px;
     /* padding: 10px; */
-    padding: 10px;
-    height: 100%;
+    padding: 20px;
 }
-.img-new {
-    padding-top: 20px;
 
-}
-.img-new h3 {
-    padding-bottom: 20px;
-}
-.price {
-    padding-right: 8px;
-}
-.text-center{
-    
-    
+.text-center {
+
+
     padding: 0 20px;
 }
-.box-x:hover{
+
+.box-x:hover {
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
-.product-title{
+
+.product-title {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 20px;
     font-weight: bold;
     text-align: center;
 
-    
+
 }
+
 .display-2 {
     font-weight: bold;
     text-align: center;
 }
-.product-title:hover{
-   transform: scale(1.1); 
+
+.product-title:hover {
+    transform: scale(1.1);
 }
-.img-new{
-    margin: 20px 30px 20px ;
-    text-align: left;
-    padding-bottom: 2rem;
+.img-new {
+    text-align: start;
+
 }
-.img-new h3{
+.img-new h3 {
     font-weight: bold;
     /* padding-bottom: 20px; */
     padding-top: -30px;
-    
+
 }
+
 /* .img-new{
     margin-top: 20px;
     
 } */
 
-.video-news{
+.video-news {
     border-radius: 10px;
 }
+
 .owl-carousel {
     display: flex;
-    flex-direction: row; /* Set flex direction to row */
-  }
+    flex-direction: row;
+    /* Set flex direction to row */
+}
 
-  .owl-carousel .item {
-    width: 100%; /* Ensure each item takes full width */
-  }
+.owl-carousel .item {
+    width: 100%;
+    /* Ensure each item takes full width */
+}
 
-  .owl-carousel h4 {
+.owl-carousel h4 {
     text-align: center;
     margin: 10px;
     padding: 20px;
     border: 1px solid #9a9898;
     border-radius: 5px;
-  }
-  .category-filters {
+}
+
+.category-filters {
     text-align: center;
     font-size: 20px;
-  }
-  .item {
+}
+
+.item {
     text-align: center;
-  }
-  .item:hover{
+}
+
+.item:hover {
     transform: scale(1.1);
 }
-.category-filters-sort{
+
+.category-filters-sort {
     border: 1px solid #ccc;
     background-color: #d8d5d5;
     border-radius: 15px;
 }
+
 .typing-text {
-  
- 
+
+
     /* border-right: 2px solid #000; đường kẻ nhấp nháy như con trỏ gõ */
-      
-      text-align: center;
-      white-space: nowrap; /* ngăn chữ xuống dòng */
-      overflow: hidden; /* giữ chữ ẩn bên trong */
-      font-size: 30px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
- 
-    .video-container{
-        width: 100%;
-        border-radius: 20px;
-        text-align: center;
-    }
-    
-    @keyframes chayNgang {
-        0% {
-            transform: translateX(100%);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
+
+    text-align: center;
+    white-space: nowrap;
+    /* ngăn chữ xuống dòng */
+    overflow: hidden;
+    /* giữ chữ ẩn bên trong */
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+@keyframes chayNgang {
+    0% {
+        transform: translateX(100%);
     }
 
-   
-    .text-container {
-        white-space: nowrap;
-        overflow: hidden;
-       
-        font-size: 24px;
-        text-align: center;
+    100% {
+        transform: translateX(-100%);
     }
-    .img-container {
-        position: relative;
-        overflow: hidden;
-        border-radius: 10px;
-      }
-  
-      .img-container img {
-        width: 100%;
-        transition: transform 0.3s ease-in-out;
-      }
-      .videok{
-        text-align: center;
-        width: 1300px;
-        height: 700px;
-      }
-      .footer_newletter {
-        width: 100% !important;
-        padding: 50px 0 50px 0;
-    
-      }
-      @media (min-width: 992px) {
-        footer .text-decoration-none, h5 {
-            margin-left: 28%;
-        }
-        .header__more {
-            order: 2;
-        }
-    }
-   
-      
+}
 
-      
+
+.text-container {
+    white-space: nowrap;
+    overflow: hidden;
+
+    font-size: 24px;
+    text-align: center;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-container img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.videok {
+    text-align: center;
+    width: 1300px;
+    height: 700px;
+}
+
+.footer_newletter {
+    width: 100% !important;
+    padding: 50px 0 50px 0;
+
+}
+
+@media (min-width: 992px) {
+
+    footer .text-decoration-none,
+    h5 {
+        margin-left: 28%;
+    }
+
+    .header__more {
+        order: 2;
+    }
+}
