@@ -1,9 +1,10 @@
 /* >= PC */
 @media (min-width: 992px) {
+    /* start Header on PC */
     .header__more {
         order: 1;
     }
-
+    /* end */
     #carousel-pc {
         display: block;
     }
@@ -16,7 +17,7 @@
     .box__iphone-img3 {
         width: 80%;
     }
-
+    /* Footer */
     footer .text-decoration-none,
     h5 {
         margin-left: 28%;
@@ -32,28 +33,25 @@
     #carousel-mobile {
         display: none;
     }
-
+    /* start header for tablet */
     .header__logo i {
         font-size: 28px !important;
     }
-    
     .header__more {
         text-align: end;
         width: 88%;
     }
-
     .navbar a {
         font-size: 22px !important;
     }
-
+    
     .nav-link {
         margin-left: 0 !important;
     }
-
     .auth-form-btn {
         margin: 16px 18px 20px 0 !important;
     }
-
+    /* end */
     .iphone__left h2,
     .iphone__left h3,
     .iphone__right h2,
@@ -138,16 +136,12 @@
     #searchModal input {
         height: 44px;
     }
-
+    /* start header for mobile */
     .header__more {
         text-align: end;
         width: 86%;
     }
-
-    .auth-form__social button {
-        padding: 10px 0;
-    }
-
+    /* end */
     .box__iphone {
         padding: 0 !important;
         min-height: 420px;
@@ -229,12 +223,12 @@
     .show-on-mobile {
         display: block !important;
     }
-
+    /* start header */
     .header__more {
         text-align: end;
         width: 77%;
     }
-
+    /* end */
     .iphone__left h2,
     .iphone__right h2 {
         font-size: 22px !important;
@@ -311,7 +305,7 @@
         font-size: 36px !important;
         line-height: 42px;
     }
-
+    /* Footer */
     footer {
         text-align: center;
     }
