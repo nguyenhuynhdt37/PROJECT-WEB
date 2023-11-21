@@ -23,11 +23,6 @@
     <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="./assets/css/responsive-home.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -43,14 +38,14 @@
                 <!-- Logo Apple -->
                 <a class="header__logo navbar-brand fs-1 text-dark" href="#"><i class="fa-brands fa-apple"></i></a>
                 <!-- Search & Cart btn-->
-                <div class="header__more fs-4">
+                <div class="header__more fs-2">
                     <a type="button" class="search-btn text-dark mx-3" data-bs-toggle="modal"
                         data-bs-target="#searchModal"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a href="https://shopdunk.com/cart" class="cart-btn text-dark mx-3"><i
-                            class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="https://shopdunk.com/cart" class="cart-btn text-dark mx-3">
+                        <i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
                 <!-- Toggle Button for Responsive Navbar -->
-                <button class="navbar-toggler fs-2 text-dark" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler fs-2 text-dark ms-2" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
@@ -58,39 +53,33 @@
                 <div class="header__main collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link fs-5 text-dark mx-4" href="">Trang Chủ</a>
+                            <a class="nav-link fs-4 text-dark mx-4" href="">Trang Chủ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-5 text-dark mx-4" aria-current="page" href="#">Tất cả sản
+                            <a class="nav-link active fs-4 text-dark mx-4" aria-current="page" href="#">Tất cả sản
                                 phẩm</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-5 text-dark mx-4" href="">iPhone</a>
+                            <a class="nav-link fs-4 text-dark mx-4" href="">iPhone</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-5 text-dark mx-4" href="">iPad</a>
+                            <a class="nav-link fs-4 text-dark mx-4" href="">iPad</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-5 text-dark mx-4" href="#">Mac</a>
+                            <a class="nav-link fs-4 text-dark mx-4" href="#">Mac</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-5 text-dark mx-4" href="#">Watch</a>
+                            <a class="nav-link fs-4 text-dark mx-4" href="#">Watch</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-5 text-dark mx-4" href="#">Phụ kiện</a>
+                            <a class="nav-link fs-4 text-dark mx-4" href="#">Phụ kiện</a>
                         </li>
                     </ul>
-                    <!-- Button Log in/Sign up modal -->
-                    <!-- <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 fs-5"
-                        data-bs-toggle="modal" data-bs-target="#staticBackdrop-sign-up">Sign up</a>
-                    <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 me-3 fs-5"
-                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Log in</a> -->
-
                     <!-- LogIn and SignUp Page -->
                     <a href="./sign-up.html" type="button"
-                        class="auth-form-btn text-dark text-decoration-none ms-4 fs-5">Sign up</a>
+                        class="auth-form-btn text-dark text-decoration-none ms-4 fs-4">Đăng ký</a>
                     <a href="./log-in.html" type="button"
-                        class="auth-form-btn text-dark text-decoration-none ms-4 me-3 fs-5">Log in</a>
+                        class="auth-form-btn text-dark text-decoration-none ms-4 me-3 fs-4">Đăng nhập</a>
                 </div>
             </div>
         </nav>
@@ -215,27 +204,31 @@
 
             <!-- iPhone 15 series -->
             <div class="iphone-content row g-5 m-4">
-                <div class="col-md-6 col-sm-12">
+                <div class="box-mobile col-md-6 col-sm-12">
                     <a href="" class="link-to-iphone text-decoration-none">
-                        <div class="iphone__left pt-5">
+                        <div class="iphone__left pt-5 bg-black">
                             <div class="intro">
-                                <h2 class="text-light" style="font-size: 36px; ">iPhone 15 Pro & 15 Pro Max </h2>
+                                <h2 class="text-light fw-bold" style="font-size: 36px; ">iPhone 15 Pro & 15 Pro Max
+                                </h2>
                                 <h3 class="fs-1 mb-4" style="color: #9c9286; font-weight: 300;">T I T A N I U M.
                                     <br>Thật bền chắc. Thật
                                     nhẹ. Thật Pro.
                                 </h3>
                             </div>
-                            <img src="./assets/images/home-img/all_colors__iphone15pro.jpg" alt="">
+                            <img class="py-5" src="./assets/images/home-img/all_colors__iphone15pro.jpg" alt="">
                         </div>
                     </a>
                 </div>
-                <div class="col-md-6 col-sm-12">
+                <div class="box-mobile col-md-6 col-sm-12">
                     <a href="" class="link-to-iphone text-decoration-none">
                         <div class="iphone__right">
-                            <img src="./assets/images/home-img/iPhone-15-black-pink-large_preview_rev_1.png" alt="">
+                            <img class="py-5"
+                                src="./assets/images/home-img/iPhone-15-black-pink-large_preview_rev_1.png" alt="">
                             <div class="intro">
-                                <h2 class=" fs-1" style="color: #f84681; font-weight: 400;">iPhone 15 & 15 Plus <br>Màu
-                                    sắc mới! </h2> <br>
+                                <h2 class="fw-bold me-5" style="color: #f84681; font-size: 32px;">iPhone 15 & 15 Plus
+                                    <br>Màu
+                                    sắc mới!
+                                </h2> <br>
                                 <h3 class="fs-1 text-dark">Trẻ trung <br>năng động <br>cá tính.</h3>
                             </div>
                         </div>
@@ -244,41 +237,42 @@
             </div>
             <!-- iPhone Features -->
             <div class="row gx-5 gy-4 m-4">
-                <div class="col-lg-4 col-md-12">
+                <div class="box-mobile col-lg-4 col-md-12">
                     <button type="button" class="box-btn btn p-0 w-100" data-bs-toggle="modal"
                         data-bs-target="#a17pro-box">
-                        <div class="box__iphone pt-5">
-                            <h2 class="box__iphone-text1 fs-2 text-center text-dark">A17 Pro<br>Chip thay đổi cuộc chơi.
+                        <div class="box__iphone py-5">
+                            <h2 class="box__iphone-text1 fs-1 text-center text-dark"><span class="fw-bold fs-1">A17
+                                    Pro</span><br>Chip thay đổi cuộc chơi.
                                 <br>Hiệu năng chấn động địa cầu.
                             </h2>
-                            <img class="box__iphone-img1" src="./assets/images/home-img/chip_a17pro_large.png" alt="">
+                            <img class="box__iphone-img1 m-5" src="./assets/images/home-img/a17pro_small.jpg" alt="">
                         </div>
                     </button>
                 </div>
-                <div class="col-lg-4 col-md-12">
+                <div class="box-mobile col-lg-4 col-md-12">
                     <button type="button" class="box-btn btn p-0 w-100" data-bs-toggle="modal"
                         data-bs-target="#usb-c-box">
-                        <div class="box__iphone pt-5">
-                            <h3 class="text-center">USB-C với USB 3</h3>
+                        <div class="box__iphone py-5">
+                            <h3 class="text-center fw-bold fs-1">USB-C với USB 3</h3>
                             <img class="box__iphone-img2" src="./assets/images/home-img/connect_large.png" alt="">
                             <h2 class="text-center">Tốc độ truyền nhanh hơn đến 20x.</h2>
                         </div>
                     </button>
                 </div>
-                <div class="col-lg-4 col-md-12">
+                <div class="box-mobile col-lg-4 col-md-12">
                     <button type="button" class="box-btn btn p-0 w-100" data-bs-toggle="modal"
                         data-bs-target="#iphone15-design">
-                        <div class="box__iphone pt-5">
-                            <img class="box__iphone-img3" src="./assets/images/home-img/iphone15_box_color_large.png"
-                                alt="">
-                            <h1 class="text-center mt-5 mx-4">Thiết kế bằng kính pha màu và nhôm bền bỉ.</h1>
+                        <div class="box__iphone py-5 px-4">
+                            <img class="box__iphone-img3 m-5"
+                                src="./assets/images/home-img/iphone15_box_color_large.png" alt="">
+                            <h1 class="text-center mx-2">Thiết kế bằng kính pha màu và nhôm bền bỉ.</h1>
                         </div>
                     </button>
                 </div>
             </div>
             <!-- iOS 17 -->
             <div class="row g-5 m-4">
-                <div class="col-12">
+                <div class="box-mobile col-12">
                     <button type="button" class="box-btn btn p-0 w-100" data-bs-toggle="modal"
                         data-bs-target="#ios17-box">
                         <div class="ios17">
@@ -292,26 +286,26 @@
             </div>
             <!-- Switch to iPhone and Security -->
             <div class="row g-5 m-4">
-                <div class="col-lg-7 col-md-6 col-sm-12">
-                    <div class="iphone-switch">
-                        <h3 class="text-center">Chuyển sang iPhone là siêu đơn giản.</h3>
-                        <img src='./assets/images/home-img/switch_to_iphone_large.jpg' alt="">
-                    </div>
+                <div class="box-mobile col-lg-7 col-md-6 col-sm-12">
+                    <button type="button" class="box-btn btn p-0 w-100" data-bs-toggle="modal"
+                        data-bs-target="#switch-box">
+                        <div class="iphone-switch">
+                            <h3 class="text-center">Chuyển sang iPhone là siêu đơn giản.</h3>
+                            <img src="https://www.apple.com/vn/iphone/home/images/overview/why-iphone/switching_to_iphone__e3oz9r418awm_small_2x.jpg" alt="">
+                        </div>
+                    </button>
                 </div>
-                <div class="col-lg-5 col-md-6 col-sm-12">
-                    <div class="iphone-security ">
-                        <h3 class="text-center">Quyền riêng tư. <br>Rất iPhone.</h3>
-                    </div>
-                    <div class="iphone-security-desc d-none">
-                        <p class="fs-1 fw-semibold lh-sm">Mỗi chiếc iPhone đều sở hữu tính năng xác thực bằng gương mặt
-                            hoặc vân tay. Các ứng dụng cần có sự đồng ý của bạn để theo dõi hoạt động của bạn trên ứng
-                            dụng hay website của các công ty khác. Tin nhắn iMessages và các cuộc gọi FaceTime của bạn
-                            được mã hóa đầu cuối. Và quyền riêng tư thì không chỉ có vậy mà thôi.</p>
-                    </div>
+                <div class="box-mobile col-lg-5 col-md-6 col-sm-12">
+                    <button type="button" class="box-btn btn p-0 w-100" data-bs-toggle="modal"
+                        data-bs-target="#security-box">
+                        <div class="iphone-security ">
+                            <h3 class="text-center">Quyền riêng tư. <br>Rất iPhone.</h3>
+                        </div>
+                    </button>
                 </div>
             </div>
             <!-- iPad Pro Description-->
-            <div class="row gy-5 mt-5">
+            <div class="row mt-5">
                 <div class="content__ipad">
                     <div class="content__ipad-intro text-center mt-5">
                         <h1 class="content__ipad-title text-light">iPad Pro</h1>
@@ -327,11 +321,11 @@
                         <a class="link-to-ipad mt-4" href="#">Đến cửa hàng ></a>
                     </div>
                     <img class="content__ipad-img2" data-aos="zoom-out" data-aos-duration="2200" data-aos-offset="400"
-                        src="./assets/images/home-img/ipad-pro-review_large.jpg" alt="">
-                    <div class="content__ipad-display" data-aos="fade-left" data-aos-duration="1400"
-                        data-aos-offset="200">
+                        src="./assets/images/home-img/ipad-performance.jpg" alt="">
+                    <div class="content__ipad-display">
                         <h1>Màn hình Liquid Retina XDR 12,9”. <br>Sáng đẹp lộng lẫy.</h1>
-                        <p>Extreme Dynamic Range trên iPad Pro 12,9 inch. Màn hình <span class="rainbow">Liquid Retina
+                        <p data-aos="fade-left" data-aos-duration="1400" data-aos-offset="200">Extreme Dynamic Range
+                            trên iPad Pro 12,9 inch. Màn hình <span class="rainbow">Liquid Retina
                                 XDR</span> mang lại độ chi tiết chân thực với tỷ lệ tương phản 1.000.000:1, vô cùng lý
                             tưởng để xem và chỉnh sửa ảnh cũng như video <span class="rainbow">HDR</span>, hay thưởng
                             thức các bộ phim và chương trình TV bạn yêu thích. Độ sáng toàn màn hình ngoạn mục lên đến
@@ -393,8 +387,7 @@
                                 tác, ghi chú, hoàn thành nhanh gọn bản kế hoạch kinh doanh. Apple thiết kế những phụ
                                 kiện đa năng này để đưa công việc và khả năng sáng tạo của bạn lên một tầm cao mới.</p>
                         </div>
-                        <img src="./assets/images/home-img/magic-keyboard.png" data-aos="fade-up"
-                            data-aos-duration="1600" data-aos-offset="300" alt="">
+                        <img src="./assets/images/home-img/magic-keyboard.png" alt="">
                         <div class="pencil-features">
                             <p data-aos="fade-left" data-aos-duration="1500" data-aos-offset="200"><span
                                     style="color: black;">Một tầm cao mới của Apple Pencil.</span> Tính năng lướt Apple
@@ -406,7 +399,8 @@
                         </div>
                     </div>
                     <video autoplay loop width="100%" id="pencil-video"
-                        src="https://www.apple.com/105/media/ww/ipad-pro/2022/08087f4b-7539-4b1e-ae8a-adc18f4242ae/anim/hover/large_2x.mp4"></video>
+                        src="https://www.apple.com/105/media/ww/ipad-pro/2022/08087f4b-7539-4b1e-ae8a-adc18f4242ae/anim/hover/large_2x.mp4">
+                    </video>
                 </div>
             </div>
             <!-- Macbook Pro -->
@@ -590,8 +584,7 @@
                         <img class="w-100 my-5" src="./assets/images/home-img/iphone-gaming.jpg" alt="">
                         <div class="row m-4">
                             <div class="col-md-6 col-sm-12">
-                                <div class="a17pro-description text-light my-5" data-aos="fade-up"
-                                    data-aos-duration="1200" data-aos-offset="100">
+                                <div class="a17pro-description text-light my-5">
                                     <p class="benefits-box__subcontent">iPhone 15 Pro lần đầu tiên sử dụng công nghệ dò
                                         tia tốc độ cao bằng phần cứng nhanh gấp bốn lần so với phương pháp dò tia bằng
                                         phần mềm, đem đến đồ họa mượt hơn và ánh sáng chân thực hơn. Đây là hiệu suất dò
@@ -600,8 +593,7 @@
                             </div>
                             <div class="col-md-6 col-sm-12">
                                 <div class="a17pro-description text-light my-5">
-                                    <p class="benefits-box__subcontent" data-aos="fade-up" data-aos-duration="1400"
-                                        data-aos-offset="400">MetalFX Upscaling kết hợp hiệu năng của GPU và
+                                    <p class="benefits-box__subcontent">MetalFX Upscaling kết hợp hiệu năng của GPU và
                                         Neural Engine để tạo ra đồ họa có độ phân giải cao nhưng tiêu thụ điện năng ít
                                         hơn rất nhiều. Vậy nên bạn có thể chơi game không ngừng nghỉ.</p>
                                 </div>
@@ -799,6 +791,112 @@
                 </div>
             </div>
         </div>
+        <!-- Modal switch to iphone -->
+        <div class="modal fade pe-0" id="switch-box" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog mega-wrap-box">
+                <div class="modal-content benefits-box" style="background-color: #f5f5f7;">
+                    <div class="modal-header benefits-box__header">
+                        <button type="button" class="btn-close fs-2" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body benefits-box__body">
+                        <h1 class="big-title text-center fw-bolder"
+                            style="font-size: 6rem; line-height: 1.05; letter-spacing: -0.015em;">
+                            Chuyển từ Android <br>sang iPhone thật dễ dàng.
+                        </h1>
+                        <div class="row pt-5 bg-white rounded-5">
+                            <div class="col text-center">
+                                <div class="switch-app">
+                                    <h1 class="text-secondary fs-1">Ứng dụng chuyển ảnh sang iOS</h1>
+                                    <p class="text-dark fw-bold lh-1 mt-4 mx-2"
+                                        style="font-size: 4rem; letter-spacing: -0.05em;">
+                                        Chuyển ảnh và danh bạ chỉ trong vài bước đơn giản.</p>
+                                </div>
+                                <img class="hide-on-mobile w-100" src="./assets/images/home-img/move_to_ios-large.jpg"
+                                    alt="">
+                                <img class="show-on-mobile w-100 d-none"
+                                    src="./assets/images/home-img/move_to_ios-small.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="row g-4 my-4 text-center">
+                            <div class="col-sm-12 col-md-6 ">
+                                <div class="switch-app h-100 bg-white py-5 rounded-5">
+                                    <h1 class="text-secondary fs-1">Độ bền</h1>
+                                    <p class="text-dark fw-bold lh-1 mt-4 mx-4"
+                                        style="font-size: 4rem; letter-spacing: -0.05em;">
+                                        Nếu bạn muốn có một chiếc điện thoại bền bỉ với thời gian thì đây.</p>
+                                    <img class="my-5 w-100" src="./assets/images/home-img/do-ben.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 ">
+                                <div class="switch-app h-100 bg-white py-5 rounded-5">
+                                    <h1 class="text-secondary fs-1">Pin</h1>
+                                    <p class="text-dark fw-bold lh-1 mt-4 mx-2"
+                                        style="font-size: 4rem; letter-spacing: -0.05em;">
+                                        Pin bền bỉ <br>cùng ngày dài bận rộn.</p>
+                                    <img class="my-5 w-50" src="./assets/images/home-img/pin.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="switch-app an-toan p-5">
+                                    <h1 class="text-light fs-1">An Toàn</h1>
+                                    <p class="text-white fw-bold lh-1 mt-4 mx-2"
+                                        style="font-size: 4rem; letter-spacing: -0.05em;">
+                                        Phát hiện va chạm<br>thay bạn gọi trợ giúp <br>khi cần kíp.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Security -->
+        <div class="modal fade pe-0" id="security-box" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog big-wrap-box">
+                <div class="modal-content features-box">
+                    <div class="modal-header benefits-box__header">
+                        <button type="button" class="btn-close fs-2" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body benefits-box__body">
+                        <h1 class="fw-bolder mb-5" style="font-size: 4rem;">Được thiết kế để tạo nên khác biệt.</h1>
+                        <h2 class="fw-bold my-5" style="font-size: 3rem;">
+                            <img src="./assets/images/home-img/lock-icon.png" alt="">
+                            Quyền riêng tư.
+                        </h2>
+                        <div class="row g-5 m-4">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="wrap-connect">
+                                    <img class="my-5" src="./assets/images/home-img/health-icon.png" alt="">
+                                    <p class="fs-2"><span class="fw-bolder">Ứng dụng Sức Khỏe</span> giúp bạn dễ dàng
+                                        xem thông tin sức khỏe và thể chất của bản thân.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="wrap-connect">
+                                    <img class="my-5" src="./assets/images/home-img/protect-icon.png" alt="">
+                                    <p class="fs-2"><span class="fw-bolder">Mã Khóa</span> loại bỏ nhu cầu nhập mật khẩu
+                                        trong ứng dụng và trên trang web bằng cách sử dụng các khóa kỹ thuật số đặc
+                                        biệt. Chỉ cần dùng Touch ID hoặc Face ID để xác thực. Đơn giản và bảo mật.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="wrap-connect">
+                                    <img class="my-5" src="./assets/images/home-img/safari-icon.png" alt="">
+                                    <p class="fs-2"><span class="fw-bolder">Duyệt Riêng Tư</span> Được Cải Tiến Trên
+                                        Safari khóa các cửa sổ duyệt web khi không được sử dụng, chặn hoạt động tải của
+                                        các trình theo dõi đã biết, cũng như xóa các URL theo dõi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Modal Benefit Box 1 -->
         <div class="modal fade" id="benefit-box1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered wrap-box">
@@ -894,9 +992,7 @@
                             để nhận thông tin cập nhật về sản phẩm mới, khuyến mãi và các sự kiện của cửa hàng.
                             <br><br>Quét mã QR để bắt đầu.
                         </p>
-                        <img class="mt-4" width="100%"
-                            src="https://www.apple.com/v/mac/home/bw/images/overview/incentive/boc_qr_code__cl3z0el7styu_large.jpg"
-                            alt="">
+                        <img class="mt-4" width="100%" src="./assets/images/home-img/qr-code-app.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -918,86 +1014,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Modal Sign Up-->
-        <!-- <div class="modal fade p-0" id="staticBackdrop-sign-up" data-bs-backdrop="static" data-bs-keyboard="false"
-            tabindex="-1" aria-labelledby="staticBackdropLabel-sign-up" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content sign-up-content p-2">
-                    <div class="modal-header">
-                        <h1 class="modal-title static-text fs-3" id="staticBackdropLabel-sign-up">Đăng Ký</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="auth-form__group">
-                            <input type="email" class="auth-form__input " placeholder="Email...">
-                        </div>
-                        <div class="auth-form__group">
-                            <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu...">
-                        </div>
-                        <div class="auth-form__group">
-                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu...">
-                        </div>
-                        <div class="auth-form__add">
-                            <p class="auth-form__policy-text">
-                                Bằng việc đăng kí, bạn đã đồng ý với TechNoPro về <br>
-                                <a href="" class="text-decoration-none">Điều khoản dịch vụ</a> &
-                                <a href="" class="text-decoration-none">Chính sách bảo mật</a>
-                            </p>
-                        </div>
-                        <div class="auth-form__social d-flex my-5">
-                            <button type="button" class="btn btn-outline-primary btn-lg w-50 fs-4 me-2"><i
-                                    class="fa-brands fa-facebook me-3"></i>Facebook</button>
-                            <button type="button" class="btn btn-outline-danger btn-lg w-50 fs-4"><i
-                                    class="fa-brands fa-google me-3"></i>Google</button>
-                        </div>
-                        <h4 class="auth-form__switch text-end">Bạn đã có tài khoản? <a href="" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop" data-bs-dismiss="modal"
-                                class="text-decoration-none">Đăng Nhập</a></h4>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="nut-bam btn btn-danger btn-lg me-2" data-bs-dismiss="modal">TRỞ
-                            LẠI</button>
-                        <button type="button" class="nut-bam btn btn-primary btn-lg">ĐĂNG KÝ</button>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- Modal Log in-->
-        <!-- <div class="modal fade p-0" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content sign-up-content p-2">
-                    <div class="modal-header">
-                        <h1 class="modal-title static-text fs-3" id="staticBackdropLabel">Đăng Nhập</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="auth-form__group">
-                            <input type="email" class="auth-form__input" placeholder="Email...">
-                        </div>
-                        <div class="auth-form__group">
-                            <input type="password" class="auth-form__input " placeholder="Nhập mật khẩu...">
-                        </div>
-                        <div class="auth-form__social d-flex my-5">
-                            <button type="button" class="btn btn-outline-primary btn-lg w-50 fs-4 me-2"><i
-                                    class="fa-brands fa-facebook me-3"></i>Facebook</button>
-                            <button type="button" class="btn btn-outline-danger btn-lg w-50 fs-4"><i
-                                    class="fa-brands fa-google me-3"></i>Google</button>
-                        </div>
-                        <h4 class="auth-form__switch text-end">Bạn chưa có tài khoản? <a href="" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop-sign-up" data-bs-dismiss="modal"
-                                class="text-decoration-none">Đăng Ký</a></h4>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="nut-bam btn btn-danger btn-lg me-2" data-bs-dismiss="modal">TRỞ
-                            LẠI</button>
-                        <button type="button" class="nut-bam btn btn-primary btn-lg">ĐĂNG NHẬP</button>
-                    </div>
-                </div>
-            </div>
-        </div> -->
 
         <!-- Modal search -->
         <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
