@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="/assets/css/cart.css">
+
+    <link rel="icon"
+        href="https://cdn-icons-png.flaticon.com/128/10096/10096939.png?ga=GA1.1.1782978868.1679199684&track=ais"
+        type="image/x-icon" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/responsive-home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="app">
+        <!-- Scroll To Top Button -->
+        <button id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+        <!-- Header Navbar by Bootstrap -->
+        <nav class="header__nav navbar navbar-expand-lg fixed-top px-4 py-1" id="globalnav">
+            <div class="container">
+                <!-- Logo Apple -->
+                <a class="header__logo navbar-brand fs-1 text-dark" href="#"><i class="fa-brands fa-apple"></i></a>
+                <!-- Search & Cart btn-->
+                <div class="header__more fs-4">
+                    <a type="button" class="search-btn text-dark mx-3" data-bs-toggle="modal"
+                        data-bs-target="#searchModal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="https://shopdunk.com/cart" class="cart-btn text-dark mx-3"><i
+                            class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <!-- Toggle Button for Responsive Navbar -->
+                <button class="navbar-toggler fs-2 text-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="header__main collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-dark mx-4" href="">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5 text-dark mx-4" aria-current="page" href="#">Tất cả sản
+                                phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-dark mx-4" href="">iPhone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-dark mx-4" href="">iPad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-dark mx-4" href="#">Mac</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-dark mx-4" href="#">Watch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-dark mx-4" href="#">Phụ kiện</a>
+                        </li>
+                    </ul>
+                    <!-- Button Log in/Sign up modal -->
+                    <!-- <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 fs-5"
+                        data-bs-toggle="modal" data-bs-target="#staticBackdrop-sign-up">Sign up</a>
+                    <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 me-3 fs-5"
+                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Log in</a> -->
+
+                    <!-- LogIn and SignUp Page -->
+                    <a href="./sign-up.html" type="button"
+                        class="auth-form-btn text-dark text-decoration-none ms-4 fs-5">Sign up</a>
+                    <a href="./log-in.html" type="button"
+                        class="auth-form-btn text-dark text-decoration-none ms-4 me-3 fs-5">Log in</a>
+                </div>
+            </div>
+        </nav>
+        <div class="breadcrumb ">
+            <ul>
+                <li><a href="./">Trang chủ</a></li>
+                <li><span>›</span> <a href="./register">Giỏ hàng</a></li>
+            </ul>
+        </div>
+        <form method="post" enctype="multipart/form-data" id="shopping-cart-form" action="/cart"
+            novalidate="novalidate">
+            <div class="shopping-cart-info col-md-8">
+                <div class="cart-detail">
+                    <div class="table-wrapper md-3">
+                        <table class="cart ">
+                            <div class="gachngang">
+                                <colgroup>
+                                    <col width="1">
+                                    <col width="1">
+                                    <col>
+                                    <col width="1">
+                                    <col width="1">
+                                    <col width="1">
+                                    <col width="1">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="product-picture">Hình ảnh </th>
+                                        <th class="product">Tên sản phẩm </th>
+                                        <th class="unit-price">Giá bán </th>
+                                        <th class="quantity">Số lượng </th>
+                                        <!-- <th class="subtotal">Toàn bộ</th> -->
+                                        <th class="remove-from-cart"></th>
+                                    </tr>
+                                </thead>
+                            </div>
+
+                            <div class="muahang">
+                                <tbody>
+                                    <tr>
+
+
+                                        <td class="product-picture"><a href="/iphone-14-pro-max"><img
+                                                    alt="Ảnh của iPhone 14 Pro Max 128GB"
+                                                    src="https://shopdunk.com/images/thumbs/0007808_iphone-14-pro-max-128gb_80.png"
+                                                    title="Hiển thị chi tiết cho iPhone 14 Pro Max 128GB"></a> <input
+                                                type="hidden" class="product-id" value="1798"></td>
+                                        <td class="product"><a href="/iphone-14-pro-max" class="product-name">iPhone 14
+                                                Pro
+                                                Max 128GB</a>
+                                            <div class="attributes">Khu vực: Khu vực miền Bắc<br>Hình
+                                                thức: Mua thẳng<br>Màu sắc: Gold</div>
+                                            <div class="edit-item"><a
+                                                    href="https://shopdunk.com/iphone-14-pro-max?updatecartitemid=185801">Sửa</a>
+                                            </div>
+                                        </td>
+                                        <td class="unit-price"><label class="td-title"></label> <span
+                                                class="product-unit-price">26.550.000₫</span></td>
+                                        <td class="quantity">
+
+                                            <div class="cart-quantity-input-container">
+                                                <svg id="cart-quantity-input-subtract185801" width="11" height="11"
+                                                    viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_10158_65576)">
+                                                        <path
+                                                            d="M-0.00390625 5.90234H11.0039C11.1133 5.90234 11.207 5.86328 11.2852 5.78516C11.3633 5.70182 11.4023 5.60547 11.4023 5.49609C11.4023 5.38672 11.3633 5.29297 11.2852 5.21484C11.207 5.13672 11.1133 5.09766 11.0039 5.09766H-0.00390625C-0.0768229 5.09766 -0.144531 5.11589 -0.207031 5.15234C-0.264323 5.1888 -0.311198 5.23828 -0.347656 5.30078C-0.384115 5.35807 -0.402344 5.42318 -0.402344 5.49609C-0.402344 5.57422 -0.384115 5.64453 -0.347656 5.70703C-0.311198 5.76432 -0.264323 5.8112 -0.207031 5.84766C-0.144531 5.88411 -0.0768229 5.90234 -0.00390625 5.90234Z"
+                                                            fill="#0066CC"></path>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_10158_65576">
+                                                            <rect width="11" height="11" fill="white"></rect>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg> <input name="itemquantity185801" id="itemquantity185801"
+                                                    type="text" value="1" class="qty-input" aria-label="Số lượng"
+                                                    oninput="updateTotal()">
+                                                <svg id="cart-quantity-input-add185801" width="12" height="13"
+                                                    viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_10158_65579)">
+                                                        <path
+                                                            d="M-0.304688 6.5C-0.304688 6.61458 -0.265625 6.71094 -0.1875 6.78906C-0.104167 6.86719 -0.0104167 6.90625 0.09375 6.90625H5.19531V12.0078C5.19531 12.1172 5.23438 12.2109 5.3125 12.2891C5.39583 12.3672 5.49219 12.4062 5.60156 12.4062C5.71094 12.4062 5.80469 12.3672 5.88281 12.2891C5.96094 12.2109 6 12.1172 6 12.0078V6.90625H11.1016C11.2109 6.90625 11.3047 6.86719 11.3828 6.78906C11.4609 6.71094 11.5 6.61458 11.5 6.5C11.5 6.39062 11.4609 6.29688 11.3828 6.21875C11.3047 6.14062 11.2109 6.10156 11.1016 6.10156H6V1C6 0.890625 5.96094 0.796875 5.88281 0.71875C5.80469 0.635417 5.71094 0.59375 5.60156 0.59375C5.49219 0.59375 5.39583 0.635417 5.3125 0.71875C5.23438 0.796875 5.19531 0.890625 5.19531 1V6.10156H0.09375C-0.0104167 6.10156 -0.104167 6.14062 -0.1875 6.21875C-0.265625 6.29688 -0.304688 6.39062 -0.304688 6.5Z"
+                                                            fill="#0066CC"></path>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_10158_65579">
+                                                            <rect width="12" height="12" fill="white"
+                                                                transform="translate(0 0.5)"></rect>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+
+
+
+                                        </td>
+                                        <!-- <td class="subtotal"><label class="td-title">Toàn bộ:</label> <span
+                                                class="product-subtotal">26.550.000₫</span></td> -->
+                                        <!-- <td class="remove-from-cart"><input type="checkbox" name="removefromcart"
+                                                id="removefromcart185801" value="185801" aria-label="Tẩy"> <button
+                                                type="button" name="updatecart" class="remove-btn once-submit-button"
+                                                onclick="$(&quot;#removefromcart185801&quot;).attr(&quot;checked&quot;,!0);$(&quot;#updatecart&quot;).click()"></button>
+                                        </td> -->
+                                    </tr>
+                                </tbody>
+                            </div>
+
+                        </table>
+                    </div>
+                    <div class="cart-options">
+                        <div class="common-buttons"><button type="submit" name="updatecart" id="updatecart"
+                                class="button-2 update-cart-button once-submit-button">Cập nhật giỏ
+                                hàng</button> <button type="submit" name="continueshopping"
+                                class="button-2 continue-shopping-button once-submit-button">Tiếp tục mua sắm</button>
+                        </div>
+                        <div class="selected-checkout-attributes"></div>
+                    </div>
+                </div>
+                <div class="product-list  ">
+                    <div class="product-title">
+                        <strong class="title text-black text-cen display-2">Gợi ý phụ kiện đi kèm</strong>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 text-center">
+                            <div class="box-x">
+                                <img src="https://shopdunk.com/images/thumbs/0001395_sac-20w-usb-c-power-adapter_240.png"
+                                    width="100%" class="img3 mt-5">
+                                <div class="img-new">
+                                    <h3>Sạc 20W USB-C Power Adapter </h3>
+                                    <span class="price actual-price">490.000₫</span>
+                                    <span class="price old-price">690.000₫</span>
+
+                                </div>
+                                <div class="buttons"><button type="button"
+                                        class="button-2 product-box-add-to-cart-button"
+                                        onclick="return AjaxCart.addproducttocart_catalog(&quot;/addproducttocart/catalog/144/1/1?forceredirection=True&quot;),!1"
+                                        tabindex="0">Mua ngay</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3  text-center">
+                            <div class="box-x">
+                                <img src="https://shopdunk.com/images/thumbs/0011256_applecare-for-iphone-14-pro-max_240.png"
+                                    width="100%" class="img3 mt-5">
+                                <div class="img-new ">
+                                    <h3>Sạc 20W USB-C Power Adapter </h3>
+                                    <span class="price actual-price">490.000₫</span>
+                                    <span class="price old-price">690.000₫</span>
+
+                                </div>
+                                <div class="buttons"><button type="button"
+                                        class="button-2 product-box-add-to-cart-button"
+                                        onclick="return AjaxCart.addproducttocart_catalog(&quot;/addproducttocart/catalog/144/1/1?forceredirection=True&quot;),!1"
+                                        tabindex="0">Mua ngay</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3  text-center">
+                            <div class="box-x">
+                                <img src="https://shopdunk.com/images/thumbs/0016024_cuong-luc-zeelot-apple-iphone-soildsleek-trong-suot_240.jpeg"
+                                    width="100%" class="img3 mt-5">
+                                <div class="img-new">
+                                    <h3>Sạc 20W USB-C Power Adapter </h3>
+                                    <span class="price actual-price">490.000₫</span>
+                                    <span class="price old-price">690.000₫</span>
+
+                                </div>
+                                <div class="buttons"><button type="button"
+                                        class="button-2 product-box-add-to-cart-button"
+                                        onclick="return AjaxCart.addproducttocart_catalog(&quot;/addproducttocart/catalog/144/1/1?forceredirection=True&quot;),!1"
+                                        tabindex="0">Mua ngay</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3  text-center">
+                            <div class="box-x">
+                                <img src="https://shopdunk.com/images/thumbs/0001737_iphone-14-pro-max-clear-case-with-magsafe_240.jpeg"
+                                    width="100%" class="img3 mt-5">
+                                <div class="img-new">
+                                    <h3>Sạc 20W USB-C Power Adapter </h3>
+                                    <span class="price actual-price">490.000₫</span>
+                                    <span class="price old-price">690.000₫</span>
+
+                                </div>
+                                <div class="buttons"><button type="button"
+                                        class="button-2 product-box-add-to-cart-button"
+                                        onclick="return AjaxCart.addproducttocart_catalog(&quot;/addproducttocart/catalog/144/1/1?forceredirection=True&quot;),!1"
+                                        tabindex="0">Mua ngay</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-title">
+                    <strong class="title text-black text-cen display-2">Thông tin thanh toán</strong>
+                </div>
+
+                <div class="content-notlogin">
+                    <p>Đăng nhập ngay để nhận được “điểm thưởng” hấp dẫn khi mua hàng thành công <br>các sản phẩm tại
+                        Shop chúng tôi</p><a href="/log-in.html">Đăng nhập ngay</a>
+                </div>
+                <div class="all_checkout-billing">
+                    <div id="checkout-billing-load">
+                        <div class="checkout-data">
+                            <div class="section new-billing-address" id="billing-new-address-form">
+                                <div class="enter-address bg-white"><input class="address-id" type="hidden"
+                                        data-val="true" data-val-required="The Id field is required."
+                                        id="BillingNewAddress_Id" name="BillingNewAddress.Id" value="0">
+                                    <div class="edit-address col-12">
+                                        <div class="inputs ">
+                                            <!-- Name Field (Spanning the entire row) -->
+                                            <input placeholder="Tên" type="text" id="BillingNewAddress_FirstName"
+                                                name="BillingNewAddress.FirstName">
+                                            <span></span>
+                                        </div>
+                                        <div class="stdnhanhang row">
+                                            <!-- Phone Number Field (Taking half of the row) -->
+                                            <div class="inputs col-6">
+                                                <input placeholder="Số điện thoại" type="tel"
+                                                    id="BillingNewAddress_PhoneNumber"
+                                                    name="BillingNewAddress.PhoneNumber">
+                                                <span></span>
+                                            </div>
+                                            <!-- Email Field (Taking half of the row) -->
+                                            <div class="inputs col-6">
+                                                <input placeholder="Email" type="email" id="BillingNewAddress_Email"
+                                                    name="BillingNewAddress.Email">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tt_receive_method">Hình thức nhận hàng</div>
+                                    <div class="inputs one-col receive_method">
+                                        <input type="radio" id="receive_store" name="receive" value="0" checked="">
+                                        <label for="receive_store mr-5">Nhận tại cửa hàng</label>
+                                        <input type="radio" id="receive_home" name="receive" value="1">
+                                        <label for="receive_home">Giao tận nơi</label>
+                                    </div>
+                                    <div class="quequan row">
+                                        <!-- Cột 1: Tỉnh, thành phố -->
+                                        <div class="inputs two_col col-6">
+                                            <label for="BillingNewAddress_StateProvinceId">Tỉnh, thành phố:</label>
+                                            <!-- Dropdown list cho Tỉnh, thành phố -->
+                                            <select data-trigger="state-select"
+                                                data-county="#BillingNewAddress_CountyId"
+                                                data-loading="#states-loading-progress"
+                                                id="BillingNewAddress_StateProvinceId"
+                                                name="BillingNewAddress.StateProvinceId" onchange="loadCounties()">
+                                                <!-- Option mặc định -->
+                                                <option value="0">Chọn tỉnh, thành phố</option>
+                                                <!-- Các tùy chọn cho tỉnh, thành phố -->
+                                                <option value="1755">Hà Nội</option>
+                                                <option value="1756">Thành phố Hồ Chí Minh</option>
+                                                <option value="1757">Đà Nẵng</option>
+                                                <option value="1758">Hải Phòng</option>
+                                                <option value="1759">Cần Thơ</option>
+                                                <option value="1812">An Giang</option>
+                                                <option value="1805">Bà Rịa - Vũng Tàu</option>
+                                                <option value="1816">Bạc Liêu</option>
+                                                <option value="1773">Bắc Giang</option>
+                                                <option value="1762">Bắc Kạn</option>
+                                                <option value="1776">Bắc Ninh</option>
+                                                <option value="1808">Bến Tre</option>
+                                                <option value="1803">Bình Dương</option>
+                                                <option value="1791">Bình Định</option>
+                                                <option value="1801">Bình Phước</option>
+                                                <option value="1795">Bình Thuận</option>
+                                                <option value="1817">Cà Mau</option>
+                                                <option value="1761">Cao Bằng</option>
+                                                <option value="1798">Đắk Lắk</option>
+                                                <option value="1799">Đắk Nông</option>
+                                                <option value="1765">Điện Biên</option>
+                                                <option value="1804">Đồng Nai</option>
+                                                <option value="1811">Đồng Tháp</option>
+                                                <option value="1797">Gia Lai</option>
+                                                <option value="1760">Hà Giang</option>
+                                                <option value="1780">Hà Nam</option>
+                                                <option value="1785">Hà Tĩnh</option>
+                                                <option value="1777">Hải Dương</option>
+                                                <option value="1814">Hậu Giang</option>
+                                                <option value="1769">Hòa Bình</option>
+                                                <option value="1778">Hưng Yên</option>
+                                                <option value="1813">Kiên Giang</option>
+                                                <option value="1796">Kon Tum</option>
+                                                <option value="1793">Khánh Hòa</option>
+                                                <option value="1766">Lai Châu</option>
+                                                <option value="1771">Lạng Sơn</option>
+                                                <option value="1764">Lào Cai</option>
+                                                <option value="1800">Lâm Đồng</option>
+                                                <option value="1806">Long An</option>
+                                                <option value="1781">Nam Định</option>
+                                                <option value="1782">Ninh Bình</option>
+                                                <option value="1794">Ninh Thuận</option>
+                                                <option value="1784">Nghệ An</option>
+                                                <option value="1774">Phú Thọ</option>
+                                                <option value="1792">Phú Yên</option>
+                                                <option value="1786">Quảng Bình</option>
+                                                <option value="1789">Quảng Nam</option>
+                                                <option value="1772">Quảng Ninh</option>
+                                                <option value="1790">Quảng Ngãi</option>
+                                                <option value="1787">Quảng Trị</option>
+                                                <option value="1815">Sóc Trăng</option>
+                                                <option value="1767">Sơn La</option>
+                                                <option value="1802">Tây Ninh</option>
+                                                <option value="1807">Tiền Giang</option>
+                                                <option value="1763">Tuyên Quang</option>
+                                                <option value="1779">Thái Bình</option>
+                                                <option value="1770">Thái Nguyên</option>
+                                                <option value="1783">Thanh Hóa</option>
+                                                <option value="1788">Thừa Thiên Huế</option>
+                                                <option value="1809">Trà Vinh</option>
+                                                <option value="1810">Vĩnh Long</option>
+                                                <option value="1775">Vĩnh Phúc</option>
+                                                <option value="1768">Yên Bái</option>
+                                            </select>
+                                            <span id="states-loading-progress" style="display:none"
+                                                class="please-wait">Chờ đợi...</span>
+
+                                        </div>
+
+                                        <div class="inputs two_col col-6">
+                                            <label for="BillingNewAddress_CountyId">Quận, huyện:</label>
+                                            <!-- Dropdown list cho Quận, huyện -->
+                                            <select data-trigger="county-select" id="BillingNewAddress_CountyId"
+                                                name="BillingNewAddress.CountyId" class="hidden">
+                                                <!-- Option mặc định -->
+                                                <option value="0">Chọn Quận, huyện:</option>
+
+
+                                                <option value="1755">Thị xã Hoàng Mai</option>
+                                                <option value="1756">Thành phố Vinh</option>
+                                                <option value="1757">Thị xã Cửa Lò</option>
+                                                <option value="1758">Huyện Anh Sơn</option>
+                                                <option value="1759">Huyện Con Cuông</option>
+                                                <option value="1812">Huyện Diễn Châu</option>
+                                                <option value="1805">Huyện Nam Đàn</option>
+                                                <option value="1816">Huyện Kỳ Sơn</option>
+                                                <option value="1773">Huyện Hưng Nguyên</option>
+                                                <option value="1762">Huyện Đô Lương</option>
+                                                <option value="1776">Huyện Nghi Lộc</option>
+                                                <option value="1808"> Huyện Nghĩa Đàn</option>
+                                                <option value="1803">Huyện Quế Phong</option>
+                                                <option value="1791"> Huyện Quỳ Châu</option>
+                                                <option value="1801">Huyện Quỳ Hợp</option>
+                                                <option value="1795">Huyện Quỳnh Lưu</option>
+                                                <option value="1817">Huyện Tân Kỳ</option>
+                                                <option value="1761">Huyện Tương Dương</option>
+                                                <option value="1798"> Huyện Thanh Chương</option>
+                                                <option value="1799">Huyện Yên Thành</option>
+                                                <option value="1765">An</option>
+                                                <!-- Các lựa chọn cho quận huyện -->
+                                            </select>
+                                            <span id="districts-loading-progress" style="display:none"
+                                                class="please-wait">Chờ đợi...</span>
+                                        </div>
+                                    </div>
+                                    <div class="all_receive_store col-12" style="display: block;">
+                                        <div class="choose_area_store">
+                                            <div class="select_receive_store ui-widget"><select autocomplete="on"
+                                                    name="select_receive_store" id="js__apply_now"> </select></div>
+                                        </div>
+                                    </div>
+                                    <div class="all_receive_home" style="display: none;">
+                                        <div class="inputs one-col"><label for="BillingNewAddress_Address1">Địa chỉ
+                                                cụ thể:</label> <input type="text" id="BillingNewAddress_Address1"
+                                                name="BillingNewAddress.Address1"> <span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bill-company">
+                        <div class="checkbox-bill-company">
+                            <input id="sl-bill-company" type="checkbox" name="sl-bill-company" value="1"
+                                onchange="showCompanyName()">
+
+                            <label for="sl-bill-company">Xuất hoá đơn công ty</label>
+                        </div>
+                        <div class="company-info" id="company-info" style="display:none;">
+                            <div class="form-group">
+                                <label for="fn-company">Tên công ty:</label>
+                                <input type="text" id="fn-company" name="fn-company" placeholder="Tên công ty">
+                            </div>
+                            <div class="form-group">
+                                <label for="f-add-company">Địa chỉ công ty:</label>
+                                <input type="text" id="f-add-company" name="f-add-company"
+                                    placeholder="Địa chỉ công ty">
+                            </div>
+                            <div class="form-group">
+                                <label for="f-tax-company">Mã số thuế:</label>
+                                <input type="text" id="f-tax-company" name="f-tax-company" placeholder="Mã số thuế">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="checkout-payment-load">
+                        <div class="checkout-data">
+                            <div class="section payment-method">
+                                <div class="tt-address-select">Thông tin thanh toán</div>
+                                <div class="notice-payment" style="text-align:left">Quý khách vui
+                                    lòng lựa chọn các hình thức thanh toán dưới đây:</div>
+                                <ul class="method-list" id="payment-method-block">
+                                    <input type="checkbox" id="showAdditionalBoxes" onchange="toggleAdditionalBoxes()">
+                                    <label for="showAdditionalBoxes">Show Additional Boxes</label>
+
+                                    <div class="hidden-box" id="box1">
+                                        <!-- Content of Box 1 -->
+                                        <li style="display:block">
+                                            <div class="method-name">
+                                                <div class="payment-details d-flex col-6">
+                                                    <div class="d-flex align-items-center"><input
+                                                            onclick="selectPaymentMethod(&quot;PaymentOnepay&quot;)"
+                                                            id="paymentmethod_1" type="radio" name="paymentmethod"
+                                                            value="Payments.Onepay"> <input id="flash-sale"
+                                                            value="false" hidden=""></div>
+
+                                                    <div class="d-flex align-items-center item_paymentmethod"
+                                                        style="width:100%"><label for="paymentmethod_1">Thanh toán
+                                                            qua thẻ ngân hàng</label></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+
+                                    <div class="hidden-box" id="box2">
+                                        <!-- Content of Box 2 -->
+                                        <li style="display:block">
+                                            <div class="method-name">
+                                                <div class="payment-details d-flex col-6">
+                                                    <div class="d-flex align-items-center"><input
+                                                            onclick="selectPaymentMethod(&quot;PaymentOnepay&quot;)"
+                                                            id="paymentmethod_1" type="radio" name="paymentmethod"
+                                                            value="Payments.Onepay"> <input id="flash-sale"
+                                                            value="false" hidden=""></div>
+
+                                                    <div class="d-flex align-items-center item_paymentmethod"
+                                                        style="width:100%"><label for="paymentmethod_1">Thanh toán
+                                                            qua VNpay</label></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+
+                                    <div class="hidden-box" id="box3">
+                                        <!-- Content of Box 3 -->
+                                        <li style="display:block">
+                                            <div class="method-name">
+                                                <div class="payment-details d-flex col-6">
+                                                    <div class="d-flex align-items-center"><input
+                                                            onclick="selectPaymentMethod(&quot;PaymentOnepay&quot;)"
+                                                            id="paymentmethod_1" type="radio" name="paymentmethod"
+                                                            value="Payments.Onepay"> <input id="flash-sale"
+                                                            value="false" hidden=""></div>
+
+                                                    <div class="d-flex align-items-center item_paymentmethod"
+                                                        style="width:100%"><label for="paymentmethod_1">Thanh toán
+                                                            khi nhận hàng</label></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="payment-info-busy"></div>
+                            <div id="checkout-payment-info"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="muahangnhanh">
+        <div class="row">
+
+            <div class="muahangcham">
+                <div class="cart-footer col-md-4 col-sm-12 col-lg-6">
+                    <div class="sidebar-cart">
+                        <div class="dangnhapemail mb-3">
+                            <div class="footer_newletter">
+
+
+                                <div class="footer-title">
+                                </div>
+                                <div class="newsletter-subscribe" id="newsletter-subscribe-block">
+                                    <div class="newsletter-email" bis_skin_checked="1"><input id="newsletter-email"
+                                            class="newsletter-subscribe-text" placeholder="Mã giảm giá"
+                                            aria-label="Đăng ký nhận bản tin của chúng tôi" type="email"
+                                            name="NewsletterEmail" fdprocessedid="2dvr7a"> <button type="button"
+                                            id="newsletter-subscribe-button"
+                                            class="button-1 newsletter-subscribe-button" fdprocessedid="4bwd3a">Áp
+                                            dụng</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="totals">
+                        <div class="total-info">
+                            <table class="cart-total">
+                                <tbody>
+                                    <tr class="order-subtotal">
+                                        <td class="cart-total-left"><label>Tổng phụ:</label></td>
+                                        <td class="cart-total-right"><span class="value-summary">26.550.000₫</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="order-total hidden" id="orderTotalRow">
+                                        <td class="cart-total-left"><label>Tổng cộng:</label></td>
+                                        <td class="cart-total-right"><span id="totalAmount"
+                                                class="value-summary">26.550.000₫</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="terms-of-service-warning-box" title="Điều khoản dịch vụ" style="display:none">
+                            <p>Vui lòng chấp nhận các điều khoản dịch vụ trước bước tiếp theo.</p>
+                        </div>
+                        <div class="terms-of-service">
+                            <div class="d-flex">
+                                <div>
+                                    <input id="termsofservice" type="checkbox" name="termsofservice"
+                                        onchange="showFeeNote()">
+                                </div>
+                                <label for="termsofservice">
+                                    <span class="rule-web">Tôi đã đọc và đồng ý với</span>
+                                    <a href="/chinh-sach-doi-tra" class="read" target="_blank"> điều khoản và điều
+                                        kiện</a>
+                                    <span class="rule-web">của website</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="checkout-buttons">
+                            <button type="submit" id="checkout" name="checkout" value="checkout"
+                                class="button-1 checkout-button">
+                                Tiến hành đặt hàng
+                            </button>
+                        </div>
+
+                        <div class="note-ck">
+                            (*) Phí phụ thu sẽ được tính khi bạn tiến hành thanh toán.
+                        </div>
+                        <div class="addon-buttons"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <input name="__RequestVerificationToken" type="hidden"
+        value="CfDJ8NKVVhBXS3NPhOeDTAUEGu13lLQsYahj1-dmPvgvvXgV1DrKT_kpUawZWsM8QU3Rrolf8_kRlVXOKt0uKzqSt3u3gbb32XWPRQJsap0sMiSjr4Sb7D7DXX3WtfZZcch8NFMG18Xf1FbQ5fiBbAEQEZA">
+    </form>
+
+
+</body>
+
+
+<script>
+    function showCompanyName() {
+        // Get the checkbox and company info elements
+        var checkbox = document.getElementById("sl-bill-company");
+        var companyInfo = document.getElementById("company-info");
+
+        // Toggle the display property based on the checkbox state
+        if (checkbox.checked) {
+            companyInfo.style.display = "block"; // Show the company info section
+        } else {
+            companyInfo.style.display = "none";  // Hide the company info section
+        }
+    }
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Lấy các phần tử cần thiết
+        var quantityInput = document.getElementById("itemquantity185801");
+        var decreaseButton = document.getElementById("cart-quantity-input-subtract185801");
+        var increaseButton = document.getElementById("cart-quantity-input-add185801");
+
+        // Xử lý sự kiện khi người dùng click vào nút giảm
+        decreaseButton.addEventListener("click", function () {
+            updateQuantity(-1);
+        });
+
+        // Xử lý sự kiện khi người dùng click vào nút tăng
+        increaseButton.addEventListener("click", function () {
+            updateQuantity(1);
+        });
+
+        // Hàm cập nhật số lượng
+        function updateQuantity(change) {
+            console.log("Updating quantity: ", change);
+            var currentValue = parseInt(quantityInput.value);
+
+            // Đảm bảo giá trị số lượng không âm
+            if (currentValue + change >= 0) {
+                quantityInput.value = currentValue + change;
+            }
+        }
+    });
+
+</script>
+<script>
+    function showFeeNote() {
+        // Get the checkbox and note elements
+        var checkbox = document.getElementById("termsofservice");
+        var feeNote = document.querySelector('.note-ck');
+
+        // Toggle the display property based on the checkbox state
+        feeNote.style.display = checkbox.checked ? 'block' : 'none';
+    }
+</script>
+<script>
+    function toggleAdditionalBoxes() {
+        var checkbox = document.getElementById("showAdditionalBoxes");
+        var box1 = document.getElementById("box1");
+        var box2 = document.getElementById("box2");
+        var box3 = document.getElementById("box3");
+
+        // Toggle the display property based on the checkbox state
+        if (checkbox.checked) {
+            box1.style.display = "block";
+            box2.style.display = "block";
+            box3.style.display = "block";
+        } else {
+            box1.style.display = "none";
+            box2.style.display = "none";
+            box3.style.display = "none";
+        }
+    }
+</script>
+
+<script>
+    // Hàm cập nhật tổng cộng khi số lượng thay đổi
+    function updateTotal() {
+        var quantityInput = document.getElementById("itemquantity185801");
+        var totalAmountSpan = document.getElementById("totalAmount");
+
+        // Lấy giá trị hiện tại của số lượng
+        var quantity = parseInt(quantityInput.value);
+
+        // Xác định giá per sản phẩm (bạn cần thay thế giá trị này bằng giá thực tế)
+        var pricePerItem = 26550000; // Thay thế giá trị này bằng giá thực tế per sản phẩm
+
+        // Tính toán tổng cộng
+        var totalAmount = quantity * pricePerItem;
+
+        // Cập nhật tổng cộng trong thẻ span
+        totalAmountSpan.textContent = formatCurrency(totalAmount); // Giả sử bạn có một hàm để định dạng tiền tệ
+    }
+
+    // Hàm mẫu để định dạng tiền tệ, bạn có thể thay thế nó bằng một giải pháp chi tiết hơn
+    function formatCurrency(amount) {
+        return amount.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+    }
+</script>
+<script>
+    // Hàm sẽ được gọi khi chọn một tỉnh mới
+    function loadCounties() {
+        var stateSelect = document.getElementById("BillingNewAddress_StateProvinceId");
+        var countySelect = document.getElementById("BillingNewAddress_CountyId");
+
+        // Lấy giá trị được chọn của tỉnh
+        var selectedState = stateSelect.value;
+
+        // Ẩn danh sách quận, huyện nếu tỉnh chưa được chọn
+        if (selectedState === "0") {
+            countySelect.classList.add("hidden");
+            return;
+        }
+
+        // Hiển thị thông báo chờ
+        document.getElementById("districts-loading-progress").style.display = "inline-block";
+
+        // Giả sử bạn có một cách nào đó để lấy dữ liệu về quận, huyện dựa trên tỉnh được chọn.
+        // Dưới đây là một ví dụ đơn giản
+        // (trong ứng dụng thực tế, bạn có thể sử dụng AJAX để tải dữ liệu từ máy chủ)
+
+        // Giả sử có một hàm fetchCountiesFromServer(stateId) trả về danh sách quận, huyện
+        // Cần thay thế bằng cách thực tế lấy dữ liệu từ máy chủ
+        var counties = fetchCountiesFromServer(selectedState);
+
+        // Xóa các option hiện tại trong
+        <select> của Quận, huyện
+
+            javascript
+            Copy code
+        while (countySelect.options.length > 1) {
+                countySelect.remove(1);
+        }
+
+            // Thêm các option mới cho Quận, huyện
+            for (var i = 0; i < counties.length; i++) {
+            var option = document.createElement("option");
+            option.value = counties[i].id;
+            option.text = counties[i].name;
+            countySelect.add(option);
+        }
+
+            // Ẩn thông báo chờ và hiển thị dropdown của Quận, huyện
+            document.getElementById("districts-loading-progress").style.display = "none";
+            countySelect.classList.remove("hidden");
+    }
+
+            // Hàm giả định để lấy danh sách quận, huyện từ máy chủ
+            function fetchCountiesFromServer(stateId) {
+        // Trong thực tế, bạn sẽ sử dụng AJAX để gửi yêu cầu đến máy chủ và nhận danh sách quận, huyện
+        // Dưới đây là một ví dụ đơn giản, bạn có thể thay thế nó bằng cách phù hợp với ứng dụng của bạn
+        // Giả sử có một đối tượng JSON chứa danh sách quận, huyện dựa trên stateId
+        var mockCounties = [
+            {id: 1, name: "Quận A" },
+            {id: 2, name: "Quận B" },
+            // ... Các quận, huyện khác ...
+            ];
+
+            return mockCounties;
+    }
+</script>
+
+
+
+
+
+</html>
