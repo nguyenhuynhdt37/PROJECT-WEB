@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
     <link rel="icon"
         href="https://cdn-icons-png.flaticon.com/128/10096/10096939.png?ga=GA1.1.1782978868.1679199684&track=ais"
         type="image/x-icon" />
@@ -16,64 +16,65 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,10vs0;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,10vs0;0,200;0,300;0,400;0,1500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,1500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
 </style>
 
 <body>
     <div class="app bg-white">
-        <header style="font-family: 'Poppins', sans-serif !important;">
-            <nav class="header__nav navbar navbar-expand-lg fixed-top px-4  py-1 ">
-                <div class="container px-0">
+        <header>
+            <nav class="header__nav navbar navbar-expand-lg fixed-top px-4 py-1" id="globalnav">
+                <div class="container">
                     <!-- Logo Apple -->
-                    <a class="header__logo navbar-brand fs-1 text-dark" href="#" style="margin-top: -0.2rem;"><i
-                            class="fa-brands fa-apple "></i></a>
+                    <a class="header__logo navbar-brand fs-1 text-dark" href="#"><i class="fa-brands fa-apple"></i></a>
                     <!-- Search & Cart btn-->
-                    <div class="header__more fs-4">
+                    <div class="header__more fs-2">
                         <a type="button" class="search-btn text-dark mx-3" data-bs-toggle="modal"
                             data-bs-target="#searchModal"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        <a href="https://shopdunk.com/cart" class="cart-btn text-dark mx-3"><i
-                                class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="https://shopdunk.com/cart" class="cart-btn text-dark mx-3">
+                            <i class="fa-solid fa-cart-shopping"></i></a>
                     </div>
                     <!-- Toggle Button for Responsive Navbar -->
-                    <button class="navbar-toggler fs-2 text-dark" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler fs-2 text-dark ms-2" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa-solid fa-bars"></i>
                     </button>
-                    <div class="header__main collapse navbar-collapse me-3" id="navbarSupportedContent">
+                    <div class="header__main collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item">
-                                <a class="nav-link fs-5 text-dark mx-1" href="">Trang chủ</a>
+                                <a class="nav-link fs-4 text-dark mx-4" href="">Trang Chủ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active fs-5 text-dark mx-1" aria-current="page" href="#">Tất cả sản
+                                <a class="nav-link active fs-4 text-dark mx-4" aria-current="page" href="#">Tất cả sản
                                     phẩm</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-5 text-dark mx-1" href="">iPhone</a>
+                                <a class="nav-link fs-4 text-dark mx-4" href="">iPhone</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-5 text-dark mx-1" href="">iPad</a>
+                                <a class="nav-link fs-4 text-dark mx-4" href="">iPad</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-5 text-dark mx-1" href="#">Mac</a>
+                                <a class="nav-link fs-4 text-dark mx-4" href="#">Mac</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-5 text-dark mx-1" href="#">Watch</a>
+                                <a class="nav-link fs-4 text-dark mx-4" href="#">Watch</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-5 text-dark mx-1" href="#">Phụ kiện</a>
+                                <a class="nav-link fs-4 text-dark mx-4" href="#">Phụ kiện</a>
                             </li>
                         </ul>
-                        <!-- Button Log in/Sign up modal -->
-                        <a href="./sign-in.html" type="button"
-                            class="auth-form-btn text-dark text-decoration-none fs-5 me-4">Sign up</a>
+                        <!-- LogIn and SignUp Page -->
+                        <a href="./sign-up.html" type="button"
+                            class="auth-form-btn text-dark text-decoration-none ms-4 fs-4">Đăng ký</a>
                         <a href="./log-in.html" type="button"
-                            class="auth-form-btn text-dark text-decoration-none fs-5">Log in</a>
+                            class="auth-form-btn text-dark text-decoration-none ms-4 me-3 fs-4">Đăng nhập</a>
                     </div>
                 </div>
             </nav>
@@ -88,13 +89,13 @@
                 </div>
             </div>
         </header>
-        <div class="container" style="margin-top: 7rem; position: relative;">
+        <div class="container container_main" style="margin-top: 5rem; position: relative;">
             <button type="button" class=" btn-scroll-to-top" style="width: 5rem; height: 5rem; opacity: 0.5;">
                 <i class="fa-solid fa-arrow-up" style="font-size: 2rem;"></i>
             </button>
             <div class="row product__main justify-content-center">
-                <ul class="product__nav-list d-flex m-0 fs-4 p-0 py-3 text-secondary align-items-center border-bottom"
-                    style="font-weight: 500 !important;">
+                <ul class="px-3 product__nav-list d-flex m-0 fs-4 p-0 py-3 text-secondary align-items-center border-bottom"
+                    style="font-weight: 1500 !important;">
                     <li class="product__nav-item list-unstyled me-2">
                         Apple
                         <i class=" fa-solid fa-chevron-right fs-5"></i>
@@ -154,7 +155,7 @@
                         <div class="product__title--y p-0 align-items-center border-bottom pb-3">
                             <h2 class="product__name m-0 p-0 me-4 fs-1 pb-2 fw-bold">iPhone 15 Pro Max
                             </h2>
-                            
+
                             <div class="product__evaluate d-flex align-items-center fs-4">
                                 <div class="product__degree-evaluation d-inline-block me-2">
                                     <i class="fa-solid fa-star text-warning"></i>
@@ -170,7 +171,7 @@
                             </div>
                         </div>
                         <div class="product__price d-flex align-items-center mt-4">
-                            <span class=" price-curent fs-1 text-primary fw-bold me-2">26.550.000₫</span>
+                            <span class=" price-curent fs-1 text-primary fw-bold me-2">26.5150.000₫</span>
                             <span class="price-old fs-2">34.990.000₫</span>
                         </div>
                         <div class="product__capacity">
@@ -216,7 +217,7 @@
                                     </h4>
                                     <div class="promotion-content py-1">
                                         <i class="fa-solid fa-circle-check mx-1" style="color: limegreen;"></i>
-                                        <span>Giảm tới <strong>500.000đ </strong>qua cổng thanh toán</span> <br>
+                                        <span>Giảm tới <strong>1500.000đ </strong>qua cổng thanh toán</span> <br>
                                     </div>
                                     <div class="promotion-content py-1">
                                         <i class="fa-solid fa-circle-check mx-1" style="color: limegreen;"></i>
@@ -232,7 +233,7 @@
                                     </h4>
                                     <div class="promotion-content py-1">
                                         <i class="fa-solid fa-circle-check mx-1" style="color: limegreen;"></i>
-                                        <span>Ưu đãi tới <strong>500.000đ </strong>khi thanh toán trả góp</span> <br>
+                                        <span>Ưu đãi tới <strong>1500.000đ </strong>khi thanh toán trả góp</span> <br>
                                     </div>
                                 </div>
                             </div>
@@ -243,7 +244,7 @@
                                     </h4>
                                     <div class="promotion-content py-1">
                                         <i class="fa-solid fa-circle-check mx-1" style="color: limegreen;"></i>
-                                        <span>Trợ giá tới <strong>1.500.000đ </strong>cho khách lên đời iPhone 15 series
+                                        <span>Trợ giá tới <strong>1.1500.000đ </strong>cho khách lên đời iPhone 15 series
                                         </span> <br>
                                     </div>
 
@@ -300,18 +301,18 @@
 
                 <div class="tab-details text-center">
                     <button type="button" class="btn btn-outline-primary"
-                        style="padding: 0.7rem 3rem !important; font-size: 1.5rem; font-weight: 500; border-radius: 0.5rem;">Mô
+                        style="padding: 0.7rem 3rem !important; font-size: 1.5rem; font-weight: 1500; border-radius: 0.5rem;">Mô
                         tả sản phẩm</button>
                 </div>
                 <div class="product__trademark mx-auto" style="width: 90%; ">
                     <div class="product__title--move  product__banner--title text-center"
-                        style="font-size: 4.5rem;font-weight: 500;margin-top: 3rem;">
+                        style="font-size: 4.5rem;font-weight: 1500;margin-top: 3rem;">
                         <i class="fa-brands fa-apple"></i>
                         <span>iPhone</span>
                     </div>
                     <div class="row product__description--display d-flex align-items-center ">
-                        <h2
-                            class="col-sm-12 col-md-6 col-tg-6 product__description--display--title  d-flex align-items-center">
+                        <h2 class="col-sm-12 col-md-6 col-tg-6 product__description--display--title  d-flex align-items-center"
+                            data-aos="fade-up" data-aos-duration="1400" data-aos-offset="200">
                             Dynamic Island
                             đưa
                             thông
@@ -323,13 +324,14 @@
                         </h2>
                         <div class="col-sm-12 col-md-6 col-tg-6 text-center pe-5">
                             <img src="https://shopdunk.com/images/uploaded-source/compareiphone15/dynamic_island_large_2x.png?1694035518949"
-                                alt="" class=" product__description--display--img " style="width: 75%;">
+                                alt="" class=" product__description--display--img " style="width: 65% !important;">
                         </div>
                     </div>
                     <div class="row design__description justify-content-between" style="margin-top: 5rem;">
                         <div class="col-sm-12 col-md-6 col-lg-6  design__material--box box-1 pe-3">
                             <div class="row design__material justify-content-center px-5">
-                                <p class="col-12 design__material--title fw-bold text-center mt-5"
+                                <p class="col-12 design__material--title fw-bold text-center mt-5" data-aos="fade-right"
+                                    data-aos-duration="1400" data-aos-offset="200"
                                     style="opacity: 0.8;font-size: 3rem;">Thiết kế bằng kính
                                     pha màu <br> và
                                     nhôm bền
@@ -342,11 +344,13 @@
                         <div class="col-sm-12 col-md-6 col-lg-6  design__material--box box-2 ps-4">
                             <div
                                 class="row design__size align-items-center px-4 justify-content-center pt-5 align-items-center">
-                                <div class="col-6 fs-1 fw-bolder design__size-big text-center" style="opacity: 0.8;">
+                                <div class="col-6 fs-1 fw-bolder design__size-big text-center" data-aos="fade-up"
+                                    data-aos-duration="1400" data-aos-offset="200" style="opacity: 0.8;">
                                     <p class="size-display__title">6,7″</p>
                                     <p class="size-display__title--name">iPhone 15 Plus</p>
                                 </div>
-                                <div class="col-6 fs-1 fw-bolder design__size-big text-center" style="opacity: 0.8;">
+                                <div class="col-6 fs-1 fw-bolder design__size-big text-center" data-aos="fade-up"
+                                    data-aos-duration="1400" data-aos-offset="200" style="opacity: 0.8;">
                                     <p class="size-display__title">6,1″</p>
                                     <p class="size-display__title--name">iPhone 15</p>
                                 </div>
@@ -362,10 +366,11 @@
                                 <img src="https://shopdunk.com/images/uploaded/iPhone%2015%20Pro%201TB/camera%20iphone%2015%20plus/camera-chinh-48mp-cua-iphone-15-plus.jpg"
                                     alt="" class="product__camera--img" style="width: 100%; border-radius: 2rem;">
                                 <div class="product-cam-ct text-center position text-light fw-bold"
-                                    style="position: absolute; top: 3rem;left: 50%; transform: translateX(-50%); width: 100%;">
+                                    style="position: absolute; top: 3rem;left: 150%; transform: translateX(-150%); width: 100%;">
                                     <p class="cam-main-resolution fs-1">Camera Chính 48MP</p>
-                                    <p class="cam-main-describe" style="font-size: 3rem;">Ảnh có độ phân giải siêu cao.
-                                        <br> Telephoto 2x.</p>
+                                    <p class="cam-main-describe" data-aos="fade-up" data-aos-duration="1400" data-aos-offset="1" style="font-size: 3rem;">Ảnh có độ phân giải siêu cao.
+                                        <br> Telephoto 2x.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -376,33 +381,33 @@
                                     Ảnh chân dung <br>
                                     thế hệ mới.</div>
                                 <img src="https://shopdunk.com/images/uploaded-source/compareiphone15/portrait_mode_small.png?1694035518951"
-                                    alt="" class="product__camera-front--img" width="80%">
+                                    alt="" class="product__camera-front--img" data-aos="fade-up" data-aos-duration="1400" data-aos-offset="200" width="80%">
                             </div>
                         </div>
                     </div>
                     <div class="row product__battery px-4 justify-content-center align-items-center"
                         style="margin-top: 5rem;">
-                        <div class="col-12 product__battery--title fs-1 fw-bold text-center"
-                            style="opacity: 0.9;">Pin
+                        <div class="col-12 product__battery--title fs-1 fw-bold text-center" data-aos="fade-up" data-aos-duration="1400" data-aos-offset="200"s style="opacity: 0.9;">Pin
                             dùng cả ngày. <br>Cứ
                             tiếp tục làm
                             mọi
                             việc
                             bạn
                             muốn.</div>
-                        <div class="col-2  product__battery--model  text-center" style="opacity: 0.6; ">
+                        <div class="col-2  product__battery--model  text-center" data-aos="fade-right" data-aos-duration="1400" data-aos-offset="200" style="opacity: 0.6; ">
                             <p class="battery__model--title">Lên đến</p>
                             <div class="battery__model--max">26 giờ</div>
                             <div class="battery__model--action">thời gian xem video trên iPhone 15 Plus.
                             </div>
                         </div>
                         <div class="col-8 product__battery--img">
-                            
+
                             <div class="x-img-box">
-                                <img src="./assets/img/battery-removebg-preview.png" class="py-5" style="width: 100%;" alt="Khung iPhone">
+                                <img src="./assets/img/battery-removebg-preview.png" data-aos="zoom-in" data-aos-duration="1800" data-aos-offset="200" class="py-5" style="width: 100%;"
+                                    alt="Khung iPhone">
                             </div>
                         </div>
-                        <div class="col-2   product__battery--model  text-center" style="opacity: 0.6; ">
+                        <div class="col-2   product__battery--model  text-center" data-aos="fade-left" data-aos-duration="1400" data-aos-offset="200" style="opacity: 0.6; ">
                             <p class="battery__model--title">Lên đến</p>
                             <div class="battery__model--max">20 giờ</div>
                             <div class="battery__model--action">thời gian xem video trên iPhone 15.</div>
@@ -414,7 +419,7 @@
                                 <p class="cpu-title fs-2 fw-bolder m-0 mb-1 pt-5" style="color: #767676;">
                                     Chip A16
                                     Bionic</p>
-                                <p class="cpu-confirm fs-1 fw-bolder m-0 px-5" style="opacity: 0.8; line-height: 1.2;">
+                                <p class="cpu-confirm fs-1 fw-bolder m-0 px-5" data-aos="fade-up" data-aos-duration="1400" data-aos-offset="1" style="opacity: 0.8; line-height: 1.2;">
                                     Sức
                                     mạnh
                                     Pro đã được kiểm
@@ -429,12 +434,12 @@
                                     Sạc dễ
                                     dàng <br>
                                     với USB-C.</p>
-                                <img src="https://shopdunk.com/images/uploaded-source/compareiphone15/usb-c_large_2x.png?1694035518948"
+                                <img src="https://shopdunk.com/images/uploaded-source/compareiphone15/usb-c_large_2x.png?1694035518948" data-aos="fade-up" data-aos-duration="1800" data-aos-offset="200"
                                     alt="" class="product__charger-img" style="width: 100%;">
                             </div>
                         </div>
                     </div>
-                    <div class="product__title--move product__special--design text-center  fs-1 fw-bold"
+                    <div class="product__title--move product__special--design text-center  fs-1 fw-bold" 
                         style="opacity: 0.8; margin-top: 5rem;">Được
                         thiết
                         kế
@@ -447,7 +452,7 @@
                         <div class="product__security--title fs-1 fw-bold mb-2" style="opacity:  0.9;">
                             Quyền riêng tư. Rất
                             iPhone.</div>
-                        <p class="product__security--describe fs-4 mb-5 text-secondary">
+                        <p class="product__security--describe fs-4 mb-5 text-secondary" data-aos="fade-up" data-aos-duration="1400" data-aos-offset="200">
                             Từ Mã Khóa đến Báo Cáo Quyền Riêng Tư<br>
                             đến ứng dụng Sức Khoẻ, iPhone cho bạn <br>
                             quyền kiểm soát những gì mình chia sẻ.
@@ -504,8 +509,8 @@
                 </div>
             </div>
         </div>
-        <div class="product__more m-0">
-            <div class="product__more--box container" style="margin-top: 5rem; padding-bottom: 5rem;">
+        <div class="product__more m-0"> 
+            <div class="product__more--box container " style="margin-top: 5rem; padding-bottom: 5rem;">
                 <div class="product__trademark mx-auto" style="width: 80%;">
                     <p class="product__title--move product__more--title fw-bold text-center fs-1 "
                         style="padding: 5rem; opacity: 0.8;">Vẫn
@@ -515,7 +520,7 @@
                     <div class="row product__accessory px-4 pt-5 align-items-center text-center">
                         <div class="col-sm-12 col-md-6 product__accessory--info " style="">
                             <p class="accessory__title fs-1 fw-bold" style="opacity: 0.8;">Phụ kiện MagSafe</p>
-                            <p class="accessory__title-main fs-1 fw-bold" style="opacity: 0.6;">Gắn thêm một ốp
+                            <p class="accessory__title-main fs-1 fw-bold" data-aos="fade-up" data-aos-duration="1400" data-aos-offset="200" style="opacity: 0.6;">Gắn thêm một ốp
                                 lưng,
                                 một ví da từ tính hay cả
                                 hai.
@@ -536,12 +541,12 @@
                         </div>
                     </div>
                     <div class="product__complimentary fs-5 text-secondary">
-                        <div class="product__juridical--title fs-4 fw-bold text-black" style="opacity: 0.8;"> Từ Chối
+                        <div class="product__juridical--title fs-4 fw-bold text-black" data-aos="fade-up" data-aos-duration="1400" data-aos-offset="200" style="opacity: 0.8;"> Từ Chối
                             Trách
                             Nhiệm
                             Pháp Lý.</div>
                         <br>
-                        <p class="product__juridical--screen"> Màn hình có các góc bo tròn theo đường cong tuyệt
+                        <p class="product__juridical--screen" data-aos="fade-up" data-aos-duration="1400" data-aos-offset="200"> Màn hình có các góc bo tròn theo đường cong tuyệt
                             đẹp
                             và
                             nằm gọn theo một hình chữ nhật chuẩn. Khi tính theo hình chữ nhật chuẩn, kích thước
@@ -561,7 +566,7 @@
                             tích
                             hiển thị thực tế nhỏ hơn.</p>
                         <br>
-                        <p class="product__juridical--electricity">Pin Và Nguồn Điện: Tất cả các xác nhận về
+                        <p class="product__juridical--electricity"data-aos="fade-up" data-aos-duration="1400" data-aos-offset="200">Pin Và Nguồn Điện: Tất cả các xác nhận về
                             thời
                             lượng pin phụ thuộc vào cấu hình mạng và nhiều yếu tố khác; các kết quả thực tế sẽ
                             khác
@@ -569,7 +574,7 @@
                             pin
                             và chu kỳ sạc khác nhau tùy theo cách sử dụng và cài đặt. Truy cập </p>
                         <br>
-                        <p class="product__juridical--charging-cable"> Cáp Sạc USB-C đi kèm các phiên bản iPhone
+                        <p class="product__juridical--charging-cable"data-aos="fade-up" data-aos-duration="1400" data-aos-offset="200"> Cáp Sạc USB-C đi kèm các phiên bản iPhone
                             15
                             tương thích với AirPods Pro (thế hệ thứ 2) có Hộp Sạc MagSafe (USB-C).
                             <br><br> Yêu cầu cáp USB 3 với tốc độ 10Gb/s để đạt tốc độ truyền nhanh hơn đến 20x
@@ -577,7 +582,7 @@
                             các phiên bản iPhone 15 Pro.
                         </p>
                         <br>
-                        <p class="product__juridical--network">Mạng Di Động Và Không Dây: Cần có gói cước dữ
+                        <p class="product__juridical--network"data-aos="fade-up" data-aos-duration="1400" data-aos-offset="200">Mạng Di Động Và Không Dây: Cần có gói cước dữ
                             liệu.
                             Mạng 5G và LTE chỉ khả dụng ở một số thị trường và được cung cấp qua một số nhà
                             mạng.
@@ -586,10 +591,10 @@
                             Để biết thông tin về hỗ trợ mạng 5G và LTE, vui lòng liên hệ nhà mạng và truy cập
                         </p>
                         <br>
-                        <p class="product__juridical--accessory"> Các màu chỉ nhằm mục đích minh họa. Phụ kiện
+                        <p class="product__juridical--accessory"data-aos="fade-up" data-aos-duration="1400" data-aos-offset="200"> Các màu chỉ nhằm mục đích minh họa. Phụ kiện
                             MagSafe được bán riêng.</p>
                         <br>
-                        <p class="product__juridical--guarantee-plus">Ưu Đãi Apple TV+: Chỉ dành cho thuê bao
+                        <p class="product__juridical--guarantee-plus"data-aos="fade-up" data-aos-duration="1400" data-aos-offset="200">Ưu Đãi Apple TV+: Chỉ dành cho thuê bao
                             mới và
                             thuê bao đã từng sử dụng đủ điều kiện. 179.000đ/tháng cho đến khi bị hủy. Một ưu đãi
                             cho
@@ -597,7 +602,7 @@
                             truy
                             cập </p>
                         <br>
-                        <p class="product__juridical--area">Tính Năng Khả Dụng: Một số tính năng không khả dụng
+                        <p class="product__juridical--area"data-aos="fade-up" data-aos-duration="1400" data-aos-offset="200">Tính Năng Khả Dụng: Một số tính năng không khả dụng
                             tại
                             một số quốc gia hoặc khu vực.</p>
                     </div>
@@ -695,8 +700,18 @@
 </body>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    AOS.init()
+
+</script>
 <script src="./assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
 <script src="./assets/js/product_details.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.158.0/three.min.js" integrity="sha512-/WaZCC76Yn6MLEoK6b9np9yiLBet/RngBS33X1P0SHuag6j2E0e5rT7jbA2CvXCydN6+FkDYNx8FBM+vkzsthw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.158.0/three.min.js"
+    integrity="sha512-/WaZCC76Yn6MLEoK6b9np9yiLBet/RngBS33X1P0SHuag6j2E0e5rT7jbA2CvXCydN6+FkDYNx8FBM+vkzsthw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 </html>

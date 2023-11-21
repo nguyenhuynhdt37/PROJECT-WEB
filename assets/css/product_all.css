@@ -50,6 +50,16 @@ html {
     .card-img-top {
         min-height: 218px !important;
     }
+    .img3 {
+        padding: 2rem 0;
+    }
+    .old-price, .price-ratio-container {
+        font-size: 1rem !important;
+    }
+    .price {
+        display: flex;
+        align-items: center;
+    }
 
 }
 

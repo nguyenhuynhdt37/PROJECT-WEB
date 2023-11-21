@@ -219,23 +219,3 @@ const App = {
     },
 }
 App.render()
-
-ScrollReveal({
-    reset: true,
-    origin: 'bottom',   // Xuất hiện từ phía dưới
-    distance: '30px',    // Khoảng cách ban đầu
-    duration: 1500,      // Thời gian xuất hiện (milliseconds)
-    delay: 0,          // Độ trễ trước khi xuất hiện (milliseconds)
-    // easing: 'ease-in-out', // Kiểu chuyển động
-    easing: 'ease-in-out',
-    opacity: '0'
-});
-
-
-
-ScrollReveal().reveal('.cpu-confirm,.product__battery--title,.product__charger--title,.product__security--title,.accessory__title-main ,.product__description--display--title,.design__material--title,.design__size-big,.cam-main-describe,.product__juridical--screen,.product__juridical--title,.product__juridical--screen', { origin: "bottom", duration: '1100' });
-ScrollReveal().reveal('.product__camera-front--img', { delay: 200, origin: "right", duration: '1100' });
-ScrollReveal().reveal('.product__battery--model', { delay: 200, origin: "left", duration: '1100' });
-ScrollReveal().reveal('.product__juridical--electricity,.product__juridical--charging-cable, .product__juridical--guarantee-plus,.product__juridical--area,.product__juridical--accessory, .product__juridical--network', { origin: "bottom", distance: '30px', duration: '1000' });
-
-
