@@ -55,6 +55,20 @@ footer {
     display: inline-block;
     color: var(--text);
 }
+.box-x {
+    display: grid;
+    justify-items: center;
+    min-height: 400px !important;
+    align-content: space-between;
+    /* height: 100%; */
+}
+
+.img3 {
+    margin-top: 50px;
+}
+.img-new  {
+    padding-bottom: 3rem;
+}
 @media(max-width: 740px) {
     .mb_hiden {
         display: none;
@@ -124,8 +138,4 @@ footer {
     .bg__banner {
         transform: scale(1.40);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 8fc87ace43f16278a7b19f4891db4c60fea9b7fd
