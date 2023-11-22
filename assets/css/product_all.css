@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -34,6 +36,39 @@ html {
     padding: 0.8rem 4rem;
 }
 
+.box-x {
+    display: grid;
+    justify-items: center;
+    min-height: 400px !important;
+    align-content: space-between;
+    /* height: 100%; */
+}
+
+.img3 {
+    margin-top: 20px;
+}
+
+footer {
+    border-top: 2px solid royalblue;
+}
+
+footer a,
+h5 {
+    font-family: 'Mulish', sans-serif !important;
+}
+
+nav a {
+    font-family: 'Mulish', sans-serif !important;
+}
+
+.link-sp:hover .box-x {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-text:hover {
+    cursor: pointer;
+}
+
 @media(max-width: 740px) {
     .mb_hiden {
         display: none;
@@ -47,27 +82,38 @@ html {
         padding: 0 10px !important;
         margin-bottom: 2rem;
     }
+
     .card-img-top {
         min-height: 218px !important;
     }
+
     .img3 {
         padding: 2rem 0;
+        width: 100%;
     }
-    .old-price, .price-ratio-container {
+
+    .old-price,
+    .price-ratio-container {
         font-size: 1rem !important;
     }
+
     .price {
         display: flex;
         align-items: center;
     }
-
 }
 
 @media(max-width: 1023px) {
     .card-img-top {
         height: 140px;
     }
+    .box-x {
+        min-height: 370px !important;
+    }
 
+    .img-new h3 {
+        margin-bottom: 20px !important;
+    }
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
