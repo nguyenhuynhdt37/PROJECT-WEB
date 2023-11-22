@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="../../assets/css/cart.css">
+    <link rel="stylesheet" href="../../assets/css/cart.css">
 </head>
 
 <body>
@@ -46,14 +46,14 @@
                 <!-- Logo Apple -->
                 <a class="header__logo navbar-brand fs-1 text-dark" href="#"><i class="fa-brands fa-apple"></i></a>
                 <!-- Search & Cart btn-->
-                <div class="header__more fs-2">
+                <div class="header__more fs-4">
                     <a type="button" class="search-btn text-dark mx-3" data-bs-toggle="modal"
                         data-bs-target="#searchModal"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a href="https://shopdunk.com/cart" class="cart-btn text-dark mx-3">
-                        <i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="https://shopdunk.com/cart" class="cart-btn text-dark mx-3"><i
+                            class="fa-solid fa-cart-shopping"></i></a>
                 </div>
                 <!-- Toggle Button for Responsive Navbar -->
-                <button class="navbar-toggler fs-2 text-dark ms-2" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler fs-2 text-dark" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
@@ -61,33 +61,39 @@
                 <div class="header__main collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link fs-4 text-dark mx-4" href="../../html/home/index.html">Trang Chủ</a>
+                            <a class="nav-link fs-5 text-dark mx-4" href="">Trang Chủ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-4 text-dark mx-4" aria-current="page" href="../../html/all_product/index.html">Tất cả sản
+                            <a class="nav-link active fs-5 text-dark mx-4" aria-current="page" href="#">Tất cả sản
                                 phẩm</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-4 text-dark mx-4" href="../list_iphone/index.html">iPhone</a>
+                            <a class="nav-link fs-5 text-dark mx-4" href="">iPhone</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-4 text-dark mx-4" href="../../html/list_ipad/index.html">iPad</a>
+                            <a class="nav-link fs-5 text-dark mx-4" href="">iPad</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-4 text-dark mx-4" href="../../html/list_mac/index.html">Mac</a>
+                            <a class="nav-link fs-5 text-dark mx-4" href="#">Mac</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-4 text-dark mx-4" href="../../html/list_watch/index.html">Watch</a>
+                            <a class="nav-link fs-5 text-dark mx-4" href="#">Watch</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-4 text-dark mx-4" href="../../html/list-pk/index.html">Phụ kiện</a>
+                            <a class="nav-link fs-5 text-dark mx-4" href="#">Phụ kiện</a>
                         </li>
                     </ul>
+                    <!-- Button Log in/Sign up modal -->
+                    <!-- <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 fs-5"
+                        data-bs-toggle="modal" data-bs-target="#staticBackdrop-sign-up">Sign up</a>
+                    <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 me-3 fs-5"
+                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Log in</a> -->
+
                     <!-- LogIn and SignUp Page -->
-                    <a href="../../html/sign-up/index.html" type="button"
-                        class="auth-form-btn text-dark text-decoration-none ms-4 fs-4">Đăng ký</a>
-                    <a href="../login/index.html" type="button"
-                        class="auth-form-btn text-dark text-decoration-none ms-4 me-3 fs-4">Đăng nhập</a>
+                    <a href="./sign-up.html" type="button"
+                        class="auth-form-btn text-dark text-decoration-none ms-4 fs-5">Sign up</a>
+                    <a href="./log-in.html" type="button"
+                        class="auth-form-btn text-dark text-decoration-none ms-4 me-3 fs-5">Log in</a>
                 </div>
             </div>
         </nav>
@@ -103,28 +109,25 @@
                 <div class="cart-detail">
                     <div class="table-wrapper md-3">
                         <table class="cart ">
-                            <div class="gachngang">
-                                <colgroup>
-                                    <col width="1">
-                                    <col width="1">
-                                    <col>
-                                    <col width="1">
-                                    <col width="1">
-                                    <col width="1">
-                                    <col width="1">
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th class="product-picture">Hình ảnh </th>
-                                        <th class="product">Tên sản phẩm </th>
-                                        <th class="unit-price">Giá bán </th>
-                                        <th class="quantity">Số lượng </th>
-                                        <!-- <th class="subtotal">Toàn bộ</th> -->
-                                        <th class="remove-from-cart"></th>
-                                    </tr>
-                                </thead>
-                            </div>
-
+                            <colgroup>
+                                <col width="1">
+                                <col width="1">
+                                <col>
+                                <col width="1">
+                                <col width="1">
+                                <col width="1">
+                                <col width="1">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="product-picture">Hình ảnh </th>
+                                    <th class="product">Tên sản phẩm </th>
+                                    <th class="unit-price">Giá bán </th>
+                                    <th class="quantity">Số lượng </th>
+                                    <!-- <th class="subtotal">Toàn bộ</th> -->
+                                    <th class="remove-from-cart"></th>
+                                </tr>
+                            </thead>
                             <div class="muahang">
                                 <tbody>
                                     <tr>
