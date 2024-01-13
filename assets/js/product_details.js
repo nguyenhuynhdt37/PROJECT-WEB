@@ -1,4 +1,3 @@
-'use strict'
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 const proDuctImg = $('.product--img')
@@ -8,13 +7,16 @@ const priceOld = $('.price-old')
 const carousel = $('.carousel-inner')
 const carouselItem = $$('.carousel-item')
 const product__colors = $('.product__colors')
+const product__name = $('.product__name')
+const product__color__title = $('.product__color--title')
+
 
 const App = {
     prices: [
-        {id: '128GB', old: '34.990.000₫', new: '26.990.000₫'},
-        {id: '256GB', old: '38.990.000₫', new: '27.990.000₫'},
-        {id: '512GB', old: '42.990.000₫', new: '33.990.000₫'},
-        {id: '1T', old: '58.990.000₫', new: '48.990.000₫'}
+        { id: '128GB', old: '34.990.000₫', new: '26.990.000₫' },
+        { id: '256GB', old: '38.990.000₫', new: '27.990.000₫' },
+        { id: '512GB', old: '42.990.000₫', new: '33.990.000₫' },
+        { id: '1T', old: '58.990.000₫', new: '48.990.000₫' }
     ],
     img: [
         {
@@ -49,114 +51,171 @@ const App = {
             img6: 'https://shopdunk.com/images/thumbs/0018658_gold_550.jpeg',
             img7: 'https://shopdunk.com/images/thumbs/0018659_gold_550.jpeg',
             img8: 'https://shopdunk.com/images/thumbs/0018660_gold_550.jpeg'
-            
+
         },
-       
+
     ],
 
-    khoidong(){
-        (()=>{
-            const html = this.img.map((img, index) => {
-                if(index === 0) {
-                  return(  
-            `<li
-                class="color-item  rounded-circle p-1 me-2 ${img.id} list-unstyled d-inline-block border border-primary border-3">
-            </li>`)
-                } else {
-                    return(  
-            `<li
-                class="color-item  rounded-circle p-1 me-2 ${img.id} list-unstyled d-inline-block">
-            </li>`) 
+    khoidong() {
+        var colorItem = $$('.color-item')
+
+            ; (() => {
+                const html = this.img.map((img, index) => {
+
+                    if (index === 0) {
+                    product__color__title.innerHTML = `Màu sắc: ${img.id}`
+                        return (
+                            `<li
+                                 class="color-item  p-1 me-2 ${img.id} list-unstyled d-inline-block border border-color border-2">
+                             </li>`
+                        )
+                    } else {
+                        return (
+                            `<li
+                                  class="color-item  p-1 me-2 ${img.id} list-unstyled d-inline-block">
+                           </li>`
+                        )
+                    }
+                }).join('')
+                product__colors.innerHTML = html
+            })()
+            ; (() => {
+                var button = document.querySelector(".btn-scroll-to-top");
+                // Khi di chuột xuống gần cuối
+                window.onscroll = () => {
+                    let scrollTop = document.documentElement.scrollTop;
+                    if (scrollTop > 700) {
+                        // Hiển thị nút
+                        button.style.display = "block";
+                    } else {
+                        // Ẩn nút
+                        button.style.display = "none";
+                    }
                 }
-        }).join('')
-            product__colors.innerHTML = html           
-        })()
-        ;(()=>{
-            var button = document.querySelector(".btn-scroll-to-top");
-                        // Khi di chuột xuống gần cuối
-            window.onscroll = ()=>{
-             let scrollTop = document.documentElement.scrollTop;
-              if (scrollTop > 700) {
-                // Hiển thị nút
-                button.style.display = "block";
-              } else {
-                // Ẩn nút
-                button.style.display = "none";
-              }
-            }
-            
-            // Khi nhấp vào nút
-            button.addEventListener("click", function() {
-              // Di chuyển lên đầu
-              window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-              });
-            });
-        })()   
+
+                // Khi nhấp vào nút
+                button.addEventListener("click", function () {
+                    // Di chuyển lên đầu
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
+                });
+            })()
+            ; var cous = (() => {
+                colorItem.forEach((item) => {
+                    this.img.forEach((ig => {
+                        if (item.classList.contains(ig.id)) {
+                            const html = Object.entries(ig).map(([key, value]) => {
+
+                                if (key !== 'id') {
+                                    if (key === 'img1') {
+
+                                        return `<div class="carousel-item active">
+                                    <img src='${value}' class="d-block w-100" alt="Slide">
+                                </div>`;
+                                    }
+                                    else {
+                                        return `<div class="carousel-item">
+                                    <img src='${value}' class="d-block w-100" alt="Slide">
+                                </div>`;
+                                    }
+                                }
+                            })
+                            carousel.innerHTML = html.join('')
+                            carouselItem[0].classList.add('active')
+                        }
+                    }))
+                })
+            })()
+
+            ; (() => {
+                capacitys.forEach(capacity => {
+                    console.log(capacity);
+                    var check = capacity.classList.contains('active1')
+                    if (check) {
+                        product__name.innerHTML = (`iPhone 15 Pro Max - ${capacity.innerText}`)
+
+                        document.title = product__name.innerText;
+
+                    }
+                })
+            })()
+
     },
-    handleClickBntColor(colorItem) {
+
+
+    handleClickBntColor() {
+        var colorItem = $$('.color-item')
         buttonCapacity: {
             capacitys.forEach((capacity) => {
                 capacity.onclick = () => {
-                    capacitys.forEach((capacity1) => {
-                        capacity1.classList.remove('active1')
-                    })
-                    capacity.classList.add('active1')
-                    if(capacity.classList.contains('active1')){
-                    this.prices.map((price)=>{
-                                if(price.id === capacity.innerText){
+                    setTimeout(() => {
+                        capacitys.forEach((capacity1) => {
+                            capacity1.classList.remove('active1')
+                        })
+                        capacity.classList.add('active1')
+                        if (capacity.classList.contains('active1')) {
+                            this.prices.map((price) => {
+                                console.log(price)
+                                if (price.id === capacity.innerText) {
                                     priceCurent.innerText = price.new
                                     priceOld.innerText = price.old
+                                    product__name.innerHTML = (`iPhone 15 Pro Max - ${price.id}`)
+                                    document.title = product__name.innerText;
                                 }
                             })
                         }
+                    }, 200)
                 }
             })
         }
-    ;((()=>{
-    colorItem.forEach((item)=>{
-        item.onclick = () => {
-            colorItem.forEach((item1)=>{
-                item1.classList.remove('border', 'border-primary' ,'border-3')
-             })
-             item.classList.add('border', 'border-primary', 'border-3')
-             this.img.forEach((ig =>{
-                if(item.classList.contains(ig.id)) {
-                    const html = Object.entries(ig).map(([key, value]) => {
-                        
-                        if(key !== 'id'){
-                            if(key === 'img1'){
-                                
-                                return `<div class="carousel-item active">
-                                    <img src='${value}' class="d-block w-100" alt="Slide">
-                                </div>`;
-                            }
-                            else{
-                                return `<div class="carousel-item">
-                                    <img src='${value}' class="d-block w-100" alt="Slide">
-                                </div>`;
-                            }
-                        }
-                    })               
-                    carousel.innerHTML = html.join('')
-                    carouselItem[0].classList.add('active')
-                    }
-               }
-            ))
-    }
-})
- }))();
+        ; (() => {
+            colorItem.forEach((item) => {
+                item.onclick = () => {
+                    setTimeout(() => {
+                        console.dir(item)
+                        colorItem.forEach((item1) => {
+                            item1.classList.remove('border', 'border-color', 'border-2')
+                        })
+                        item.classList.add('border', 'border-color', 'border-2')
+                        this.img.forEach((ig => {
+                            if (item.classList.contains(ig.id)) {
+                                product__color__title.innerHTML = `Màu sắc: ${ig.id}`
 
-},
+                                const html = Object.entries(ig).map(([key, value]) => {
 
-    
-    render(){
-    this.khoidong()
-    const colorItem = $$('.color-item')
-        this.handleClickBntColor(colorItem)
+                                    if (key !== 'id') {
+                                        if (key === 'img1') {
+
+                                            return `<div class="carousel-item active">
+                                        <img src='${value}' class="d-block w-100" alt="Slide">
+                                    </div>`;
+                                        }
+                                        else {
+                                            return `<div class="carousel-item">
+                                        <img src='${value}' class="d-block w-100" alt="Slide">
+                                    </div>`;
+                                        }
+                                    }
+                                })
+                                carousel.innerHTML = html.join('')
+                                carouselItem[0].classList.add('active')
+                            }
+                        }))
+                    }, 200)
+                }
+            })
+        })();
+
+    },
+
+
+    render() {
+        this.khoidong()
+
+        this.handleClickBntColor()
 
     },
 }
-App.render() 
-
+App.render()
